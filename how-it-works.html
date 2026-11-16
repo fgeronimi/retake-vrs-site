@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works · retake-vrs</title>
+<meta name="description" content="Counter-Strike 2 Valve Regional Standings as of 2026-11-02, recomputed and audited.">
+<link rel="stylesheet" href="assets/site.dcbecfdd70.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">retake-vrs</a>
+  <nav aria-label="Main">
+    <a href="index.html">Global</a>
+<a href="region/europe.html">Europe</a><a href="region/americas.html">Americas</a><a href="region/asia.html">Asia</a>    <a href="evolution.html">Evolution</a>
+    <a href="how-it-works.html">How it works</a>
+  </nav>
+</header>
+<main>
+  <p class="fresh">Standings as of <strong>2026-11-02</strong> · site built 2026-11-16 12:31 UTC</p>
+<h1>How it works</h1>
+<p class="lede">Valve ranks Counter-Strike 2 rosters with its Regional Standings (VRS) to invite teams to Major qualifiers. This site republishes Valve's standings, explains them, and checks that every published value can be recomputed.</p>
+
+<h2>What is ranked</h2>
+<p>A roster is a group of players, not an organisation. Matches are read from the most recent backwards; a lineup belongs to the first roster it shares three players with. Prize money follows the lineup that actually played the event.</p>
+
+<h2>The starting value</h2>
+<p>Over the last six months, each roster gets four factors between 0 and 1:</p>
+<ul>
+  <li><b>Bounty offered</b>: its own prize money, best ten events, weighted by age.</li>
+  <li><b>Bounty collected</b>: the prize money of the teams it beat, best ten wins.</li>
+  <li><b>Opponent network</b>: how many distinct teams its beaten opponents themselves beat.</li>
+  <li><b>LAN wins</b>: its best ten wins on LAN.</li>
+</ul>
+<p>Each is compared with the 5th best roster, so a top team scores 1. Wins at high-stakes events count more. The average of the four factors is mapped onto 400 to 2,000 points.</p>
+
+<h2>Head-to-head</h2>
+<p>All matches are then replayed in order with an Elo-like update: beating a stronger team earns more than beating a weaker one. The final value is the starting value plus these adjustments. Older results weigh less, and results from the last month count in full.</p>
+
+<h2>What retake-vrs checks</h2>
+<p>For every roster, the starting value, the head-to-head sum, the factors and the age of every match are recomputed from the published pages. Valve rounds what it publishes, so a value counts as recomputed when the gap stays within what that rounding allows. A ✓ on a roster sheet means exactly that.</p>
+<p>The model itself was ported to Python and checked against Valve's own code: identical rosters and ordering, and ratings equal to within 10<sup>-12</sup> point.</p>
+</main>
+<footer>
+  <p>Model and standings: <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a>.
+  Event data: HLTV.org, as credited by Valve. Recomputed and audited by retake-vrs.</p>
+  <p>Not affiliated with Valve or HLTV. Standings as of 2026-11-02.</p>
+</footer>
+</body>
+</html>
