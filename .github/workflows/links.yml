@@ -1,0 +1,17 @@
+name: Links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Internal links only: external sites are not fetched, so the check never flakes.
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress --root-dir "${{ github.workspace }}" './**/*.html'
+          fail: true
