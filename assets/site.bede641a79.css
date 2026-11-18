@@ -55,3 +55,6 @@ footer { max-width: 1040px; margin: 0 auto; padding: 18px 16px 40px; font-size: 
 .diverge { display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
 .diverge > div:first-child { display: flex; justify-content: flex-end; border-right: 1px solid var(--axis); }
 .bar.neg { border-radius: 4px 0 0 4px; }
+h3 { font-size: 15px; margin: 16px 0 6px; }
+details { margin: 8px 0; padding: 8px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+summary { cursor: pointer; }
