@@ -2,738 +2,742 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BBL: roster sheet · retake-vrs</title>
-<meta name="description" content="Counter-Strike 2 Valve Regional Standings as of 2026-11-02, recomputed and audited.">
-<link rel="stylesheet" href="../assets/site.bede641a79.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BBL · retake-vrs</title>
+<meta name="description" content="Every month Valve ranks the Counter-Strike teams, and the best of each region are invited to the Majors. retake-vrs recomputes those standings with Valve&#39;s own model and plays the race to each Major thousands of times.">
+<link rel="alternate" hreflang="en" href="../roster/0042--bbl--iceberg-leakz-mistr-nickyb-salazar.html">
+<link rel="alternate" hreflang="fr" href="../fr/roster/0042--bbl--iceberg-leakz-mistr-nickyb-salazar.html">
+<link rel="preload" href="../assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.128a9c93e5.css">
+<script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="../assets/site.5959fce70a.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 <header class="top">
-  <a class="brand" href="../index.html">retake-vrs</a>
-  <nav aria-label="Main">
-    <a href="../index.html">Global</a>
-<a href="../region/europe.html">Europe</a><a href="../region/americas.html">Americas</a><a href="../region/asia.html">Asia</a>    <a href="../evolution.html">Evolution</a>
-<a href="../versus-official.html">Mine vs official</a><a href="../race.html">Race to a Major</a><a href="../what-if.html">What it would take</a>    <a href="../how-it-works.html">How it works</a>
-  </nav>
+  <div class="wrap">
+    <a class="mark" href="../index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="2" y="7" width="28" height="20" rx="4" fill="var(--accent)"/>
+        <rect x="6" y="11" width="16" height="12" rx="2" fill="var(--bg)"/>
+        <path d="M9 14h4M9 20h4M15 14h4M15 20h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="17" r="2" fill="var(--bg)"/>
+        <path d="M10 7V4M22 7V3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>retake-vrs</a>
+    <nav class="nav" aria-label="Main">
+      <a href="../standings.html" aria-current="true">Standings</a>
+<a href="../race.html">Race to the Major</a>      <a href="../evolution.html">Analysis</a>
+      <a href="../how-it-works.html">How it&#39;s built</a>
+    </nav>
+    <div class="tools">
+      <div class="search js-only">
+        <input id="q" type="search" autocomplete="off" placeholder="Search a team or a player" aria-label="Search a team or a player"
+               data-index="../assets/search.json" data-home="../" data-none="No team or player matches.">
+        <ul id="q-results" hidden></ul>
+      </div>
+      <div class="seg js-only" role="group" aria-label="Theme">
+        <button type="button" data-set-theme="dark">Dark</button>
+        <button type="button" data-set-theme="light">Light</button>
+      </div>
+      <div class="seg" role="group" aria-label="Language">
+<a href="../roster/0042--bbl--iceberg-leakz-mistr-nickyb-salazar.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="../fr/roster/0042--bbl--iceberg-leakz-mistr-nickyb-salazar.html" hreflang="fr" lang="fr">FR</a>      </div>
+    </div>
+  </div>
 </header>
-<main>
-  <p class="fresh">Standings as of <strong>2026-11-02</strong> · site built 2026-11-18 12:50 UTC</p>
-<p class="crumbs"><a href="../index.html">Global standings</a> › BBL</p>
-<h1>BBL</h1>
-<p class="lede">IceBerg, leakz, MistR, NickyB, salazar</p>
+<nav class="subnav" aria-label="BBL"><div class="wrap">
+<a href="../standings.html">Global</a><a href="../region/europe.html">Europe</a><a href="../region/americas.html">Americas</a><a href="../region/asia.html">Asia</a></div></nav>
+<main id="content" class="wrap">
+  <p class="fresh">Standings as of 2 Nov 2026 · built 2026-11-18 23:46 UTC</p>
+<p class="crumbs"><a href="../standings.html">Standings</a> › <a href="../region/europe.html">Europe</a> › BBL</p>
+<section class="head">
+  <h1>BBL</h1>
+  <p class="lede">IceBerg · leakz · MistR · NickyB · salazar</p>
+</section>
 
-<section class="kpis" aria-label="Ranks and value">
-  <div class="kpi"><div class="v">#42</div><div class="k">Global rank</div></div>
-  <div class="kpi"><div class="v">#32</div><div class="k">Europe</div></div>
-  <div class="kpi"><div class="v">1365</div><div class="k">Points</div></div>
-<div class="kpi"><div class="v spark-wrap"><svg class="spark" viewBox="0 0 160 36" width="160" height="36" role="img" aria-label="Points over time: 2026-04-06: 1281, 2026-09-07: 1136, 2026-10-05: 1386, 2026-11-02: 1365"><polyline points="110.0,15.9 143.0,31.0 149.0,5.0 155.0,7.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="155.0" cy="7.2" r="4"/></svg></div><div class="k">Points over 4 snapshots</div></div></section>
+<section class="kpis plain" aria-label="BBL">
+  <div class="stat"><span class="v">#42</span><span class="k">Global rank</span></div>
+  <div class="stat"><span class="v">#32</span><span class="k">Europe</span></div>
+  <div class="stat"><span class="v">1,365.2</span><span class="k">Points</span></div>
+  <div class="stat"><span class="v">48%</span><span class="k">Matches on LAN</span></div>
+  <div class="stat"><span class="v">$38,450</span><span class="k">Prize money in the window</span></div>
+</section>
 
-<h2>Final value</h2>
-<p>Final value <b>1365.2</b> = starting value <b>1387.9</b>
-+ head-to-head adjustments <b>-22.7</b>.</p>
-<p class="muted">Starting value recomputed from the factors: 1387.8 <span class="ok" title="Within the precision of Valve's publication">✓ recomputed</span>.
-Sum of the head-to-head adjustments below: -22.71 <span class="ok" title="Within the precision of Valve's publication">✓ recomputed</span>.</p>
+<section class="card" aria-labelledby="season-title">
+  <h2 id="season-title">The season, match by match</h2>
+  <div class="legend">
+    <span><i class="l-lan"></i>LAN match</span>
+    <span><i class="l-online"></i>Online match</span>
+<span><i class="l-unknown"></i>Not found on the OpenVRS side (1)</span>    <span><i class="l-prize"></i>Prize money, by event date</span>
+  </div>
+  <div class="chart-box"><svg class="chart season" viewBox="0 0 960 410" width="960" height="410" role="img" aria-label="The season, match by match">
+<line class="grid" x1="56" x2="944" y1="248.0" y2="248.0"/>
+<text class="axis" x="48" y="252.0" text-anchor="end">1,250</text>
+<line class="grid" x1="56" x2="944" y1="190.5" y2="190.5"/>
+<text class="axis" x="48" y="194.5" text-anchor="end">1,300</text>
+<line class="grid" x1="56" x2="944" y1="133.0" y2="133.0"/>
+<text class="axis" x="48" y="137.0" text-anchor="end">1,350</text>
+<line class="grid" x1="56" x2="944" y1="75.5" y2="75.5"/>
+<text class="axis" x="48" y="79.5" text-anchor="end">1,400</text>
+<line class="grid" x1="56" x2="944" y1="18.0" y2="18.0"/>
+<text class="axis" x="48" y="22.0" text-anchor="end">1,450</text>
+<line class="grid" x1="199.7" x2="199.7" y1="18" y2="384"/>
+<text class="axis" x="203.7" y="402">Jun</text>
+<line class="grid" x1="353.7" x2="353.7" y1="18" y2="384"/>
+<text class="axis" x="357.7" y="402">Jul</text>
+<line class="grid" x1="512.8" x2="512.8" y1="18" y2="384"/>
+<text class="axis" x="516.8" y="402">Aug</text>
+<line class="grid" x1="672.0" x2="672.0" y1="18" y2="384"/>
+<text class="axis" x="676.0" y="402">Sep</text>
+<line class="grid" x1="825.9" x2="825.9" y1="18" y2="384"/>
+<text class="axis" x="829.9" y="402">Oct</text>
+<path class="area" d="M71.4 89.4 L71.4 89.6 L81.7 89.6 L86.8 89.6 L102.2 89.5 L127.9 89.3 L138.1 89.1 L143.3 86.7 L143.3 90.1 L179.2 95.1 L184.3 95.0 L189.5 95.8 L210.0 100.4 L287.0 100.1 L297.2 94.0 L302.4 98.7 L312.6 95.6 L317.8 90.6 L322.9 89.9 L333.2 100.3 L338.3 92.0 L446.1 91.9 L461.5 86.5 L466.6 92.5 L471.8 86.8 L476.9 87.7 L543.6 87.6 L548.8 86.5 L553.9 103.4 L630.9 126.5 L666.8 147.8 L687.4 145.8 L692.5 155.4 L697.6 147.5 L697.6 161.3 L713.0 140.3 L718.2 122.6 L728.4 105.9 L733.5 115.5 L759.2 127.7 L759.2 117.1 L759.2 132.0 L759.2 122.3 L759.2 99.2 L764.3 113.5 L779.7 95.1 L779.7 105.7 L779.7 101.9 L795.1 114.0 L795.1 106.4 L805.4 121.8 L831.1 139.9 L831.1 129.5 L831.1 129.3 L831.1 125.5 L831.1 138.1 L831.1 122.3 L836.2 104.4 L836.2 116.8 L887.5 126.1 L887.5 140.3 L902.9 128.8 L908.1 122.2 L918.3 109.4 L923.5 126.7 L923.5 106.3 L928.6 115.5 L928.6 248 L71.4 248 Z"/>
+<path class="line" d="M71.4 89.4 L71.4 89.6 L81.7 89.6 L86.8 89.6 L102.2 89.5 L127.9 89.3 L138.1 89.1 L143.3 86.7 L143.3 90.1 L179.2 95.1 L184.3 95.0 L189.5 95.8 L210.0 100.4 L287.0 100.1 L297.2 94.0 L302.4 98.7 L312.6 95.6 L317.8 90.6 L322.9 89.9 L333.2 100.3 L338.3 92.0 L446.1 91.9 L461.5 86.5 L466.6 92.5 L471.8 86.8 L476.9 87.7 L543.6 87.6 L548.8 86.5 L553.9 103.4 L630.9 126.5 L666.8 147.8 L687.4 145.8 L692.5 155.4 L697.6 147.5 L697.6 161.3 L713.0 140.3 L718.2 122.6 L728.4 105.9 L733.5 115.5 L759.2 127.7 L759.2 117.1 L759.2 132.0 L759.2 122.3 L759.2 99.2 L764.3 113.5 L779.7 95.1 L779.7 105.7 L779.7 101.9 L795.1 114.0 L795.1 106.4 L805.4 121.8 L831.1 139.9 L831.1 129.5 L831.1 129.3 L831.1 125.5 L831.1 138.1 L831.1 122.3 L836.2 104.4 L836.2 116.8 L887.5 126.1 L887.5 140.3 L902.9 128.8 L908.1 122.2 L918.3 109.4 L923.5 126.7 L923.5 106.3 L928.6 115.5"/>
+<circle class="online" cx="71.4" cy="89.6" r="5" data-tip="7 May 2026 · Lost · AM · Online · BC.Game Masters Season 2 Europe Series 1 · -0.18 → 1,387.7"><title>7 May 2026 · Lost · AM · Online · BC.Game Masters Season 2 Europe Series 1 · -0.18 → 1,387.7</title></circle>
+<circle class="online" cx="81.7" cy="89.6" r="5" data-tip="9 May 2026 · Won · Walczaki · Online · NODWIN Gaming Clutch Series 8 · +0.03 → 1,387.8"><title>9 May 2026 · Won · Walczaki · Online · NODWIN Gaming Clutch Series 8 · +0.03 → 1,387.8</title></circle>
+<circle class="online" cx="86.8" cy="89.6" r="5" data-tip="10 May 2026 · Won · MOUZ NXT · Online · NODWIN Gaming Clutch Series 8 · +0.01 → 1,387.8"><title>10 May 2026 · Won · MOUZ NXT · Online · NODWIN Gaming Clutch Series 8 · +0.01 → 1,387.8</title></circle>
+<circle class="online" cx="102.2" cy="89.5" r="5" data-tip="13 May 2026 · Won · ex-RUBY · Online · NODWIN Gaming Clutch Series 8 · +0.03 → 1,387.8"><title>13 May 2026 · Won · ex-RUBY · Online · NODWIN Gaming Clutch Series 8 · +0.03 → 1,387.8</title></circle>
+<circle class="online" cx="127.9" cy="89.3" r="5" data-tip="18 May 2026 · Won · BET-M · Online · NODWIN Gaming Clutch Series 8 · +0.24 → 1,388.0"><title>18 May 2026 · Won · BET-M · Online · NODWIN Gaming Clutch Series 8 · +0.24 → 1,388.0</title></circle>
+<circle class="online" cx="138.1" cy="89.1" r="5" data-tip="20 May 2026 · Won · Walczaki · Online · NODWIN Gaming Clutch Series 8 · +0.13 → 1,388.2"><title>20 May 2026 · Won · Walczaki · Online · NODWIN Gaming Clutch Series 8 · +0.13 → 1,388.2</title></circle>
+<circle class="online" cx="143.3" cy="86.7" r="5" data-tip="21 May 2026 · Won · HOTU · Online · NODWIN Gaming Clutch Series 8 · +2.08 → 1,390.2"><title>21 May 2026 · Won · HOTU · Online · NODWIN Gaming Clutch Series 8 · +2.08 → 1,390.2</title></circle>
+<circle class="online" cx="143.3" cy="90.1" r="5" data-tip="21 May 2026 · Lost · Color · Online · NODWIN Gaming Clutch Series 8 · -2.96 → 1,387.3"><title>21 May 2026 · Lost · Color · Online · NODWIN Gaming Clutch Series 8 · -2.96 → 1,387.3</title></circle>
+<circle class="online" cx="179.2" cy="95.1" r="5" data-tip="28 May 2026 · Lost · Just Players · Online · CCT 2026 Europe Series 2 · -4.33 → 1,383.0"><title>28 May 2026 · Lost · Just Players · Online · CCT 2026 Europe Series 2 · -4.33 → 1,383.0</title></circle>
+<circle class="online" cx="184.3" cy="95.0" r="5" data-tip="29 May 2026 · Won · AM · Online · BC.Game Masters Season 2 Europe Series 2 · +0.10 → 1,383.0"><title>29 May 2026 · Won · AM · Online · BC.Game Masters Season 2 Europe Series 2 · +0.10 → 1,383.0</title></circle>
+<circle class="online" cx="189.5" cy="95.8" r="5" data-tip="30 May 2026 · Lost · Nemiga · Online · BC.Game Masters Season 2 Europe Series 2 · -0.72 → 1,382.3"><title>30 May 2026 · Lost · Nemiga · Online · BC.Game Masters Season 2 Europe Series 2 · -0.72 → 1,382.3</title></circle>
+<circle class="online" cx="210.0" cy="100.4" r="5" data-tip="3 Jun 2026 · Lost · Phantom · Online · CCT 2026 Europe Series 3 · -3.94 → 1,378.4"><title>3 Jun 2026 · Lost · Phantom · Online · CCT 2026 Europe Series 3 · -3.94 → 1,378.4</title></circle>
+<circle class="online" cx="287.0" cy="100.1" r="5" data-tip="18 Jun 2026 · Won · KOLESIE · Online · Stake Ranked Episode 3 Qualifier · +0.26 → 1,378.6"><title>18 Jun 2026 · Won · KOLESIE · Online · Stake Ranked Episode 3 Qualifier · +0.26 → 1,378.6</title></circle>
+<circle class="online" cx="297.2" cy="94.0" r="5" data-tip="20 Jun 2026 · Won · Inner Circle · Online · Stake Ranked Episode 3 Qualifier · +5.23 → 1,383.9"><title>20 Jun 2026 · Won · Inner Circle · Online · Stake Ranked Episode 3 Qualifier · +5.23 → 1,383.9</title></circle>
+<circle class="online" cx="302.4" cy="98.7" r="5" data-tip="21 Jun 2026 · Lost · K27 · Online · Stake Ranked Episode 3 Qualifier · -4.02 → 1,379.9"><title>21 Jun 2026 · Lost · K27 · Online · Stake Ranked Episode 3 Qualifier · -4.02 → 1,379.9</title></circle>
+<circle class="lan" cx="312.6" cy="95.6" r="5" data-tip="23 Jun 2026 · Won · Betclic · LAN · Super DraculaN Season 1 · +2.66 → 1,382.5"><title>23 Jun 2026 · Won · Betclic · LAN · Super DraculaN Season 1 · +2.66 → 1,382.5</title></circle>
+<circle class="lan" cx="317.8" cy="90.6" r="5" data-tip="24 Jun 2026 · Won · FOKUS · LAN · Super DraculaN Season 1 · +4.39 → 1,386.9"><title>24 Jun 2026 · Won · FOKUS · LAN · Super DraculaN Season 1 · +4.39 → 1,386.9</title></circle>
+<circle class="lan" cx="322.9" cy="89.9" r="5" data-tip="25 Jun 2026 · Won · Walczaki · LAN · Super DraculaN Season 1 · +0.59 → 1,387.5"><title>25 Jun 2026 · Won · Walczaki · LAN · Super DraculaN Season 1 · +0.59 → 1,387.5</title></circle>
+<circle class="lan" cx="333.2" cy="100.3" r="5" data-tip="27 Jun 2026 · Lost · Acend · LAN · Super DraculaN Season 1 · -9.03 → 1,378.5"><title>27 Jun 2026 · Lost · Acend · LAN · Super DraculaN Season 1 · -9.03 → 1,378.5</title></circle>
+<circle class="lan" cx="338.3" cy="92.0" r="5" data-tip="28 Jun 2026 · Won · DENDELE · LAN · Super DraculaN Season 1 · +7.17 → 1,385.6"><title>28 Jun 2026 · Won · DENDELE · LAN · Super DraculaN Season 1 · +7.17 → 1,385.6</title></circle>
+<circle class="unknown" cx="446.1" cy="91.9" r="5" data-tip="19 Jul 2026 · Won · Belgium · ? · +0.06 → 1,385.7"><title>19 Jul 2026 · Won · Belgium · ? · +0.06 → 1,385.7</title></circle>
+<circle class="online" cx="461.5" cy="86.5" r="5" data-tip="22 Jul 2026 · Won · Nuclear TigeRES · Online · StarLadder StarSeries 2026 Fall Europe · +4.70 → 1,390.4"><title>22 Jul 2026 · Won · Nuclear TigeRES · Online · StarLadder StarSeries 2026 Fall Europe · +4.70 → 1,390.4</title></circle>
+<circle class="online" cx="466.6" cy="92.5" r="5" data-tip="23 Jul 2026 · Lost · Ninjas in Pyjamas · Online · StarLadder StarSeries 2026 Fall Europe · -5.22 → 1,385.2"><title>23 Jul 2026 · Lost · Ninjas in Pyjamas · Online · StarLadder StarSeries 2026 Fall Europe · -5.22 → 1,385.2</title></circle>
+<circle class="online" cx="471.8" cy="86.8" r="5" data-tip="24 Jul 2026 · Won · Nuclear TigeRES · Online · StarLadder StarSeries 2026 Fall Europe · +4.98 → 1,390.2"><title>24 Jul 2026 · Won · Nuclear TigeRES · Online · StarLadder StarSeries 2026 Fall Europe · +4.98 → 1,390.2</title></circle>
+<circle class="online" cx="476.9" cy="87.7" r="5" data-tip="25 Jul 2026 · Lost · Aurora · Online · StarLadder StarSeries 2026 Fall Europe · -0.73 → 1,389.4"><title>25 Jul 2026 · Lost · Aurora · Online · StarLadder StarSeries 2026 Fall Europe · -0.73 → 1,389.4</title></circle>
+<circle class="lan" cx="543.6" cy="87.6" r="5" data-tip="7 Aug 2026 · Won · Passion Chicha · LAN · Esports World Cup 2026 Qualifier · +0.08 → 1,389.5"><title>7 Aug 2026 · Won · Passion Chicha · LAN · Esports World Cup 2026 Qualifier · +0.08 → 1,389.5</title></circle>
+<circle class="lan" cx="548.8" cy="86.5" r="5" data-tip="8 Aug 2026 · Won · OG · LAN · Esports World Cup 2026 Qualifier · +0.89 → 1,390.4"><title>8 Aug 2026 · Won · OG · LAN · Esports World Cup 2026 Qualifier · +0.89 → 1,390.4</title></circle>
+<circle class="lan" cx="553.9" cy="103.4" r="5" data-tip="9 Aug 2026 · Lost · GenOne · LAN · Esports World Cup 2026 Qualifier · -14.66 → 1,375.7"><title>9 Aug 2026 · Lost · GenOne · LAN · Esports World Cup 2026 Qualifier · -14.66 → 1,375.7</title></circle>
+<circle class="online" cx="630.9" cy="126.5" r="5" data-tip="24 Aug 2026 · Lost · CYBERSHOKE · Online · Intel Extreme Masters 2026 Beijing Qualifier Global Open · -20.12 → 1,355.6"><title>24 Aug 2026 · Lost · CYBERSHOKE · Online · Intel Extreme Masters 2026 Beijing Qualifier Global Open · -20.12 → 1,355.6</title></circle>
+<circle class="online" cx="666.8" cy="147.8" r="5" data-tip="31 Aug 2026 · Lost · Black Phoenix · Online · NODWIN Gaming Clutch Series 11 · -18.48 → 1,337.1"><title>31 Aug 2026 · Lost · Black Phoenix · Online · NODWIN Gaming Clutch Series 11 · -18.48 → 1,337.1</title></circle>
+<circle class="online" cx="687.4" cy="145.8" r="5" data-tip="4 Sep 2026 · Won · Walczaki · Online · Stake Ranked Episode 4 Qualifier · +1.69 → 1,338.8"><title>4 Sep 2026 · Won · Walczaki · Online · Stake Ranked Episode 4 Qualifier · +1.69 → 1,338.8</title></circle>
+<circle class="online" cx="692.5" cy="155.4" r="5" data-tip="5 Sep 2026 · Lost · fnatic · Online · Stake Ranked Episode 4 Qualifier · -8.34 → 1,330.5"><title>5 Sep 2026 · Lost · fnatic · Online · Stake Ranked Episode 4 Qualifier · -8.34 → 1,330.5</title></circle>
+<circle class="online" cx="697.6" cy="147.5" r="5" data-tip="6 Sep 2026 · Won · UPGRADE · Online · PGL 2026 Masters Europe Open 2 · +6.89 → 1,337.4"><title>6 Sep 2026 · Won · UPGRADE · Online · PGL 2026 Masters Europe Open 2 · +6.89 → 1,337.4</title></circle>
+<circle class="online" cx="697.6" cy="161.3" r="5" data-tip="6 Sep 2026 · Lost · SINNERS · Online · PGL 2026 Masters Europe Open 2 · -12.03 → 1,325.4"><title>6 Sep 2026 · Lost · SINNERS · Online · PGL 2026 Masters Europe Open 2 · -12.03 → 1,325.4</title></circle>
+<circle class="online" cx="713.0" cy="140.3" r="5" data-tip="9 Sep 2026 · Won · 100 Thieves · Online · Thunderpick World Championship 2026 Qualifier · +18.30 → 1,343.7"><title>9 Sep 2026 · Won · 100 Thieves · Online · Thunderpick World Championship 2026 Qualifier · +18.30 → 1,343.7</title></circle>
+<circle class="online" cx="718.2" cy="122.6" r="5" data-tip="10 Sep 2026 · Won · Envy · Online · Thunderpick World Championship 2026 Qualifier · +15.43 → 1,359.1"><title>10 Sep 2026 · Won · Envy · Online · Thunderpick World Championship 2026 Qualifier · +15.43 → 1,359.1</title></circle>
+<circle class="online" cx="728.4" cy="105.9" r="5" data-tip="12 Sep 2026 · Won · Wildcard · Online · Thunderpick World Championship 2026 Qualifier · +14.52 → 1,373.6"><title>12 Sep 2026 · Won · Wildcard · Online · Thunderpick World Championship 2026 Qualifier · +14.52 → 1,373.6</title></circle>
+<circle class="online" cx="733.5" cy="115.5" r="5" data-tip="13 Sep 2026 · Lost · HOTU · Online · Thunderpick World Championship 2026 Qualifier · -8.38 → 1,365.2"><title>13 Sep 2026 · Lost · HOTU · Online · Thunderpick World Championship 2026 Qualifier · -8.38 → 1,365.2</title></circle>
+<circle class="lan" cx="759.2" cy="127.7" r="5" data-tip="18 Sep 2026 · Lost · Inner Circle · LAN · Logitech G Play Connect 2026 · -10.65 → 1,354.6"><title>18 Sep 2026 · Lost · Inner Circle · LAN · Logitech G Play Connect 2026 · -10.65 → 1,354.6</title></circle>
+<circle class="lan" cx="759.2" cy="117.1" r="5" data-tip="18 Sep 2026 · Won · INFINITE · LAN · Logitech G Play Connect 2026 · +9.25 → 1,363.8"><title>18 Sep 2026 · Won · INFINITE · LAN · Logitech G Play Connect 2026 · +9.25 → 1,363.8</title></circle>
+<circle class="lan" cx="759.2" cy="132.0" r="5" data-tip="18 Sep 2026 · Lost · Envy · LAN · Logitech G Play Connect 2026 · -12.93 → 1,350.9"><title>18 Sep 2026 · Lost · Envy · LAN · Logitech G Play Connect 2026 · -12.93 → 1,350.9</title></circle>
+<circle class="lan" cx="759.2" cy="122.3" r="5" data-tip="18 Sep 2026 · Won · EYEBALLERS · LAN · Logitech G Play Connect 2026 · +8.39 → 1,359.3"><title>18 Sep 2026 · Won · EYEBALLERS · LAN · Logitech G Play Connect 2026 · +8.39 → 1,359.3</title></circle>
+<circle class="lan" cx="759.2" cy="99.2" r="5" data-tip="18 Sep 2026 · Won · Liquid · LAN · Logitech G Play Connect 2026 · +20.11 → 1,379.4"><title>18 Sep 2026 · Won · Liquid · LAN · Logitech G Play Connect 2026 · +20.11 → 1,379.4</title></circle>
+<circle class="lan" cx="764.3" cy="113.5" r="5" data-tip="19 Sep 2026 · Lost · Luminosity · LAN · Logitech G Play Connect 2026 · -12.46 → 1,366.9"><title>19 Sep 2026 · Lost · Luminosity · LAN · Logitech G Play Connect 2026 · -12.46 → 1,366.9</title></circle>
+<circle class="lan" cx="779.7" cy="95.1" r="5" data-tip="22 Sep 2026 · Won · Virtus.pro · LAN · Stake Pulse Beat II · +16.00 → 1,382.9"><title>22 Sep 2026 · Won · Virtus.pro · LAN · Stake Pulse Beat II · +16.00 → 1,382.9</title></circle>
+<circle class="lan" cx="779.7" cy="105.7" r="5" data-tip="22 Sep 2026 · Lost · HEROIC · LAN · Stake Pulse Beat II · -9.15 → 1,373.8"><title>22 Sep 2026 · Lost · HEROIC · LAN · Stake Pulse Beat II · -9.15 → 1,373.8</title></circle>
+<circle class="lan" cx="779.7" cy="101.9" r="5" data-tip="22 Sep 2026 · Won · Johnny Speeds · LAN · Stake Pulse Beat II · +3.24 → 1,377.0"><title>22 Sep 2026 · Won · Johnny Speeds · LAN · Stake Pulse Beat II · +3.24 → 1,377.0</title></circle>
+<circle class="lan" cx="795.1" cy="114.0" r="5" data-tip="25 Sep 2026 · Lost · 100 Thieves · LAN · Stake Pulse Beat II · -10.46 → 1,366.6"><title>25 Sep 2026 · Lost · 100 Thieves · LAN · Stake Pulse Beat II · -10.46 → 1,366.6</title></circle>
+<circle class="online" cx="795.1" cy="106.4" r="5" data-tip="25 Sep 2026 · Won · BRUTE · Online · NODWIN Gaming Clutch Series 12 · +6.53 → 1,373.1"><title>25 Sep 2026 · Won · BRUTE · Online · NODWIN Gaming Clutch Series 12 · +6.53 → 1,373.1</title></circle>
+<circle class="online" cx="805.4" cy="121.8" r="5" data-tip="27 Sep 2026 · Lost · SINNERS · Online · NODWIN Gaming Clutch Series 12 · -13.35 → 1,359.7"><title>27 Sep 2026 · Lost · SINNERS · Online · NODWIN Gaming Clutch Series 12 · -13.35 → 1,359.7</title></circle>
+<circle class="lan" cx="831.1" cy="139.9" r="5" data-tip="2 Oct 2026 · Lost · Sangal · LAN · Journey 2026 Autumn · -15.76 → 1,344.0"><title>2 Oct 2026 · Lost · Sangal · LAN · Journey 2026 Autumn · -15.76 → 1,344.0</title></circle>
+<circle class="lan" cx="831.1" cy="129.5" r="5" data-tip="2 Oct 2026 · Won · SportsBetExpert · LAN · Journey 2026 Autumn · +9.09 → 1,353.1"><title>2 Oct 2026 · Won · SportsBetExpert · LAN · Journey 2026 Autumn · +9.09 → 1,353.1</title></circle>
+<circle class="lan" cx="831.1" cy="129.3" r="5" data-tip="2 Oct 2026 · Won · XEPT · LAN · Journey 2026 Autumn · +0.15 → 1,353.2"><title>2 Oct 2026 · Won · XEPT · LAN · Journey 2026 Autumn · +0.15 → 1,353.2</title></circle>
+<circle class="lan" cx="831.1" cy="125.5" r="5" data-tip="2 Oct 2026 · Won · HAVU · LAN · Journey 2026 Autumn · +3.30 → 1,356.5"><title>2 Oct 2026 · Won · HAVU · LAN · Journey 2026 Autumn · +3.30 → 1,356.5</title></circle>
+<circle class="lan" cx="831.1" cy="138.1" r="5" data-tip="2 Oct 2026 · Lost · Ninjas in Pyjamas · LAN · Journey 2026 Autumn · -10.95 → 1,345.6"><title>2 Oct 2026 · Lost · Ninjas in Pyjamas · LAN · Journey 2026 Autumn · -10.95 → 1,345.6</title></circle>
+<circle class="lan" cx="831.1" cy="122.3" r="5" data-tip="2 Oct 2026 · Won · FOKUS · LAN · Journey 2026 Autumn · +13.76 → 1,359.3"><title>2 Oct 2026 · Won · FOKUS · LAN · Journey 2026 Autumn · +13.76 → 1,359.3</title></circle>
+<circle class="lan" cx="836.2" cy="104.4" r="5" data-tip="3 Oct 2026 · Won · BC.Game · LAN · Journey 2026 Autumn · +15.53 → 1,374.9"><title>3 Oct 2026 · Won · BC.Game · LAN · Journey 2026 Autumn · +15.53 → 1,374.9</title></circle>
+<circle class="lan" cx="836.2" cy="116.8" r="5" data-tip="3 Oct 2026 · Lost · Ninjas in Pyjamas · LAN · Journey 2026 Autumn · -10.77 → 1,364.1"><title>3 Oct 2026 · Lost · Ninjas in Pyjamas · LAN · Journey 2026 Autumn · -10.77 → 1,364.1</title></circle>
+<circle class="lan" cx="887.5" cy="126.1" r="5" data-tip="13 Oct 2026 · Lost · Liquid · LAN · Stake Pulse Beat III · -8.06 → 1,356.0"><title>13 Oct 2026 · Lost · Liquid · LAN · Stake Pulse Beat III · -8.06 → 1,356.0</title></circle>
+<circle class="lan" cx="887.5" cy="140.3" r="5" data-tip="13 Oct 2026 · Lost · JiJieHao · LAN · Stake Pulse Beat III · -12.35 → 1,343.7"><title>13 Oct 2026 · Lost · JiJieHao · LAN · Stake Pulse Beat III · -12.35 → 1,343.7</title></circle>
+<circle class="online" cx="902.9" cy="128.8" r="5" data-tip="16 Oct 2026 · Won · EYEBALLERS · Online · PGL 2027 Bucharest Qualifier · +9.99 → 1,353.7"><title>16 Oct 2026 · Won · EYEBALLERS · Online · PGL 2027 Bucharest Qualifier · +9.99 → 1,353.7</title></circle>
+<circle class="online" cx="908.1" cy="122.2" r="5" data-tip="17 Oct 2026 · Won · ex-RUSTEC · Online · PGL 2027 Bucharest Qualifier · +5.72 → 1,359.4"><title>17 Oct 2026 · Won · ex-RUSTEC · Online · PGL 2027 Bucharest Qualifier · +5.72 → 1,359.4</title></circle>
+<circle class="online" cx="918.3" cy="109.4" r="5" data-tip="19 Oct 2026 · Won · Betclic · Online · PGL 2027 Bucharest Qualifier · +11.16 → 1,370.6"><title>19 Oct 2026 · Won · Betclic · Online · PGL 2027 Bucharest Qualifier · +11.16 → 1,370.6</title></circle>
+<circle class="lan" cx="923.5" cy="126.7" r="5" data-tip="20 Oct 2026 · Lost · BC.Game · LAN · DraculaN Season 7 · -15.08 → 1,355.5"><title>20 Oct 2026 · Lost · BC.Game · LAN · DraculaN Season 7 · -15.08 → 1,355.5</title></circle>
+<circle class="lan" cx="923.5" cy="106.3" r="5" data-tip="20 Oct 2026 · Won · Luminosity · LAN · DraculaN Season 7 · +17.75 → 1,373.2"><title>20 Oct 2026 · Won · Luminosity · LAN · DraculaN Season 7 · +17.75 → 1,373.2</title></circle>
+<circle class="lan" cx="928.6" cy="115.5" r="5" data-tip="21 Oct 2026 · Lost · HEROIC · LAN · DraculaN Season 7 · -8.03 → 1,365.2"><title>21 Oct 2026 · Lost · HEROIC · LAN · DraculaN Season 7 · -8.03 → 1,365.2</title></circle>
+<text class="axis" x="56" y="280">Prize money</text>
+<line class="grid" x1="56" x2="944" y1="384" y2="384"/>
+<rect class="prize" x="137.3" y="320.0" width="12" height="64.0" rx="3" data-tip="21 May 2026 · $10,000"><title>21 May 2026 · $10,000</title></rect>
+<text class="axis" x="143.3" y="315.0" text-anchor="middle">10k</text>
+<rect class="prize" x="188.6" y="371.2" width="12" height="12.8" rx="3" data-tip="31 May 2026 · $2,000"><title>31 May 2026 · $2,000</title></rect>
+<text class="axis" x="194.6" y="366.2" text-anchor="middle">2k</text>
+<rect class="prize" x="332.3" y="288.0" width="12" height="96.0" rx="3" data-tip="28 Jun 2026 · $15,000"><title>28 Jun 2026 · $15,000</title></rect>
+<text class="axis" x="338.3" y="283.0" text-anchor="middle">15k</text>
+<rect class="prize" x="778.9" y="353.6" width="12" height="30.4" rx="3" data-tip="23 Sep 2026 · $4,750"><title>23 Sep 2026 · $4,750</title></rect>
+<text class="axis" x="784.9" y="348.6" text-anchor="middle">5k</text>
+<rect class="prize" x="794.3" y="358.4" width="12" height="25.6" rx="3" data-tip="26 Sep 2026 · $4,000"><title>26 Sep 2026 · $4,000</title></rect>
+<text class="axis" x="800.3" y="353.4" text-anchor="middle">4k</text>
+<rect class="prize" x="804.5" y="376.3" width="12" height="7.7" rx="3" data-tip="28 Sep 2026 · $1,200"><title>28 Sep 2026 · $1,200</title></rect>
+<text class="axis" x="810.5" y="371.3" text-anchor="middle">1k</text>
+<rect class="prize" x="830.2" y="374.4" width="12" height="9.6" rx="3" data-tip="3 Oct 2026 · $1,500"><title>3 Oct 2026 · $1,500</title></rect>
+<text class="axis" x="836.2" y="369.4" text-anchor="middle">2k</text>
+</svg></div>
+  <p class="note">Points after each match: the starting value (1,387.9) plus Valve&#39;s head-to-head adjustments, in the order played; the last point is the final value.</p>
+</section>
 
-<h2>Factors</h2>
-<div class="scroll"><table>
-  <thead><tr><th>Factor</th><th class="r">Value</th><th class="hide-narrow">Recomputed by retake-vrs</th></tr></thead>
-  <tbody>
-    <tr><td>Bounty offered</td><td class="r">0.401</td><td class="hide-narrow">0.401 <span class="ok" title="Within the precision of Valve's publication">✓ recomputed</span></td></tr>
-    <tr><td>Bounty collected</td><td class="r">0.453</td><td class="hide-narrow">0.453 <span class="ok" title="Within the precision of Valve's publication">✓ recomputed</span></td></tr>
-    <tr><td>Opponent network</td><td class="r">0.293</td><td class="hide-narrow">0.293</td></tr>
-    <tr><td>LAN wins</td><td class="r">0.962</td><td class="hide-narrow">0.962</td></tr>
-  </tbody>
-</table></div>
+<div class="grid2">
+  <section class="card" aria-labelledby="factors-title">
+    <h2 id="factors-title">Factors</h2>
+    <div class="factor"><span>Bounty offered</span><span class="track"><b style="width:40.1%"></b></span><span class="val">0.401</span></div>
+    <div class="factor"><span>Bounty collected</span><span class="track"><b style="width:45.3%"></b></span><span class="val">0.453</span></div>
+    <div class="factor"><span>Opponent network</span><span class="track"><b style="width:29.3%"></b></span><span class="val">0.293</span></div>
+    <div class="factor"><span>LAN wins</span><span class="track"><b style="width:96.2%"></b></span><span class="val">0.962</span></div>
+    <p class="note">Starting value 1,387.9 from the average of the four factors, recomputed by retake-vrs: within Valve&#39;s rounding. Head-to-head −22.7.</p>
+  </section>
 
-<h2>Matches</h2>
-<p class="muted">66 matches in the six-month window, most recent first. Values in parentheses are adjusted by age and event weight.</p>
-<div class="scroll"><table class="dense">
-  <thead><tr>
-    <th>Date</th><th>Opponent</th><th>Result</th><th class="r hide-narrow">Age weight</th>
-    <th class="r hide-narrow">Bounty collected</th><th class="r hide-narrow">Opponent network</th><th class="r hide-narrow">LAN</th><th class="r">H2H</th>
-  </tr></thead>
-  <tbody>
-    <tr>
-      <td>2026-10-21</td>
-      <td>HEROIC</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-8.03</td>
-    </tr>
-    <tr>
-      <td>2026-10-20</td>
-      <td>Luminosity</td>
-      <td>Won</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">0.116 (0.047)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r">+17.75</td>
-    </tr>
-    <tr>
-      <td>2026-10-20</td>
-      <td>BC.Game</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-15.08</td>
-    </tr>
-    <tr>
-      <td>2026-10-19</td>
-      <td>Betclic</td>
-      <td>Won</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+11.16</td>
-    </tr>
-    <tr>
-      <td>2026-10-17</td>
-      <td>ex-RUSTEC</td>
-      <td>Won</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+5.72</td>
-    </tr>
-    <tr>
-      <td>2026-10-16</td>
-      <td>EYEBALLERS</td>
-      <td>Won</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+9.99</td>
-    </tr>
-    <tr>
-      <td>2026-10-13</td>
-      <td>JiJieHao</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-12.35</td>
-    </tr>
-    <tr>
-      <td>2026-10-13</td>
-      <td>Liquid</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-8.06</td>
-    </tr>
-    <tr>
-      <td>2026-10-03</td>
-      <td>Ninjas in Pyjamas</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.999</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-10.77</td>
-    </tr>
-    <tr>
-      <td>2026-10-03</td>
-      <td>BC.Game</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.999</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">0.999</td>
-      <td class="r">+15.53</td>
-    </tr>
-    <tr>
-      <td>2026-10-02</td>
-      <td>FOKUS</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.994</td>
-      <td class="r hide-narrow">0.090 (0.033)</td>
-      <td class="r hide-narrow">0.776 (0.286)</td>
-      <td class="r hide-narrow">0.994</td>
-      <td class="r">+13.76</td>
-    </tr>
-    <tr>
-      <td>2026-10-02</td>
-      <td>Ninjas in Pyjamas</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.993</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-10.95</td>
-    </tr>
-    <tr>
-      <td>2026-10-02</td>
-      <td>HAVU</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.993</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">0.993</td>
-      <td class="r">+3.30</td>
-    </tr>
-    <tr>
-      <td>2026-10-02</td>
-      <td>XEPT</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.993</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">0.993</td>
-      <td class="r">+0.15</td>
-    </tr>
-    <tr>
-      <td>2026-10-02</td>
-      <td>SportsBetExpert</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.993</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">0.993</td>
-      <td class="r">+9.09</td>
-    </tr>
-    <tr>
-      <td>2026-10-02</td>
-      <td>Sangal</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.992</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-15.76</td>
-    </tr>
-    <tr>
-      <td>2026-09-27</td>
-      <td>SINNERS</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.960</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-13.35</td>
-    </tr>
-    <tr>
-      <td>2026-09-25</td>
-      <td>BRUTE</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.947</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">0.600 (0.225)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+6.53</td>
-    </tr>
-    <tr>
-      <td>2026-09-25</td>
-      <td>100 Thieves</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.946</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-10.46</td>
-    </tr>
-    <tr>
-      <td>2026-09-22</td>
-      <td>Johnny Speeds</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.927</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">0.927</td>
-      <td class="r">+3.24</td>
-    </tr>
-    <tr>
-      <td>2026-09-22</td>
-      <td>HEROIC</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.926</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-9.15</td>
-    </tr>
-    <tr>
-      <td>2026-09-22</td>
-      <td>Virtus.pro</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.925</td>
-      <td class="r hide-narrow">0.072 (0.030)</td>
-      <td class="r hide-narrow">0.557 (0.232)</td>
-      <td class="r hide-narrow">0.925</td>
-      <td class="r">+16.00</td>
-    </tr>
-    <tr>
-      <td>2026-09-19</td>
-      <td>Luminosity</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.905</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-12.46</td>
-    </tr>
-    <tr>
-      <td>2026-09-18</td>
-      <td>Liquid</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.900</td>
-      <td class="r hide-narrow">0.203 (0.091)</td>
-      <td class="r hide-narrow">0.544 (0.245)</td>
-      <td class="r hide-narrow">0.900</td>
-      <td class="r">+20.11</td>
-    </tr>
-    <tr>
-      <td>2026-09-18</td>
-      <td>EYEBALLERS</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.900</td>
-      <td class="r hide-narrow">0.056 (0.025)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">0.900</td>
-      <td class="r">+8.39</td>
-    </tr>
-    <tr>
-      <td>2026-09-18</td>
-      <td>Envy</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.900</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-12.93</td>
-    </tr>
-    <tr>
-      <td>2026-09-18</td>
-      <td>INFINITE</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.898</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+9.25</td>
-    </tr>
-    <tr>
-      <td>2026-09-18</td>
-      <td>Inner Circle</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.898</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-10.65</td>
-    </tr>
-    <tr>
-      <td>2026-09-13</td>
-      <td>HOTU</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.865</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-8.38</td>
-    </tr>
-    <tr>
-      <td>2026-09-12</td>
-      <td>Wildcard</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.859</td>
-      <td class="r hide-narrow">0.119 (0.079)</td>
-      <td class="r hide-narrow">0.300 (0.198)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+14.52</td>
-    </tr>
-    <tr>
-      <td>2026-09-10</td>
-      <td>Envy</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.847</td>
-      <td class="r hide-narrow">0.230 (0.149)</td>
-      <td class="r hide-narrow">0.385 (0.251)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+15.43</td>
-    </tr>
-    <tr>
-      <td>2026-09-09</td>
-      <td>100 Thieves</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.840</td>
-      <td class="r hide-narrow">0.174 (0.113)</td>
-      <td class="r hide-narrow">0.786 (0.507)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+18.30</td>
-    </tr>
-    <tr>
-      <td>2026-09-06</td>
-      <td>SINNERS</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.820</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-12.03</td>
-    </tr>
-    <tr>
-      <td>2026-09-06</td>
-      <td>UPGRADE</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.819</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">0.653 (0.334)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+6.89</td>
-    </tr>
-    <tr>
-      <td>2026-09-05</td>
-      <td>fnatic</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.812</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-8.34</td>
-    </tr>
-    <tr>
-      <td>2026-09-04</td>
-      <td>Walczaki</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.806</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+1.69</td>
-    </tr>
-    <tr>
-      <td>2026-08-31</td>
-      <td>Black Phoenix</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.778</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-18.48</td>
-    </tr>
-    <tr>
-      <td>2026-08-24</td>
-      <td>CYBERSHOKE</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.733</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-20.12</td>
-    </tr>
-    <tr>
-      <td>2026-08-09</td>
-      <td>GenOne</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.632</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-14.66</td>
-    </tr>
-    <tr>
-      <td>2026-08-08</td>
-      <td>OG</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.625</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.89</td>
-    </tr>
-    <tr>
-      <td>2026-08-07</td>
-      <td>Passion Chicha</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.620</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.08</td>
-    </tr>
-    <tr>
-      <td>2026-07-25</td>
-      <td>Aurora</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.533</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-0.73</td>
-    </tr>
-    <tr>
-      <td>2026-07-24</td>
-      <td>Nuclear TigeRES</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.526</td>
-      <td class="r hide-narrow">0.072 (0.024)</td>
-      <td class="r hide-narrow">1.000 (0.328)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+4.98</td>
-    </tr>
-    <tr>
-      <td>2026-07-23</td>
-      <td>Ninjas in Pyjamas</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.520</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-5.22</td>
-    </tr>
-    <tr>
-      <td>2026-07-22</td>
-      <td>Nuclear TigeRES</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.514</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">1.000 (0.321)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+4.70</td>
-    </tr>
-    <tr>
-      <td>2026-07-19</td>
-      <td>Belgium</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.493</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.06</td>
-    </tr>
-    <tr>
-      <td>2026-06-28</td>
-      <td>DENDELE</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.353</td>
-      <td class="r hide-narrow">0.155 (0.030)</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+7.17</td>
-    </tr>
-    <tr>
-      <td>2026-06-27</td>
-      <td>Acend</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.348</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-9.03</td>
-    </tr>
-    <tr>
-      <td>2026-06-25</td>
-      <td>Walczaki</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.334</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.59</td>
-    </tr>
-    <tr>
-      <td>2026-06-24</td>
-      <td>FOKUS</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.327</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+4.39</td>
-    </tr>
-    <tr>
-      <td>2026-06-23</td>
-      <td>Betclic</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.319</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+2.66</td>
-    </tr>
-    <tr>
-      <td>2026-06-21</td>
-      <td>K27</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.305</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-4.02</td>
-    </tr>
-    <tr>
-      <td>2026-06-20</td>
-      <td>Inner Circle</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.299</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+5.23</td>
-    </tr>
-    <tr>
-      <td>2026-06-18</td>
-      <td>KOLESIE</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.287</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.26</td>
-    </tr>
-    <tr>
-      <td>2026-06-03</td>
-      <td>Phantom</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.187</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-3.94</td>
-    </tr>
-    <tr>
-      <td>2026-05-30</td>
-      <td>Nemiga</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.159</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-0.72</td>
-    </tr>
-    <tr>
-      <td>2026-05-29</td>
-      <td>AM</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.154</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.10</td>
-    </tr>
-    <tr>
-      <td>2026-05-28</td>
-      <td>Just Players</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.146</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-4.33</td>
-    </tr>
-    <tr>
-      <td>2026-05-21</td>
-      <td>Color</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.100</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-2.96</td>
-    </tr>
-    <tr>
-      <td>2026-05-21</td>
-      <td>HOTU</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.099</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+2.08</td>
-    </tr>
-    <tr>
-      <td>2026-05-20</td>
-      <td>Walczaki</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.094</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.13</td>
-    </tr>
-    <tr>
-      <td>2026-05-18</td>
-      <td>BET-M</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.080</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.24</td>
-    </tr>
-    <tr>
-      <td>2026-05-13</td>
-      <td>ex-RUBY</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.047</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.03</td>
-    </tr>
-    <tr>
-      <td>2026-05-10</td>
-      <td>MOUZ NXT</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.025</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.01</td>
-    </tr>
-    <tr>
-      <td>2026-05-09</td>
-      <td>Walczaki</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.020</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">+0.03</td>
-    </tr>
-    <tr>
-      <td>2026-05-07</td>
-      <td>AM</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.006</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-0.18</td>
-    </tr>
-  </tbody>
-</table></div>
+  <section class="card" aria-labelledby="prize-title">
+    <h2 id="prize-title">Prize money</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Event date</th><th class="r">Won</th><th class="r hide-narrow">Weighted by age</th></tr></thead>
+      <tbody><tr><td class="nowrap">3 Oct 2026</td><td class="r">$1,500</td><td class="r muted hide-narrow">$1,500</td></tr><tr><td class="nowrap">28 Sep 2026</td><td class="r">$1,200</td><td class="r muted hide-narrow">$1,160</td></tr><tr><td class="nowrap">26 Sep 2026</td><td class="r">$4,000</td><td class="r muted hide-narrow">$3,817</td></tr><tr><td class="nowrap">23 Sep 2026</td><td class="r">$4,750</td><td class="r muted hide-narrow">$4,442</td></tr><tr><td class="nowrap">28 Jun 2026</td><td class="r">$15,000</td><td class="r muted hide-narrow">$5,322</td></tr><tr><td class="nowrap">31 May 2026</td><td class="r">$2,000</td><td class="r muted hide-narrow">$335</td></tr><tr><td class="nowrap">21 May 2026</td><td class="r">$10,000</td><td class="r muted hide-narrow">$997</td></tr></tbody>
+    </table></div>
+<h3>Over the snapshots</h3><div style="color:var(--likely)"><svg class="spark" viewBox="0 0 160 36" width="160" height="36" role="img" aria-label="Points over time: 2025-11-03: 735, 2025-12-01: 812, 2026-01-05: 829, 2026-02-02: 1240, 2026-03-02: 1100, 2026-04-06: 1281, 2026-05-04: 1211, 2026-06-01: 1251, 2026-07-06: 1257, 2026-08-03: 1289, 2026-09-07: 1136, 2026-10-05: 1386, 2026-11-02: 1365"><polyline points="77.0,31.0 83.0,27.9 90.5,27.2 96.5,10.8 102.5,16.4 110.0,9.2 116.0,12.0 122.0,10.4 129.5,10.2 135.5,8.9 143.0,15.0 149.0,5.0 155.0,5.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="155.0" cy="5.8" r="4"/></svg></div>
+    <p class="note">3 Nov 2025: #133 (735) · 1 Dec 2025: #133 (812) · 5 Jan 2026: #141 (829) · 2 Feb 2026: #48 (1,240) · 2 Mar 2026: #66 (1,100) · 6 Apr 2026: #55 (1,281) · 4 May 2026: #58 (1,211) · 1 Jun 2026: #50 (1,251) · 6 Jul 2026: #40 (1,257) · 3 Aug 2026: #42 (1,289) · 7 Sep 2026: #53 (1,136) · 5 Oct 2026: #37 (1,386) · 2 Nov 2026: #42 (1,365)</p>  </section>
+</div>
 
-<h2>Winnings</h2>
-<div class="scroll"><table>
-  <thead><tr><th>Event date</th><th class="r">Age weight</th><th class="r">Prize</th><th class="r">Scaled</th></tr></thead>
-  <tbody>
-    <tr><td>2026-10-03</td><td class="r">1.000</td><td class="r">$1,500</td><td class="r">$1,500</td></tr>
-    <tr><td>2026-09-28</td><td class="r">0.967</td><td class="r">$1,200</td><td class="r">$1,160</td></tr>
-    <tr><td>2026-09-26</td><td class="r">0.954</td><td class="r">$4,000</td><td class="r">$3,817</td></tr>
-    <tr><td>2026-09-23</td><td class="r">0.935</td><td class="r">$4,750</td><td class="r">$4,442</td></tr>
-    <tr><td>2026-06-28</td><td class="r">0.355</td><td class="r">$15,000</td><td class="r">$5,322</td></tr>
-    <tr><td>2026-05-31</td><td class="r">0.168</td><td class="r">$2,000</td><td class="r">$335</td></tr>
-    <tr><td>2026-05-21</td><td class="r">0.100</td><td class="r">$10,000</td><td class="r">$997</td></tr>
-  </tbody>
-</table></div>
+<section class="card" aria-labelledby="matches-title" style="padding:0;overflow:hidden">
+  <h2 id="matches-title" style="padding:18px 18px 0">Matches</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Date</th><th>Opponent</th><th class="hide-narrow">Event</th><th>Where</th><th>Result</th><th class="r">Points</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="nowrap">21 Oct</td>
+        <td>HEROIC</td>
+        <td class="muted hide-narrow">DraculaN Season 7</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−8.03</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">20 Oct</td>
+        <td>Luminosity</td>
+        <td class="muted hide-narrow">DraculaN Season 7</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+17.75</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">20 Oct</td>
+        <td>BC.Game</td>
+        <td class="muted hide-narrow">DraculaN Season 7</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−15.08</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">19 Oct</td>
+        <td>Betclic</td>
+        <td class="muted hide-narrow">PGL 2027 Bucharest Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+11.16</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">17 Oct</td>
+        <td>ex-RUSTEC</td>
+        <td class="muted hide-narrow">PGL 2027 Bucharest Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+5.72</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">16 Oct</td>
+        <td>EYEBALLERS</td>
+        <td class="muted hide-narrow">PGL 2027 Bucharest Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+9.99</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">13 Oct</td>
+        <td>JiJieHao</td>
+        <td class="muted hide-narrow">Stake Pulse Beat III</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−12.35</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">13 Oct</td>
+        <td>Liquid</td>
+        <td class="muted hide-narrow">Stake Pulse Beat III</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−8.06</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">3 Oct</td>
+        <td>Ninjas in Pyjamas</td>
+        <td class="muted hide-narrow">Journey 2026 Autumn</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−10.77</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">3 Oct</td>
+        <td>BC.Game</td>
+        <td class="muted hide-narrow">Journey 2026 Autumn</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+15.53</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">2 Oct</td>
+        <td>FOKUS</td>
+        <td class="muted hide-narrow">Journey 2026 Autumn</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+13.76</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">2 Oct</td>
+        <td>Ninjas in Pyjamas</td>
+        <td class="muted hide-narrow">Journey 2026 Autumn</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−10.95</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">2 Oct</td>
+        <td>HAVU</td>
+        <td class="muted hide-narrow">Journey 2026 Autumn</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+3.30</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">2 Oct</td>
+        <td>XEPT</td>
+        <td class="muted hide-narrow">Journey 2026 Autumn</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.15</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">2 Oct</td>
+        <td>SportsBetExpert</td>
+        <td class="muted hide-narrow">Journey 2026 Autumn</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+9.09</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">2 Oct</td>
+        <td>Sangal</td>
+        <td class="muted hide-narrow">Journey 2026 Autumn</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−15.76</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">27 Sep</td>
+        <td>SINNERS</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 12</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−13.35</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">25 Sep</td>
+        <td>BRUTE</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 12</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+6.53</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">25 Sep</td>
+        <td>100 Thieves</td>
+        <td class="muted hide-narrow">Stake Pulse Beat II</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−10.46</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">22 Sep</td>
+        <td>Johnny Speeds</td>
+        <td class="muted hide-narrow">Stake Pulse Beat II</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+3.24</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">22 Sep</td>
+        <td>HEROIC</td>
+        <td class="muted hide-narrow">Stake Pulse Beat II</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−9.15</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">22 Sep</td>
+        <td>Virtus.pro</td>
+        <td class="muted hide-narrow">Stake Pulse Beat II</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+16.00</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">19 Sep</td>
+        <td>Luminosity</td>
+        <td class="muted hide-narrow">Logitech G Play Connect 2026</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−12.46</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">18 Sep</td>
+        <td>Liquid</td>
+        <td class="muted hide-narrow">Logitech G Play Connect 2026</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+20.11</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">18 Sep</td>
+        <td>EYEBALLERS</td>
+        <td class="muted hide-narrow">Logitech G Play Connect 2026</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+8.39</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">18 Sep</td>
+        <td>Envy</td>
+        <td class="muted hide-narrow">Logitech G Play Connect 2026</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−12.93</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">18 Sep</td>
+        <td>INFINITE</td>
+        <td class="muted hide-narrow">Logitech G Play Connect 2026</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+9.25</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">18 Sep</td>
+        <td>Inner Circle</td>
+        <td class="muted hide-narrow">Logitech G Play Connect 2026</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−10.65</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">13 Sep</td>
+        <td>HOTU</td>
+        <td class="muted hide-narrow">Thunderpick World Championship 2026 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−8.38</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">12 Sep</td>
+        <td>Wildcard</td>
+        <td class="muted hide-narrow">Thunderpick World Championship 2026 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+14.52</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">10 Sep</td>
+        <td>Envy</td>
+        <td class="muted hide-narrow">Thunderpick World Championship 2026 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+15.43</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">9 Sep</td>
+        <td>100 Thieves</td>
+        <td class="muted hide-narrow">Thunderpick World Championship 2026 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+18.30</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">6 Sep</td>
+        <td>SINNERS</td>
+        <td class="muted hide-narrow">PGL 2026 Masters Europe Open 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−12.03</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">6 Sep</td>
+        <td>UPGRADE</td>
+        <td class="muted hide-narrow">PGL 2026 Masters Europe Open 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+6.89</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">5 Sep</td>
+        <td>fnatic</td>
+        <td class="muted hide-narrow">Stake Ranked Episode 4 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−8.34</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">4 Sep</td>
+        <td>Walczaki</td>
+        <td class="muted hide-narrow">Stake Ranked Episode 4 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+1.69</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">31 Aug</td>
+        <td>Black Phoenix</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 11</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−18.48</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">24 Aug</td>
+        <td>CYBERSHOKE</td>
+        <td class="muted hide-narrow">Intel Extreme Masters 2026 Beijing Qualifier Global Open</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−20.12</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">9 Aug</td>
+        <td>GenOne</td>
+        <td class="muted hide-narrow">Esports World Cup 2026 Qualifier</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−14.66</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">8 Aug</td>
+        <td>OG</td>
+        <td class="muted hide-narrow">Esports World Cup 2026 Qualifier</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.89</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">7 Aug</td>
+        <td>Passion Chicha</td>
+        <td class="muted hide-narrow">Esports World Cup 2026 Qualifier</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.08</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">25 Jul</td>
+        <td>Aurora</td>
+        <td class="muted hide-narrow">StarLadder StarSeries 2026 Fall Europe</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−0.73</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">24 Jul</td>
+        <td>Nuclear TigeRES</td>
+        <td class="muted hide-narrow">StarLadder StarSeries 2026 Fall Europe</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+4.98</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">23 Jul</td>
+        <td>Ninjas in Pyjamas</td>
+        <td class="muted hide-narrow">StarLadder StarSeries 2026 Fall Europe</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−5.22</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">22 Jul</td>
+        <td>Nuclear TigeRES</td>
+        <td class="muted hide-narrow">StarLadder StarSeries 2026 Fall Europe</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+4.70</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">19 Jul</td>
+        <td>Belgium</td>
+        <td class="muted hide-narrow">–</td>
+        <td><span class="tag dim">–</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.06</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">28 Jun</td>
+        <td>DENDELE</td>
+        <td class="muted hide-narrow">Super DraculaN Season 1</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+7.17</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">27 Jun</td>
+        <td>Acend</td>
+        <td class="muted hide-narrow">Super DraculaN Season 1</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−9.03</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">25 Jun</td>
+        <td>Walczaki</td>
+        <td class="muted hide-narrow">Super DraculaN Season 1</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.59</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">24 Jun</td>
+        <td>FOKUS</td>
+        <td class="muted hide-narrow">Super DraculaN Season 1</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+4.39</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">23 Jun</td>
+        <td>Betclic</td>
+        <td class="muted hide-narrow">Super DraculaN Season 1</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+2.66</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">21 Jun</td>
+        <td>K27</td>
+        <td class="muted hide-narrow">Stake Ranked Episode 3 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−4.02</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">20 Jun</td>
+        <td>Inner Circle</td>
+        <td class="muted hide-narrow">Stake Ranked Episode 3 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+5.23</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">18 Jun</td>
+        <td>KOLESIE</td>
+        <td class="muted hide-narrow">Stake Ranked Episode 3 Qualifier</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.26</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">3 Jun</td>
+        <td>Phantom</td>
+        <td class="muted hide-narrow">CCT 2026 Europe Series 3</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−3.94</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">30 May</td>
+        <td>Nemiga</td>
+        <td class="muted hide-narrow">BC.Game Masters Season 2 Europe Series 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−0.72</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">29 May</td>
+        <td>AM</td>
+        <td class="muted hide-narrow">BC.Game Masters Season 2 Europe Series 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.10</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">28 May</td>
+        <td>Just Players</td>
+        <td class="muted hide-narrow">CCT 2026 Europe Series 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−4.33</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">21 May</td>
+        <td>Color</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 8</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−2.96</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">21 May</td>
+        <td>HOTU</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 8</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+2.08</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">20 May</td>
+        <td>Walczaki</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 8</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.13</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">18 May</td>
+        <td>BET-M</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 8</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.24</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">13 May</td>
+        <td>ex-RUBY</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 8</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.03</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">10 May</td>
+        <td>MOUZ NXT</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 8</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.01</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">9 May</td>
+        <td>Walczaki</td>
+        <td class="muted hide-narrow">NODWIN Gaming Clutch Series 8</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+0.03</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">7 May</td>
+        <td>AM</td>
+        <td class="muted hide-narrow">BC.Game Masters Season 2 Europe Series 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−0.18</span></td>
+      </tr>
+    </tbody>
+  </table></div>
+</section>
 </main>
-<footer>
-  <p>Model and standings: <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a>.
-  Event data: HLTV.org, as credited by Valve. Recomputed and audited by retake-vrs.</p>
-<p>Recomputed standings: match data by <a href="https://openvrs.uk">OpenVRS</a>, from <a href="https://liquipedia.net/counterstrike/">Liquipedia</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>  <p>Not affiliated with Valve or HLTV. Standings as of 2026-11-02.</p>
-</footer>
+<footer><div class="wrap">
+  <p>Model and standings: Valve. Event data: HLTV.org, as credited by Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>
+<p>Our recomputed standings and races: match data by OpenVRS, from Liquipedia (CC BY-SA 3.0). <a href="https://openvrs.uk">OpenVRS</a> · <a href="https://liquipedia.net/counterstrike/">Liquipedia</a></p>  <p>Typeface: Albert Sans (SIL Open Font License). Not affiliated with Valve, HLTV, OpenVRS or Liquipedia. <a href="https://github.com/fgeronimi/retake-vrs">GitHub</a></p>
+</div></footer>
 </body>
 </html>

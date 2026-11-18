@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Where the data comes from, and where it goes · retake-vrs</title>
+<meta name="description" content="Every month Valve ranks the Counter-Strike teams, and the best of each region are invited to the Majors. retake-vrs recomputes those standings with Valve&#39;s own model and plays the race to each Major thousands of times.">
+<link rel="alternate" hreflang="en" href="data.html">
+<link rel="alternate" hreflang="fr" href="fr/data.html">
+<link rel="preload" href="assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.128a9c93e5.css">
+<script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="assets/site.5959fce70a.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="2" y="7" width="28" height="20" rx="4" fill="var(--accent)"/>
+        <rect x="6" y="11" width="16" height="12" rx="2" fill="var(--bg)"/>
+        <path d="M9 14h4M9 20h4M15 14h4M15 20h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="17" r="2" fill="var(--bg)"/>
+        <path d="M10 7V4M22 7V3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>retake-vrs</a>
+    <nav class="nav" aria-label="Main">
+      <a href="standings.html">Standings</a>
+<a href="race.html">Race to the Major</a>      <a href="evolution.html">Analysis</a>
+      <a href="how-it-works.html" aria-current="true">How it&#39;s built</a>
+    </nav>
+    <div class="tools">
+      <div class="search js-only">
+        <input id="q" type="search" autocomplete="off" placeholder="Search a team or a player" aria-label="Search a team or a player"
+               data-index="assets/search.json" data-home="" data-none="No team or player matches.">
+        <ul id="q-results" hidden></ul>
+      </div>
+      <div class="seg js-only" role="group" aria-label="Theme">
+        <button type="button" data-set-theme="dark">Dark</button>
+        <button type="button" data-set-theme="light">Light</button>
+      </div>
+      <div class="seg" role="group" aria-label="Language">
+<a href="data.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="fr/data.html" hreflang="fr" lang="fr">FR</a>      </div>
+    </div>
+  </div>
+</header>
+<nav class="subnav" aria-label="Where the data comes from, and where it goes"><div class="wrap">
+<a href="how-it-works.html">How it works</a><a href="data.html" aria-current="page">Where the data goes</a></div></nav>
+<main id="content" class="wrap">
+  <p class="fresh">Standings as of 2 Nov 2026 · built 2026-11-18 23:46 UTC</p>
+<section class="head">
+  <h1>Where the data comes from, and where it goes</h1>
+  <p class="lede">Before you see a team&#39;s points on this site, the numbers go on a long trip. Here it is, step by step, like a recipe.</p>
+</section>
+
+<ol class="journey" aria-label="Where the data comes from, and where it goes">
+  <li class="step">
+    <span class="step-n" aria-hidden="true">1</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="16" width="44" height="28" rx="12"/><circle cx="23" cy="30" r="4"/><path d="M41 26v8M37 30h8"/></svg>
+    <h2>Teams play matches</h2>
+    <p>All over the world, teams play matches in tournaments. Some on stage in front of a crowd, some online from home.</p>
+    <p class="tech"><span>The grown-up name</span>Counter-Strike 2 events</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">2</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="16" y="8" width="32" height="46" rx="4"/><path d="M23 20h18M23 28h18M23 36h12"/><path d="M42 46l8-8"/></svg>
+    <h2>Someone writes them down</h2>
+    <p>Websites write down every match: who played, who won, and how much prize money each team took home.</p>
+    <p class="tech"><span>The grown-up name</span>HLTV for Valve, Liquipedia for OpenVRS</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">3</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="18" width="44" height="34" rx="4"/><path d="M10 28h44"/><circle cx="32" cy="40" r="5"/><path d="M32 40v4"/></svg>
+    <h2>We copy it into a safe box</h2>
+    <p>We copy those lists into a safe box. We never write on the copy, so we can always go back and check.</p>
+    <p class="tech"><span>The grown-up name</span>Bronze · Google Cloud Storage</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">4</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="10" width="40" height="44" rx="4"/><path d="M12 25h40M12 40h40"/><path d="M27 18h10M27 33h10M27 48h10"/></svg>
+    <h2>We sort and check</h2>
+    <p>We put each piece in the right drawer and check that nothing is missing. If something looks wrong, everything stops.</p>
+    <p class="tech"><span>The grown-up name</span>Silver · BigQuery tables and quality checks</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">5</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="8" width="36" height="48" rx="5"/><rect x="20" y="14" width="24" height="10" rx="2"/><path d="M22 32h4M30 32h4M38 32h4M22 40h4M30 40h4M38 40h4M22 48h4M30 48h12"/></svg>
+    <h2>We do the maths</h2>
+    <p>We use Valve&#39;s own recipe to give each team points. Then the computer plays the next tournaments thousands of times to see who could be invited.</p>
+    <p class="tech"><span>The grown-up name</span>Gold · the model in Python and the simulation</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">6</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="20" width="36" height="28" rx="8"/><circle cx="25" cy="33" r="3.5"/><circle cx="39" cy="33" r="3.5"/><path d="M27 41h10M32 20v-7"/><circle cx="32" cy="11" r="2.5"/><path d="M14 32h-5M55 32h-5"/></svg>
+    <h2>A robot builds the website</h2>
+    <p>Twice a day, a little robot wakes up, looks for new matches and rebuilds every page, in English and in French.</p>
+    <p class="tech"><span>The grown-up name</span>Cloud Run job at 06:00 and 18:00 UTC · GitHub Pages</p>
+  </li>
+</ol>
+
+<section class="card" aria-labelledby="funnel">
+  <h2 id="funnel">From a lot to a few</h2>
+  <p class="lede">Lots of matches go in. A handful of teams come out with a ticket to the Major. The bars are drawn to scale.</p>
+  <div class="grid2">
+<div><h3>Matches</h3><div class="chart-box"><svg class="chart scale-bars" viewBox="0 0 420 98" width="420" height="98" role="img" aria-label="Matches">
+<g data-tip="Matches written down, two years: 19,948"><title>Matches written down, two years: 19,948</title>
+<text class="bar-label" x="0" y="20">Matches written down, two years</text>
+<rect class="bar-fill" x="0" y="26" width="350.0" height="16" rx="4"/>
+<text class="bar-value" x="358.0" y="39">19,948</text></g>
+<g data-tip="Matches that count, the last six months: 5,917"><title>Matches that count, the last six months: 5,917</title>
+<text class="bar-label" x="0" y="66">Matches that count, the last six months</text>
+<rect class="bar-fill" x="0" y="72" width="103.8" height="16" rx="4"/>
+<text class="bar-value" x="111.8" y="85">5,917</text></g>
+</svg></div></div>    <div><h3>Teams</h3><div class="chart-box"><svg class="chart scale-bars" viewBox="0 0 420 98" width="420" height="98" role="img" aria-label="Teams">
+<g data-tip="Teams with points: 376"><title>Teams with points: 376</title>
+<text class="bar-label" x="0" y="20">Teams with points</text>
+<rect class="bar-fill" x="0" y="26" width="350.0" height="16" rx="4"/>
+<text class="bar-value" x="358.0" y="39">376</text></g>
+<g data-tip="Teams invited to the PGL Major Singapore 2026: 32"><title>Teams invited to the PGL Major Singapore 2026: 32</title>
+<text class="bar-label" x="0" y="66">Teams invited to the PGL Major Singapore 2026</text>
+<rect class="bar-fill" x="0" y="72" width="29.8" height="16" rx="4"/>
+<text class="bar-value" x="37.8" y="85">32</text></g>
+</svg></div></div>
+  </div>
+  <p class="note">Numbers of the 2 Nov 2026 standings: OpenVRS (Liquipedia), Valve.</p>
+</section>
+
+<section class="card" aria-labelledby="weight">
+  <h2 id="weight">Old matches count less</h2>
+  <p class="lede">A match from last week counts fully. A match from five months ago counts only a little. After six months, it does not count at all: it is like it fell out of the window.</p>
+  <div class="chart-box"><svg class="chart age-weight" viewBox="0 0 960 210" width="960" height="210" role="img" aria-label="Old matches count less">
+<line class="grid" x1="64" x2="908" y1="166.0" y2="166.0"/>
+<text class="axis" x="56.0" y="170.0" text-anchor="end">0%</text>
+<line class="grid" x1="64" x2="908" y1="91.0" y2="91.0"/>
+<text class="axis" x="56.0" y="95.0" text-anchor="end">50%</text>
+<line class="grid" x1="64" x2="908" y1="16.0" y2="16.0"/>
+<text class="axis" x="56.0" y="20.0" text-anchor="end">100%</text>
+<text class="axis" x="64.0" y="184.0" text-anchor="middle">8 mo. ago</text>
+<text class="axis" x="275.0" y="184.0" text-anchor="middle">6 mo. ago</text>
+<text class="axis" x="380.5" y="184.0" text-anchor="middle">5 mo. ago</text>
+<text class="axis" x="486.0" y="184.0" text-anchor="middle">4 mo. ago</text>
+<text class="axis" x="591.5" y="184.0" text-anchor="middle">3 mo. ago</text>
+<text class="axis" x="697.0" y="184.0" text-anchor="middle">2 mo. ago</text>
+<text class="axis" x="802.5" y="184.0" text-anchor="middle">1 mo. ago</text>
+<text class="axis" x="908.0" y="184.0" text-anchor="middle">Today</text>
+<path class="area" d="M64.0 166.0 L275.0 166.0 L802.5 16.0 L908.0 16.0 L908.0 166.0 Z"/>
+<path class="line" d="M64.0 166.0 L275.0 166.0 L802.5 16.0 L908.0 16.0"/>
+<rect class="full-band" x="802.5" y="16" width="105.5" height="150"/>
+<text class="note-label" x="855.2" y="38.0" text-anchor="middle">counts fully</text>
+<text class="note-label" x="169.5" y="154.0" text-anchor="middle">too old, does not count</text>
+<text class="axis" x="908.0" y="206.0" text-anchor="end">How old the match is →</text>
+</svg></div>
+</section>
+
+<p><a href="how-it-works.html">How it works →</a></p>
+</main>
+<footer><div class="wrap">
+  <p>Model and standings: Valve. Event data: HLTV.org, as credited by Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>
+<p>Our recomputed standings and races: match data by OpenVRS, from Liquipedia (CC BY-SA 3.0). <a href="https://openvrs.uk">OpenVRS</a> · <a href="https://liquipedia.net/counterstrike/">Liquipedia</a></p>  <p>Typeface: Albert Sans (SIL Open Font License). Not affiliated with Valve, HLTV, OpenVRS or Liquipedia. <a href="https://github.com/fgeronimi/retake-vrs">GitHub</a></p>
+</div></footer>
+</body>
+</html>

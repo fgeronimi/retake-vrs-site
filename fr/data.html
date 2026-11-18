@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>D&#39;où viennent les données, et où elles vont · retake-vrs</title>
+<meta name="description" content="Chaque mois, Valve classe les équipes de Counter-Strike, et les meilleures de chaque région sont invitées aux Majors. retake-vrs recalcule ces classements avec le modèle de Valve lui-même et joue la course à chaque Major des milliers de fois.">
+<link rel="alternate" hreflang="en" href="../data.html">
+<link rel="alternate" hreflang="fr" href="../fr/data.html">
+<link rel="preload" href="../assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.128a9c93e5.css">
+<script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="../assets/site.5959fce70a.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">Aller au contenu</a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="../fr/index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="2" y="7" width="28" height="20" rx="4" fill="var(--accent)"/>
+        <rect x="6" y="11" width="16" height="12" rx="2" fill="var(--bg)"/>
+        <path d="M9 14h4M9 20h4M15 14h4M15 20h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="17" r="2" fill="var(--bg)"/>
+        <path d="M10 7V4M22 7V3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>retake-vrs</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="../fr/standings.html">Classements</a>
+<a href="../fr/race.html">Course au Major</a>      <a href="../fr/evolution.html">Analyses</a>
+      <a href="../fr/how-it-works.html" aria-current="true">Comment c&#39;est fait</a>
+    </nav>
+    <div class="tools">
+      <div class="search js-only">
+        <input id="q" type="search" autocomplete="off" placeholder="Chercher une équipe ou un joueur" aria-label="Chercher une équipe ou un joueur"
+               data-index="../assets/search.json" data-home="../fr/" data-none="Aucune équipe ni joueur ne correspond.">
+        <ul id="q-results" hidden></ul>
+      </div>
+      <div class="seg js-only" role="group" aria-label="Thème">
+        <button type="button" data-set-theme="dark">Sombre</button>
+        <button type="button" data-set-theme="light">Clair</button>
+      </div>
+      <div class="seg" role="group" aria-label="Langue">
+<a href="../data.html" hreflang="en" lang="en">EN</a><a href="../fr/data.html" hreflang="fr" lang="fr" aria-current="true">FR</a>      </div>
+    </div>
+  </div>
+</header>
+<nav class="subnav" aria-label="D&#39;où viennent les données, et où elles vont"><div class="wrap">
+<a href="../fr/how-it-works.html">Comment ça marche</a><a href="../fr/data.html" aria-current="page">Le voyage des données</a></div></nav>
+<main id="content" class="wrap">
+  <p class="fresh">Classement du 2 nov. 2026 · généré le 2026-11-18 23:46 UTC</p>
+<section class="head">
+  <h1>D&#39;où viennent les données, et où elles vont</h1>
+  <p class="lede">Avant que tu voies les points d&#39;une équipe sur ce site, les chiffres font un long voyage. Le voici, étape par étape, comme une recette.</p>
+</section>
+
+<ol class="journey" aria-label="D&#39;où viennent les données, et où elles vont">
+  <li class="step">
+    <span class="step-n" aria-hidden="true">1</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="16" width="44" height="28" rx="12"/><circle cx="23" cy="30" r="4"/><path d="M41 26v8M37 30h8"/></svg>
+    <h2>Les équipes jouent des matchs</h2>
+    <p>Partout dans le monde, des équipes jouent des matchs dans des tournois. Certaines sur scène devant un public, d&#39;autres en ligne depuis chez elles.</p>
+    <p class="tech"><span>Le nom pour les grands</span>Les tournois de Counter-Strike 2</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">2</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="16" y="8" width="32" height="46" rx="4"/><path d="M23 20h18M23 28h18M23 36h12"/><path d="M42 46l8-8"/></svg>
+    <h2>Quelqu&#39;un les note</h2>
+    <p>Des sites notent chaque match : qui a joué, qui a gagné, et combien d&#39;argent chaque équipe a remporté.</p>
+    <p class="tech"><span>Le nom pour les grands</span>HLTV pour Valve, Liquipedia pour OpenVRS</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">3</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="18" width="44" height="34" rx="4"/><path d="M10 28h44"/><circle cx="32" cy="40" r="5"/><path d="M32 40v4"/></svg>
+    <h2>On en fait une copie dans un coffre</h2>
+    <p>On copie ces listes dans un coffre. On n&#39;écrit jamais sur la copie, comme ça on peut toujours revenir vérifier.</p>
+    <p class="tech"><span>Le nom pour les grands</span>Bronze · Google Cloud Storage</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">4</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="10" width="40" height="44" rx="4"/><path d="M12 25h40M12 40h40"/><path d="M27 18h10M27 33h10M27 48h10"/></svg>
+    <h2>On range et on vérifie</h2>
+    <p>On met chaque morceau dans le bon tiroir et on vérifie que rien ne manque. Si quelque chose cloche, tout s&#39;arrête.</p>
+    <p class="tech"><span>Le nom pour les grands</span>Silver · tables BigQuery et contrôles de qualité</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">5</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="8" width="36" height="48" rx="5"/><rect x="20" y="14" width="24" height="10" rx="2"/><path d="M22 32h4M30 32h4M38 32h4M22 40h4M30 40h4M38 40h4M22 48h4M30 48h12"/></svg>
+    <h2>On fait les calculs</h2>
+    <p>On suit la recette de Valve elle-même pour donner des points à chaque équipe. Puis l&#39;ordinateur joue les prochains tournois des milliers de fois pour voir qui pourrait être invité.</p>
+    <p class="tech"><span>Le nom pour les grands</span>Gold · le modèle en Python et la simulation</p>
+  </li>
+  <li class="step">
+    <span class="step-n" aria-hidden="true">6</span>
+    <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="20" width="36" height="28" rx="8"/><circle cx="25" cy="33" r="3.5"/><circle cx="39" cy="33" r="3.5"/><path d="M27 41h10M32 20v-7"/><circle cx="32" cy="11" r="2.5"/><path d="M14 32h-5M55 32h-5"/></svg>
+    <h2>Un robot construit le site</h2>
+    <p>Deux fois par jour, un petit robot se réveille, cherche les nouveaux matchs et refait toutes les pages, en anglais et en français.</p>
+    <p class="tech"><span>Le nom pour les grands</span>Job Cloud Run à 06:00 et 18:00 UTC · GitHub Pages</p>
+  </li>
+</ol>
+
+<section class="card" aria-labelledby="funnel">
+  <h2 id="funnel">De beaucoup à quelques-uns</h2>
+  <p class="lede">Beaucoup de matchs entrent. Une poignée d&#39;équipes ressortent avec un ticket pour le Major. Les barres sont à l&#39;échelle.</p>
+  <div class="grid2">
+<div><h3>Matchs</h3><div class="chart-box"><svg class="chart scale-bars" viewBox="0 0 420 98" width="420" height="98" role="img" aria-label="Matchs">
+<g data-tip="Matchs notés, sur deux ans : 19 948"><title>Matchs notés, sur deux ans : 19 948</title>
+<text class="bar-label" x="0" y="20">Matchs notés, sur deux ans</text>
+<rect class="bar-fill" x="0" y="26" width="350.0" height="16" rx="4"/>
+<text class="bar-value" x="358.0" y="39">19 948</text></g>
+<g data-tip="Matchs qui comptent, les six derniers mois : 5 917"><title>Matchs qui comptent, les six derniers mois : 5 917</title>
+<text class="bar-label" x="0" y="66">Matchs qui comptent, les six derniers mois</text>
+<rect class="bar-fill" x="0" y="72" width="103.8" height="16" rx="4"/>
+<text class="bar-value" x="111.8" y="85">5 917</text></g>
+</svg></div></div>    <div><h3>Équipes</h3><div class="chart-box"><svg class="chart scale-bars" viewBox="0 0 420 98" width="420" height="98" role="img" aria-label="Équipes">
+<g data-tip="Équipes qui ont des points : 376"><title>Équipes qui ont des points : 376</title>
+<text class="bar-label" x="0" y="20">Équipes qui ont des points</text>
+<rect class="bar-fill" x="0" y="26" width="350.0" height="16" rx="4"/>
+<text class="bar-value" x="358.0" y="39">376</text></g>
+<g data-tip="Équipes invitées au PGL Major Singapore 2026 : 32"><title>Équipes invitées au PGL Major Singapore 2026 : 32</title>
+<text class="bar-label" x="0" y="66">Équipes invitées au PGL Major Singapore 2026</text>
+<rect class="bar-fill" x="0" y="72" width="29.8" height="16" rx="4"/>
+<text class="bar-value" x="37.8" y="85">32</text></g>
+</svg></div></div>
+  </div>
+  <p class="note">Chiffres du classement du 2 nov. 2026 : OpenVRS (Liquipedia), Valve.</p>
+</section>
+
+<section class="card" aria-labelledby="weight">
+  <h2 id="weight">Les vieux matchs comptent moins</h2>
+  <p class="lede">Un match de la semaine dernière compte en entier. Un match d&#39;il y a cinq mois compte juste un peu. Après six mois, il ne compte plus du tout : c&#39;est comme s&#39;il était tombé par la fenêtre.</p>
+  <div class="chart-box"><svg class="chart age-weight" viewBox="0 0 960 210" width="960" height="210" role="img" aria-label="Les vieux matchs comptent moins">
+<line class="grid" x1="64" x2="908" y1="166.0" y2="166.0"/>
+<text class="axis" x="56.0" y="170.0" text-anchor="end">0 %</text>
+<line class="grid" x1="64" x2="908" y1="91.0" y2="91.0"/>
+<text class="axis" x="56.0" y="95.0" text-anchor="end">50 %</text>
+<line class="grid" x1="64" x2="908" y1="16.0" y2="16.0"/>
+<text class="axis" x="56.0" y="20.0" text-anchor="end">100 %</text>
+<text class="axis" x="64.0" y="184.0" text-anchor="middle">il y a 8 mois</text>
+<text class="axis" x="275.0" y="184.0" text-anchor="middle">il y a 6 mois</text>
+<text class="axis" x="380.5" y="184.0" text-anchor="middle">il y a 5 mois</text>
+<text class="axis" x="486.0" y="184.0" text-anchor="middle">il y a 4 mois</text>
+<text class="axis" x="591.5" y="184.0" text-anchor="middle">il y a 3 mois</text>
+<text class="axis" x="697.0" y="184.0" text-anchor="middle">il y a 2 mois</text>
+<text class="axis" x="802.5" y="184.0" text-anchor="middle">il y a 1 mois</text>
+<text class="axis" x="908.0" y="184.0" text-anchor="middle">Aujourd&#x27;hui</text>
+<path class="area" d="M64.0 166.0 L275.0 166.0 L802.5 16.0 L908.0 16.0 L908.0 166.0 Z"/>
+<path class="line" d="M64.0 166.0 L275.0 166.0 L802.5 16.0 L908.0 16.0"/>
+<rect class="full-band" x="802.5" y="16" width="105.5" height="150"/>
+<text class="note-label" x="855.2" y="38.0" text-anchor="middle">compte en entier</text>
+<text class="note-label" x="169.5" y="154.0" text-anchor="middle">trop vieux, ne compte pas</text>
+<text class="axis" x="908.0" y="206.0" text-anchor="end">L&#x27;âge du match →</text>
+</svg></div>
+</section>
+
+<p><a href="../fr/how-it-works.html">Comment ça marche →</a></p>
+</main>
+<footer><div class="wrap">
+  <p>Modèle et classements : Valve. Données des tournois : HLTV.org, comme l&#39;indique Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>
+<p>Nos classements recalculés et nos courses : données de matchs OpenVRS, d&#39;après Liquipedia (CC BY-SA 3.0). <a href="https://openvrs.uk">OpenVRS</a> · <a href="https://liquipedia.net/counterstrike/">Liquipedia</a></p>  <p>Police : Albert Sans (SIL Open Font License). Sans lien avec Valve, HLTV, OpenVRS ni Liquipedia. <a href="https://github.com/fgeronimi/retake-vrs">GitHub</a></p>
+</div></footer>
+</body>
+</html>

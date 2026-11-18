@@ -2,264 +2,307 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Just Swing: roster sheet · retake-vrs</title>
-<meta name="description" content="Counter-Strike 2 Valve Regional Standings as of 2026-11-02, recomputed and audited.">
-<link rel="stylesheet" href="../assets/site.bede641a79.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Just Swing · retake-vrs</title>
+<meta name="description" content="Every month Valve ranks the Counter-Strike teams, and the best of each region are invited to the Majors. retake-vrs recomputes those standings with Valve&#39;s own model and plays the race to each Major thousands of times.">
+<link rel="alternate" hreflang="en" href="../roster/0168--just-swing--daniel-gas-purely-sator1-skrr.html">
+<link rel="alternate" hreflang="fr" href="../fr/roster/0168--just-swing--daniel-gas-purely-sator1-skrr.html">
+<link rel="preload" href="../assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.128a9c93e5.css">
+<script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="../assets/site.5959fce70a.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 <header class="top">
-  <a class="brand" href="../index.html">retake-vrs</a>
-  <nav aria-label="Main">
-    <a href="../index.html">Global</a>
-<a href="../region/europe.html">Europe</a><a href="../region/americas.html">Americas</a><a href="../region/asia.html">Asia</a>    <a href="../evolution.html">Evolution</a>
-<a href="../versus-official.html">Mine vs official</a><a href="../race.html">Race to a Major</a><a href="../what-if.html">What it would take</a>    <a href="../how-it-works.html">How it works</a>
-  </nav>
+  <div class="wrap">
+    <a class="mark" href="../index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="2" y="7" width="28" height="20" rx="4" fill="var(--accent)"/>
+        <rect x="6" y="11" width="16" height="12" rx="2" fill="var(--bg)"/>
+        <path d="M9 14h4M9 20h4M15 14h4M15 20h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="17" r="2" fill="var(--bg)"/>
+        <path d="M10 7V4M22 7V3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>retake-vrs</a>
+    <nav class="nav" aria-label="Main">
+      <a href="../standings.html" aria-current="true">Standings</a>
+<a href="../race.html">Race to the Major</a>      <a href="../evolution.html">Analysis</a>
+      <a href="../how-it-works.html">How it&#39;s built</a>
+    </nav>
+    <div class="tools">
+      <div class="search js-only">
+        <input id="q" type="search" autocomplete="off" placeholder="Search a team or a player" aria-label="Search a team or a player"
+               data-index="../assets/search.json" data-home="../" data-none="No team or player matches.">
+        <ul id="q-results" hidden></ul>
+      </div>
+      <div class="seg js-only" role="group" aria-label="Theme">
+        <button type="button" data-set-theme="dark">Dark</button>
+        <button type="button" data-set-theme="light">Light</button>
+      </div>
+      <div class="seg" role="group" aria-label="Language">
+<a href="../roster/0168--just-swing--daniel-gas-purely-sator1-skrr.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="../fr/roster/0168--just-swing--daniel-gas-purely-sator1-skrr.html" hreflang="fr" lang="fr">FR</a>      </div>
+    </div>
+  </div>
 </header>
-<main>
-  <p class="fresh">Standings as of <strong>2026-11-02</strong> · site built 2026-11-18 12:50 UTC</p>
-<p class="crumbs"><a href="../index.html">Global standings</a> › Just Swing</p>
-<h1>Just Swing</h1>
-<p class="lede">Daniel, gas, Purely, sATOR1, skrr</p>
+<nav class="subnav" aria-label="Just Swing"><div class="wrap">
+<a href="../standings.html">Global</a><a href="../region/europe.html">Europe</a><a href="../region/americas.html">Americas</a><a href="../region/asia.html">Asia</a></div></nav>
+<main id="content" class="wrap">
+  <p class="fresh">Standings as of 2 Nov 2026 · built 2026-11-18 23:46 UTC</p>
+<p class="crumbs"><a href="../standings.html">Standings</a> › <a href="../region/asia.html">Asia</a> › Just Swing</p>
+<section class="head">
+  <h1>Just Swing</h1>
+  <p class="lede">Daniel · gas · Purely · sATOR1 · skrr</p>
+</section>
 
-<section class="kpis" aria-label="Ranks and value">
-  <div class="kpi"><div class="v">#168</div><div class="k">Global rank</div></div>
-  <div class="kpi"><div class="v">#20</div><div class="k">Asia</div></div>
-  <div class="kpi"><div class="v">775</div><div class="k">Points</div></div>
-<div class="kpi"><div class="v spark-wrap"><svg class="spark" viewBox="0 0 160 36" width="160" height="36" role="img" aria-label="Points over time: 2026-04-06: 721, 2026-09-07: 710, 2026-10-05: 724, 2026-11-02: 775"><polyline points="110.0,26.6 143.0,31.0 149.0,25.4 155.0,5.0" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="155.0" cy="5.0" r="4"/></svg></div><div class="k">Points over 4 snapshots</div></div></section>
+<section class="kpis plain" aria-label="Just Swing">
+  <div class="stat"><span class="v">#168</span><span class="k">Global rank</span></div>
+  <div class="stat"><span class="v">#20</span><span class="k">Asia</span></div>
+  <div class="stat"><span class="v">774.6</span><span class="k">Points</span></div>
+  <div class="stat"><span class="v">5%</span><span class="k">Matches on LAN</span></div>
+  <div class="stat"><span class="v">$3,596</span><span class="k">Prize money in the window</span></div>
+</section>
 
-<h2>Final value</h2>
-<p>Final value <b>774.6</b> = starting value <b>691.6</b>
-+ head-to-head adjustments <b>83.0</b>.</p>
-<p class="muted">Starting value recomputed from the factors: 691.8 <span class="ok" title="Within the precision of Valve's publication">✓ recomputed</span>.
-Sum of the head-to-head adjustments below: 82.97 <span class="ok" title="Within the precision of Valve's publication">✓ recomputed</span>.</p>
+<section class="card" aria-labelledby="season-title">
+  <h2 id="season-title">The season, match by match</h2>
+  <div class="legend">
+    <span><i class="l-lan"></i>LAN match</span>
+    <span><i class="l-online"></i>Online match</span>
+    <span><i class="l-prize"></i>Prize money, by event date</span>
+  </div>
+  <div class="chart-box"><svg class="chart season" viewBox="0 0 960 410" width="960" height="410" role="img" aria-label="The season, match by match">
+<line class="grid" x1="56" x2="944" y1="248.0" y2="248.0"/>
+<text class="axis" x="48" y="252.0" text-anchor="end">600</text>
+<line class="grid" x1="56" x2="944" y1="202.0" y2="202.0"/>
+<text class="axis" x="48" y="206.0" text-anchor="end">650</text>
+<line class="grid" x1="56" x2="944" y1="156.0" y2="156.0"/>
+<text class="axis" x="48" y="160.0" text-anchor="end">700</text>
+<line class="grid" x1="56" x2="944" y1="110.0" y2="110.0"/>
+<text class="axis" x="48" y="114.0" text-anchor="end">750</text>
+<line class="grid" x1="56" x2="944" y1="64.0" y2="64.0"/>
+<text class="axis" x="48" y="68.0" text-anchor="end">800</text>
+<line class="grid" x1="56" x2="944" y1="18.0" y2="18.0"/>
+<text class="axis" x="48" y="22.0" text-anchor="end">850</text>
+<line class="grid" x1="214.6" x2="214.6" y1="18" y2="384"/>
+<text class="axis" x="218.6" y="402">Sep</text>
+<line class="grid" x1="690.3" x2="690.3" y1="18" y2="384"/>
+<text class="axis" x="694.3" y="402">Oct</text>
+<path class="area" d="M103.6 163.7 L103.6 151.3 L119.4 155.6 L135.3 149.3 L151.1 137.4 L167.0 129.4 L182.9 110.3 L198.7 111.3 L198.7 116.2 L214.6 117.1 L547.6 110.5 L563.4 112.1 L579.3 104.6 L595.1 110.2 L595.1 122.9 L785.4 119.1 L801.3 96.1 L833.0 80.4 L864.7 82.7 L880.6 87.4 L880.6 248 L103.6 248 Z"/>
+<path class="line" d="M103.6 163.7 L103.6 151.3 L119.4 155.6 L135.3 149.3 L151.1 137.4 L167.0 129.4 L182.9 110.3 L198.7 111.3 L198.7 116.2 L214.6 117.1 L547.6 110.5 L563.4 112.1 L579.3 104.6 L595.1 110.2 L595.1 122.9 L785.4 119.1 L801.3 96.1 L833.0 80.4 L864.7 82.7 L880.6 87.4"/>
+<circle class="online" cx="103.6" cy="151.3" r="5" data-tip="25 Aug 2026 · Won · Kaleido · Online · ESL Challenger League Season 52 Asia Cup 1 · +13.51 → 705.1"><title>25 Aug 2026 · Won · Kaleido · Online · ESL Challenger League Season 52 Asia Cup 1 · +13.51 → 705.1</title></circle>
+<circle class="online" cx="119.4" cy="155.6" r="5" data-tip="26 Aug 2026 · Lost · Rare Atom · Online · ESL Challenger League Season 52 Asia Cup 1 · -4.66 → 700.5"><title>26 Aug 2026 · Lost · Rare Atom · Online · ESL Challenger League Season 52 Asia Cup 1 · -4.66 → 700.5</title></circle>
+<circle class="online" cx="135.3" cy="149.3" r="5" data-tip="27 Aug 2026 · Won · The KnockoutX · Online · ESL Challenger League Season 52 Asia Cup 1 · +6.84 → 707.3"><title>27 Aug 2026 · Won · The KnockoutX · Online · ESL Challenger League Season 52 Asia Cup 1 · +6.84 → 707.3</title></circle>
+<circle class="online" cx="151.1" cy="137.4" r="5" data-tip="28 Aug 2026 · Won · Vitalem Aerem · Online · ESL Challenger League Season 52 Asia Cup 1 · +12.94 → 720.2"><title>28 Aug 2026 · Won · Vitalem Aerem · Online · ESL Challenger League Season 52 Asia Cup 1 · +12.94 → 720.2</title></circle>
+<circle class="online" cx="167.0" cy="129.4" r="5" data-tip="29 Aug 2026 · Won · Chinggis Warriors · Online · ESL Challenger League Season 52 Asia Cup 1 · +8.63 → 728.9"><title>29 Aug 2026 · Won · Chinggis Warriors · Online · ESL Challenger League Season 52 Asia Cup 1 · +8.63 → 728.9</title></circle>
+<circle class="online" cx="182.9" cy="110.3" r="5" data-tip="30 Aug 2026 · Won · Alter Ego · Online · ESL Challenger League Season 52 Asia Cup 1 · +20.86 → 749.7"><title>30 Aug 2026 · Won · Alter Ego · Online · ESL Challenger League Season 52 Asia Cup 1 · +20.86 → 749.7</title></circle>
+<circle class="online" cx="198.7" cy="111.3" r="5" data-tip="31 Aug 2026 · Lost · NEXVOID · Online · GGMEDIA Challenger Series Season 2 · -1.11 → 748.6"><title>31 Aug 2026 · Lost · NEXVOID · Online · GGMEDIA Challenger Series Season 2 · -1.11 → 748.6</title></circle>
+<circle class="online" cx="198.7" cy="116.2" r="5" data-tip="31 Aug 2026 · Lost · Rare Atom · Online · ESL Challenger League Season 52 Asia Cup 1 · -5.32 → 743.3"><title>31 Aug 2026 · Lost · Rare Atom · Online · ESL Challenger League Season 52 Asia Cup 1 · -5.32 → 743.3</title></circle>
+<circle class="online" cx="214.6" cy="117.1" r="5" data-tip="1 Sep 2026 · Lost · Chinggis Warriors · Online · GGMEDIA Challenger Series Season 2 · -1.01 → 742.3"><title>1 Sep 2026 · Lost · Chinggis Warriors · Online · GGMEDIA Challenger Series Season 2 · -1.01 → 742.3</title></circle>
+<circle class="online" cx="547.6" cy="110.5" r="5" data-tip="22 Sep 2026 · Won · the ONE · Online · ESL Challenger League Season 52 Asia Cup 2 · +7.17 → 749.5"><title>22 Sep 2026 · Won · the ONE · Online · ESL Challenger League Season 52 Asia Cup 2 · +7.17 → 749.5</title></circle>
+<circle class="online" cx="563.4" cy="112.1" r="5" data-tip="23 Sep 2026 · Lost · NEXVOID · Online · ESL Challenger League Season 52 Asia Cup 2 · -1.69 → 747.8"><title>23 Sep 2026 · Lost · NEXVOID · Online · ESL Challenger League Season 52 Asia Cup 2 · -1.69 → 747.8</title></circle>
+<circle class="online" cx="579.3" cy="104.6" r="5" data-tip="24 Sep 2026 · Won · Haunted House · Online · ESL Challenger League Season 52 Asia Cup 2 · +8.16 → 755.9"><title>24 Sep 2026 · Won · Haunted House · Online · ESL Challenger League Season 52 Asia Cup 2 · +8.16 → 755.9</title></circle>
+<circle class="online" cx="595.1" cy="110.2" r="5" data-tip="25 Sep 2026 · Lost · Rare Atom · Online · 5EPLAY Professional Challenge Season 1 · -6.12 → 749.8"><title>25 Sep 2026 · Lost · Rare Atom · Online · 5EPLAY Professional Challenge Season 1 · -6.12 → 749.8</title></circle>
+<circle class="online" cx="595.1" cy="122.9" r="5" data-tip="25 Sep 2026 · Lost · Kaleido · Online · ESL Challenger League Season 52 Asia Cup 2 · -13.77 → 736.0"><title>25 Sep 2026 · Lost · Kaleido · Online · ESL Challenger League Season 52 Asia Cup 2 · -13.77 → 736.0</title></circle>
+<circle class="lan" cx="785.4" cy="119.1" r="5" data-tip="7 Oct 2026 · Won · BORING PLAYERS · LAN · +4.09 → 740.1"><title>7 Oct 2026 · Won · BORING PLAYERS · LAN · +4.09 → 740.1</title></circle>
+<circle class="online" cx="801.3" cy="96.1" r="5" data-tip="8 Oct 2026 · Won · Rare Atom · Online · ESL Challenger League Season 52 Asia Cup 3 · +24.97 → 765.1"><title>8 Oct 2026 · Won · Rare Atom · Online · ESL Challenger League Season 52 Asia Cup 3 · +24.97 → 765.1</title></circle>
+<circle class="online" cx="833.0" cy="80.4" r="5" data-tip="10 Oct 2026 · Won · Kaleido · Online · ESL Challenger League Season 52 Asia Cup 3 · +17.12 → 782.2"><title>10 Oct 2026 · Won · Kaleido · Online · ESL Challenger League Season 52 Asia Cup 3 · +17.12 → 782.2</title></circle>
+<circle class="online" cx="864.7" cy="82.7" r="5" data-tip="12 Oct 2026 · Lost · Lynn Vision · Online · ESL Challenger League Season 52 Asia Cup 3 · -2.57 → 779.6"><title>12 Oct 2026 · Lost · Lynn Vision · Online · ESL Challenger League Season 52 Asia Cup 3 · -2.57 → 779.6</title></circle>
+<circle class="online" cx="880.6" cy="87.4" r="5" data-tip="13 Oct 2026 · Lost · Alter Ego · Online · ESL Challenger League Season 52 Asia Cup 3 · -5.07 → 774.6"><title>13 Oct 2026 · Lost · Alter Ego · Online · ESL Challenger League Season 52 Asia Cup 3 · -5.07 → 774.6</title></circle>
+<text class="axis" x="56" y="280">Prize money</text>
+<line class="grid" x1="56" x2="944" y1="384" y2="384"/>
+<rect class="prize" x="208.6" y="288.0" width="12" height="96.0" rx="3" data-tip="1 Sep 2026 · $1,500"><title>1 Sep 2026 · $1,500</title></rect>
+<text class="axis" x="214.6" y="283.0" text-anchor="middle">2k</text>
+<rect class="prize" x="620.9" y="345.9" width="12" height="38.1" rx="3" data-tip="27 Sep 2026 · $596"><title>27 Sep 2026 · $596</title></rect>
+<text class="axis" x="626.9" y="340.9" text-anchor="middle">1k</text>
+<rect class="prize" x="890.4" y="288.0" width="12" height="96.0" rx="3" data-tip="14 Oct 2026 · $1,500"><title>14 Oct 2026 · $1,500</title></rect>
+<text class="axis" x="896.4" y="283.0" text-anchor="middle">2k</text>
+</svg></div>
+  <p class="note">Points after each match: the starting value (691.6) plus Valve&#39;s head-to-head adjustments, in the order played; the last point is the final value.</p>
+</section>
 
-<h2>Factors</h2>
-<div class="scroll"><table>
-  <thead><tr><th>Factor</th><th class="r">Value</th><th class="hide-narrow">Recomputed by retake-vrs</th></tr></thead>
-  <tbody>
-    <tr><td>Bounty offered</td><td class="r">0.310</td><td class="hide-narrow">0.310 <span class="ok" title="Within the precision of Valve's publication">✓ recomputed</span></td></tr>
-    <tr><td>Bounty collected</td><td class="r">0.259</td><td class="hide-narrow">0.259 <span class="ok" title="Within the precision of Valve's publication">✓ recomputed</span></td></tr>
-    <tr><td>Opponent network</td><td class="r">0.054</td><td class="hide-narrow">0.054</td></tr>
-    <tr><td>LAN wins</td><td class="r">0.000</td><td class="hide-narrow">0.000</td></tr>
-  </tbody>
-</table></div>
+<div class="grid2">
+  <section class="card" aria-labelledby="factors-title">
+    <h2 id="factors-title">Factors</h2>
+    <div class="factor"><span>Bounty offered</span><span class="track"><b style="width:31.0%"></b></span><span class="val">0.310</span></div>
+    <div class="factor"><span>Bounty collected</span><span class="track"><b style="width:25.9%"></b></span><span class="val">0.259</span></div>
+    <div class="factor"><span>Opponent network</span><span class="track"><b style="width:5.4%"></b></span><span class="val">0.054</span></div>
+    <div class="factor"><span>LAN wins</span><span class="track"><b style="width:0.0%"></b></span><span class="val">0.000</span></div>
+    <p class="note">Starting value 691.6 from the average of the four factors, recomputed by retake-vrs: within Valve&#39;s rounding. Head-to-head +83.0.</p>
+  </section>
 
-<h2>Matches</h2>
-<p class="muted">19 matches in the six-month window, most recent first. Values in parentheses are adjusted by age and event weight.</p>
-<div class="scroll"><table class="dense">
-  <thead><tr>
-    <th>Date</th><th>Opponent</th><th>Result</th><th class="r hide-narrow">Age weight</th>
-    <th class="r hide-narrow">Bounty collected</th><th class="r hide-narrow">Opponent network</th><th class="r hide-narrow">LAN</th><th class="r">H2H</th>
-  </tr></thead>
-  <tbody>
-    <tr>
-      <td>2026-10-13</td>
-      <td>Alter Ego</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-5.07</td>
-    </tr>
-    <tr>
-      <td>2026-10-12</td>
-      <td>Lynn Vision</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-2.57</td>
-    </tr>
-    <tr>
-      <td>2026-10-10</td>
-      <td>Kaleido</td>
-      <td>Won</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">0.005 (0.002)</td>
-      <td class="r hide-narrow">0.307 (0.102)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+17.12</td>
-    </tr>
-    <tr>
-      <td>2026-10-08</td>
-      <td>Rare Atom</td>
-      <td>Won</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">0.014 (0.005)</td>
-      <td class="r hide-narrow">0.428 (0.143)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+24.97</td>
-    </tr>
-    <tr>
-      <td>2026-10-07</td>
-      <td>BORING PLAYERS</td>
-      <td>Won</td>
-      <td class="r hide-narrow">1.000</td>
-      <td class="r hide-narrow">0.000 (0.000)</td>
-      <td class="r hide-narrow">0.032 (0.011)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+4.09</td>
-    </tr>
-    <tr>
-      <td>2026-09-25</td>
-      <td>Kaleido</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.946</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-13.77</td>
-    </tr>
-    <tr>
-      <td>2026-09-25</td>
-      <td>Rare Atom</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.945</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-6.12</td>
-    </tr>
-    <tr>
-      <td>2026-09-24</td>
-      <td>Haunted House</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.939</td>
-      <td class="r hide-narrow">0.000 (0.000)</td>
-      <td class="r hide-narrow">0.032 (0.010)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+8.16</td>
-    </tr>
-    <tr>
-      <td>2026-09-23</td>
-      <td>NEXVOID</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.933</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-1.69</td>
-    </tr>
-    <tr>
-      <td>2026-09-22</td>
-      <td>the ONE</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.926</td>
-      <td class="r hide-narrow">0.000 (0.000)</td>
-      <td class="r hide-narrow">0.031 (0.010)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+7.17</td>
-    </tr>
-    <tr>
-      <td>2026-09-01</td>
-      <td>Chinggis Warriors</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.786</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-1.01</td>
-    </tr>
-    <tr>
-      <td>2026-08-31</td>
-      <td>Rare Atom</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.780</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-5.32</td>
-    </tr>
-    <tr>
-      <td>2026-08-31</td>
-      <td>NEXVOID</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.778</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-1.11</td>
-    </tr>
-    <tr>
-      <td>2026-08-30</td>
-      <td>Alter Ego</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.773</td>
-      <td class="r hide-narrow">0.020 (0.005)</td>
-      <td class="r hide-narrow">0.379 (0.098)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+20.86</td>
-    </tr>
-    <tr>
-      <td>2026-08-29</td>
-      <td>Chinggis Warriors</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.766</td>
-      <td class="r hide-narrow">0.001 (0.000)</td>
-      <td class="r hide-narrow">0.049 (0.013)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+8.63</td>
-    </tr>
-    <tr>
-      <td>2026-08-28</td>
-      <td>Vitalem Aerem</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.759</td>
-      <td class="r hide-narrow">0.003 (0.001)</td>
-      <td class="r hide-narrow">0.222 (0.056)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+12.94</td>
-    </tr>
-    <tr>
-      <td>2026-08-27</td>
-      <td>The KnockoutX</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.753</td>
-      <td class="r hide-narrow">0.000 (0.000)</td>
-      <td class="r hide-narrow">0.087 (0.022)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+6.84</td>
-    </tr>
-    <tr>
-      <td>2026-08-26</td>
-      <td>Rare Atom</td>
-      <td>Lost</td>
-      <td class="r hide-narrow">0.746</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r hide-narrow">-</td>
-      <td class="r">-4.66</td>
-    </tr>
-    <tr>
-      <td>2026-08-25</td>
-      <td>Kaleido</td>
-      <td>Won</td>
-      <td class="r hide-narrow">0.739</td>
-      <td class="r hide-narrow">0.005 (0.001)</td>
-      <td class="r hide-narrow">0.307 (0.076)</td>
-      <td class="r hide-narrow">0.000</td>
-      <td class="r">+13.51</td>
-    </tr>
-  </tbody>
-</table></div>
+  <section class="card" aria-labelledby="prize-title">
+    <h2 id="prize-title">Prize money</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Event date</th><th class="r">Won</th><th class="r hide-narrow">Weighted by age</th></tr></thead>
+      <tbody><tr><td class="nowrap">14 Oct 2026</td><td class="r">$1,500</td><td class="r muted hide-narrow">$1,500</td></tr><tr><td class="nowrap">27 Sep 2026</td><td class="r">$596</td><td class="r muted hide-narrow">$571</td></tr><tr><td class="nowrap">1 Sep 2026</td><td class="r">$1,500</td><td class="r muted hide-narrow">$1,180</td></tr></tbody>
+    </table></div>
+<h3>Over the snapshots</h3><div style="color:var(--likely)"><svg class="spark" viewBox="0 0 160 36" width="160" height="36" role="img" aria-label="Points over time: 2025-11-03: 739, 2025-12-01: 727, 2026-01-05: 756, 2026-02-02: 747, 2026-03-02: 645, 2026-04-06: 721, 2026-05-04: 818, 2026-06-01: 816, 2026-07-06: 749, 2026-08-03: 717, 2026-09-07: 710, 2026-10-05: 724, 2026-11-02: 775"><polyline points="77.0,16.9 83.0,18.7 90.5,14.3 96.5,15.7 102.5,31.0 110.0,19.6 116.0,5.0 122.0,5.3 129.5,15.4 135.5,20.2 143.0,21.2 149.0,19.1 155.0,11.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="155.0" cy="11.5" r="4"/></svg></div>
+    <p class="note">3 Nov 2025: #131 (739) · 1 Dec 2025: #158 (727) · 5 Jan 2026: #166 (756) · 2 Feb 2026: #183 (747) · 2 Mar 2026: #226 (645) · 6 Apr 2026: #217 (721) · 4 May 2026: #173 (818) · 1 Jun 2026: #174 (816) · 6 Jul 2026: #196 (749) · 3 Aug 2026: #230 (717) · 7 Sep 2026: #200 (710) · 5 Oct 2026: #201 (724) · 2 Nov 2026: #168 (775)</p>  </section>
+</div>
 
-<h2>Winnings</h2>
-<div class="scroll"><table>
-  <thead><tr><th>Event date</th><th class="r">Age weight</th><th class="r">Prize</th><th class="r">Scaled</th></tr></thead>
-  <tbody>
-    <tr><td>2026-10-14</td><td class="r">1.000</td><td class="r">$1,500</td><td class="r">$1,500</td></tr>
-    <tr><td>2026-09-27</td><td class="r">0.958</td><td class="r">$596</td><td class="r">$571</td></tr>
-    <tr><td>2026-09-01</td><td class="r">0.787</td><td class="r">$1,500</td><td class="r">$1,180</td></tr>
-  </tbody>
-</table></div>
+<section class="card" aria-labelledby="matches-title" style="padding:0;overflow:hidden">
+  <h2 id="matches-title" style="padding:18px 18px 0">Matches</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Date</th><th>Opponent</th><th class="hide-narrow">Event</th><th>Where</th><th>Result</th><th class="r">Points</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="nowrap">13 Oct</td>
+        <td>Alter Ego</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 3</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−5.07</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">12 Oct</td>
+        <td>Lynn Vision</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 3</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−2.57</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">10 Oct</td>
+        <td>Kaleido</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 3</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+17.12</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">8 Oct</td>
+        <td>Rare Atom</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 3</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+24.97</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">7 Oct</td>
+        <td>BORING PLAYERS</td>
+        <td class="muted hide-narrow">–</td>
+        <td><span class="tag">LAN</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+4.09</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">25 Sep</td>
+        <td>Kaleido</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−13.77</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">25 Sep</td>
+        <td>Rare Atom</td>
+        <td class="muted hide-narrow">5EPLAY Professional Challenge Season 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−6.12</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">24 Sep</td>
+        <td>Haunted House</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+8.16</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">23 Sep</td>
+        <td>NEXVOID</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−1.69</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">22 Sep</td>
+        <td>the ONE</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+7.17</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">1 Sep</td>
+        <td>Chinggis Warriors</td>
+        <td class="muted hide-narrow">GGMEDIA Challenger Series Season 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−1.01</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">31 Aug</td>
+        <td>Rare Atom</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−5.32</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">31 Aug</td>
+        <td>NEXVOID</td>
+        <td class="muted hide-narrow">GGMEDIA Challenger Series Season 2</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−1.11</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">30 Aug</td>
+        <td>Alter Ego</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+20.86</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">29 Aug</td>
+        <td>Chinggis Warriors</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+8.63</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">28 Aug</td>
+        <td>Vitalem Aerem</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+12.94</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">27 Aug</td>
+        <td>The KnockoutX</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+6.84</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">26 Aug</td>
+        <td>Rare Atom</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="lost">Lost</td>
+        <td class="r"><span class="down">−4.66</span></td>
+      </tr>
+      <tr>
+        <td class="nowrap">25 Aug</td>
+        <td>Kaleido</td>
+        <td class="muted hide-narrow">ESL Challenger League Season 52 Asia Cup 1</td>
+        <td><span class="tag dim">Online</span></td>
+        <td class="won">Won</td>
+        <td class="r"><span class="up">+13.51</span></td>
+      </tr>
+    </tbody>
+  </table></div>
+</section>
 </main>
-<footer>
-  <p>Model and standings: <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a>.
-  Event data: HLTV.org, as credited by Valve. Recomputed and audited by retake-vrs.</p>
-<p>Recomputed standings: match data by <a href="https://openvrs.uk">OpenVRS</a>, from <a href="https://liquipedia.net/counterstrike/">Liquipedia</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>  <p>Not affiliated with Valve or HLTV. Standings as of 2026-11-02.</p>
-</footer>
+<footer><div class="wrap">
+  <p>Model and standings: Valve. Event data: HLTV.org, as credited by Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>
+<p>Our recomputed standings and races: match data by OpenVRS, from Liquipedia (CC BY-SA 3.0). <a href="https://openvrs.uk">OpenVRS</a> · <a href="https://liquipedia.net/counterstrike/">Liquipedia</a></p>  <p>Typeface: Albert Sans (SIL Open Font License). Not affiliated with Valve, HLTV, OpenVRS or Liquipedia. <a href="https://github.com/fgeronimi/retake-vrs">GitHub</a></p>
+</div></footer>
 </body>
 </html>

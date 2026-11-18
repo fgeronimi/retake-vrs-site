@@ -2,49 +2,238 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How it works · retake-vrs</title>
-<meta name="description" content="Counter-Strike 2 Valve Regional Standings as of 2026-11-02, recomputed and audited.">
-<link rel="stylesheet" href="assets/site.bede641a79.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How it&#39;s built · retake-vrs</title>
+<meta name="description" content="Every month Valve ranks the Counter-Strike teams, and the best of each region are invited to the Majors. retake-vrs recomputes those standings with Valve&#39;s own model and plays the race to each Major thousands of times.">
+<link rel="alternate" hreflang="en" href="how-it-works.html">
+<link rel="alternate" hreflang="fr" href="fr/how-it-works.html">
+<link rel="preload" href="assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.128a9c93e5.css">
+<script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="assets/site.5959fce70a.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 <header class="top">
-  <a class="brand" href="index.html">retake-vrs</a>
-  <nav aria-label="Main">
-    <a href="index.html">Global</a>
-<a href="region/europe.html">Europe</a><a href="region/americas.html">Americas</a><a href="region/asia.html">Asia</a>    <a href="evolution.html">Evolution</a>
-<a href="versus-official.html">Mine vs official</a><a href="race.html">Race to a Major</a><a href="what-if.html">What it would take</a>    <a href="how-it-works.html">How it works</a>
-  </nav>
+  <div class="wrap">
+    <a class="mark" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="2" y="7" width="28" height="20" rx="4" fill="var(--accent)"/>
+        <rect x="6" y="11" width="16" height="12" rx="2" fill="var(--bg)"/>
+        <path d="M9 14h4M9 20h4M15 14h4M15 20h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="17" r="2" fill="var(--bg)"/>
+        <path d="M10 7V4M22 7V3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>retake-vrs</a>
+    <nav class="nav" aria-label="Main">
+      <a href="standings.html">Standings</a>
+<a href="race.html">Race to the Major</a>      <a href="evolution.html">Analysis</a>
+      <a href="how-it-works.html" aria-current="true">How it&#39;s built</a>
+    </nav>
+    <div class="tools">
+      <div class="search js-only">
+        <input id="q" type="search" autocomplete="off" placeholder="Search a team or a player" aria-label="Search a team or a player"
+               data-index="assets/search.json" data-home="" data-none="No team or player matches.">
+        <ul id="q-results" hidden></ul>
+      </div>
+      <div class="seg js-only" role="group" aria-label="Theme">
+        <button type="button" data-set-theme="dark">Dark</button>
+        <button type="button" data-set-theme="light">Light</button>
+      </div>
+      <div class="seg" role="group" aria-label="Language">
+<a href="how-it-works.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="fr/how-it-works.html" hreflang="fr" lang="fr">FR</a>      </div>
+    </div>
+  </div>
 </header>
-<main>
-  <p class="fresh">Standings as of <strong>2026-11-02</strong> · site built 2026-11-18 12:50 UTC</p>
-<h1>How it works</h1>
-<p class="lede">Valve ranks Counter-Strike 2 rosters with its Regional Standings (VRS) to invite teams to Major qualifiers. This site republishes Valve's standings, explains them, and checks that every published value can be recomputed.</p>
-
-<h2>What is ranked</h2>
-<p>A roster is a group of players, not an organisation. Matches are read from the most recent backwards; a lineup belongs to the first roster it shares three players with. Prize money follows the lineup that actually played the event.</p>
-
-<h2>The starting value</h2>
-<p>Over the last six months, each roster gets four factors between 0 and 1:</p>
-<ul>
-  <li><b>Bounty offered</b>: its own prize money, best ten events, weighted by age.</li>
-  <li><b>Bounty collected</b>: the prize money of the teams it beat, best ten wins.</li>
-  <li><b>Opponent network</b>: how many distinct teams its beaten opponents themselves beat.</li>
-  <li><b>LAN wins</b>: its best ten wins on LAN.</li>
-</ul>
-<p>Each is compared with the 5th best roster, so a top team scores 1. Wins at high-stakes events count more. The average of the four factors is mapped onto 400 to 2,000 points.</p>
-
-<h2>Head-to-head</h2>
-<p>All matches are then replayed in order with an Elo-like update: beating a stronger team earns more than beating a weaker one. The final value is the starting value plus these adjustments. Older results weigh less, and results from the last month count in full.</p>
-
-<h2>What retake-vrs checks</h2>
-<p>For every roster, the starting value, the head-to-head sum, the factors and the age of every match are recomputed from the published pages. Valve rounds what it publishes, so a value counts as recomputed when the gap stays within what that rounding allows. A ✓ on a roster sheet means exactly that.</p>
-<p>The model itself was ported to Python and checked against Valve's own code: identical rosters and ordering, and ratings equal to within 10<sup>-12</sup> point.</p>
+<nav class="subnav" aria-label="How it&#39;s built"><div class="wrap">
+<a href="how-it-works.html" aria-current="page">How it works</a><a href="data.html">Where the data goes</a></div></nav>
+<main id="content" class="wrap">
+  <p class="fresh">Standings as of 2 Nov 2026 · built 2026-11-18 23:46 UTC</p>
+<section class="head">
+  <h1>How it&#39;s built</h1>
+  <p class="lede">retake-vrs rewrites Valve&#39;s ranking model in Python, checks it against every figure Valve publishes, and uses it to simulate the race to each Major.</p>
+</section>
+<section class="card" aria-labelledby="cal">
+  <h2 id="cal">Which matches count, and when the Majors are decided</h2>
+  <p class="lede">Each row is one of Valve&#39;s monthly standings. Its bar covers the six months of matches it counts: the last month at full weight, older matches fading out. The pink columns are the Majors, linked to the standings that sent their invitations.</p>
+  <div class="legend">
+    <span><i class="l-window"></i>Counted, losing weight with age</span>
+    <span><i class="l-full"></i>Last month, full weight</span>
+    <span><i class="l-major"></i>Major</span>
+  </div>
+  <div class="chart-box"><svg class="chart calendar" viewBox="0 0 960 412" width="960" height="412" role="img" aria-label="Which matches count, and when the Majors are decided">
+<line class="grid" x1="96.0" x2="96.0" y1="38" y2="382"/>
+<text class="axis" x="99.0" y="400">M</text>
+<line class="grid" x1="122.1" x2="122.1" y1="38" y2="382"/>
+<text class="axis" x="125.1" y="400">J</text>
+<line class="grid" x1="147.4" x2="147.4" y1="38" y2="382"/>
+<text class="axis" x="150.4" y="400">J</text>
+<line class="grid" x1="173.6" x2="173.6" y1="38" y2="382"/>
+<text class="axis" x="176.6" y="400">A</text>
+<line class="grid" x1="199.7" x2="199.7" y1="38" y2="382"/>
+<text class="axis" x="202.7" y="400">S</text>
+<line class="grid" x1="225.0" x2="225.0" y1="38" y2="382"/>
+<text class="axis" x="228.0" y="400">O</text>
+<line class="grid" x1="251.1" x2="251.1" y1="38" y2="382"/>
+<text class="axis" x="254.1" y="400">N</text>
+<line class="grid" x1="276.4" x2="276.4" y1="38" y2="382"/>
+<text class="axis" x="279.4" y="400">D</text>
+<line class="grid" x1="302.5" x2="302.5" y1="38" y2="382"/>
+<text class="axis" x="305.5" y="400">2025</text>
+<line class="grid" x1="328.7" x2="328.7" y1="38" y2="382"/>
+<text class="axis" x="331.7" y="400">F</text>
+<line class="grid" x1="352.3" x2="352.3" y1="38" y2="382"/>
+<text class="axis" x="355.3" y="400">M</text>
+<line class="grid" x1="378.4" x2="378.4" y1="38" y2="382"/>
+<text class="axis" x="381.4" y="400">A</text>
+<line class="grid" x1="403.7" x2="403.7" y1="38" y2="382"/>
+<text class="axis" x="406.7" y="400">M</text>
+<line class="grid" x1="429.8" x2="429.8" y1="38" y2="382"/>
+<text class="axis" x="432.8" y="400">J</text>
+<line class="grid" x1="455.1" x2="455.1" y1="38" y2="382"/>
+<text class="axis" x="458.1" y="400">J</text>
+<line class="grid" x1="481.2" x2="481.2" y1="38" y2="382"/>
+<text class="axis" x="484.2" y="400">A</text>
+<line class="grid" x1="507.4" x2="507.4" y1="38" y2="382"/>
+<text class="axis" x="510.4" y="400">S</text>
+<line class="grid" x1="532.6" x2="532.6" y1="38" y2="382"/>
+<text class="axis" x="535.6" y="400">O</text>
+<line class="grid" x1="558.8" x2="558.8" y1="38" y2="382"/>
+<text class="axis" x="561.8" y="400">N</text>
+<line class="grid" x1="584.1" x2="584.1" y1="38" y2="382"/>
+<text class="axis" x="587.1" y="400">D</text>
+<line class="grid" x1="610.2" x2="610.2" y1="38" y2="382"/>
+<text class="axis" x="613.2" y="400">2026</text>
+<line class="grid" x1="636.3" x2="636.3" y1="38" y2="382"/>
+<text class="axis" x="639.3" y="400">F</text>
+<line class="grid" x1="659.9" x2="659.9" y1="38" y2="382"/>
+<text class="axis" x="662.9" y="400">M</text>
+<line class="grid" x1="686.1" x2="686.1" y1="38" y2="382"/>
+<text class="axis" x="689.1" y="400">A</text>
+<line class="grid" x1="711.3" x2="711.3" y1="38" y2="382"/>
+<text class="axis" x="714.3" y="400">M</text>
+<line class="grid" x1="737.5" x2="737.5" y1="38" y2="382"/>
+<text class="axis" x="740.5" y="400">J</text>
+<line class="grid" x1="762.8" x2="762.8" y1="38" y2="382"/>
+<text class="axis" x="765.8" y="400">J</text>
+<line class="grid" x1="788.9" x2="788.9" y1="38" y2="382"/>
+<text class="axis" x="791.9" y="400">A</text>
+<line class="grid" x1="815.0" x2="815.0" y1="38" y2="382"/>
+<text class="axis" x="818.0" y="400">S</text>
+<line class="grid" x1="840.3" x2="840.3" y1="38" y2="382"/>
+<text class="axis" x="843.3" y="400">O</text>
+<line class="grid" x1="866.4" x2="866.4" y1="38" y2="382"/>
+<text class="axis" x="869.4" y="400">N</text>
+<line class="grid" x1="891.7" x2="891.7" y1="38" y2="382"/>
+<text class="axis" x="894.7" y="400">D</text>
+<line class="grid" x1="917.9" x2="917.9" y1="38" y2="382"/>
+<text class="axis" x="920.9" y="400">2027</text>
+<g data-tip="PGL Major Singapore 2026 · 24 Nov 2026 – 13 Dec 2026"><title>PGL Major Singapore 2026 · 24 Nov 2026 – 13 Dec 2026</title><rect class="major" x="885.8" y="16" width="16.9" height="366"/>
+<line class="major-edge" x1="885.8" x2="885.8" y1="16" y2="382"/>
+<text class="major-label" x="881.8" y="28" text-anchor="end">Singapore</text></g>
+<g data-tip="IEM Cologne Major 2026 · 2 Jun 2026 – 21 Jun 2026"><title>IEM Cologne Major 2026 · 2 Jun 2026 – 21 Jun 2026</title><rect class="major" x="738.3" y="16" width="16.9" height="366"/>
+<line class="major-edge" x1="738.3" x2="738.3" y1="16" y2="382"/>
+<text class="major-label" x="734.3" y="28" text-anchor="end">Cologne</text></g>
+<line class="today" x1="880.8" x2="880.8" y1="10" y2="382"/>
+<text class="today-label" x="884.8" y="16">Today</text>
+<g data-tip="2 Dec 2024"><title>2 Dec 2024</title>
+<text class="snap-label" x="86" y="62.0" text-anchor="end">2 Dec</text>
+<rect class="window" x="125.5" y="52.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="251.9" y="52.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="277.2" cy="58.0" r="3.5"/>
+<rect class="hit" x="0" y="46.0" width="960" height="24"/></g>
+<g data-tip="3 Nov 2025"><title>3 Nov 2025</title>
+<text class="snap-label" x="86" y="86.0" text-anchor="end">3 Nov</text>
+<rect class="window" x="408.7" y="76.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="535.2" y="76.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="560.5" cy="82.0" r="3.5"/>
+<rect class="hit" x="0" y="70.0" width="960" height="24"/></g>
+<g data-tip="1 Dec 2025"><title>1 Dec 2025</title>
+<text class="snap-label" x="86" y="110.0" text-anchor="end">1 Dec</text>
+<rect class="window" x="432.3" y="100.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="558.8" y="100.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="584.1" cy="106.0" r="3.5"/>
+<rect class="hit" x="0" y="94.0" width="960" height="24"/></g>
+<g data-tip="5 Jan 2026"><title>5 Jan 2026</title>
+<text class="snap-label" x="86" y="134.0" text-anchor="end">5 Jan</text>
+<rect class="window" x="461.8" y="124.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="588.3" y="124.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="613.6" cy="130.0" r="3.5"/>
+<rect class="hit" x="0" y="118.0" width="960" height="24"/></g>
+<g data-tip="2 Feb 2026"><title>2 Feb 2026</title>
+<text class="snap-label" x="86" y="158.0" text-anchor="end">2 Feb</text>
+<rect class="window" x="485.4" y="148.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="611.9" y="148.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="637.2" cy="154.0" r="3.5"/>
+<rect class="hit" x="0" y="142.0" width="960" height="24"/></g>
+<g data-tip="2 Mar 2026"><title>2 Mar 2026</title>
+<text class="snap-label" x="86" y="182.0" text-anchor="end">2 Mar</text>
+<rect class="window" x="509.0" y="172.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="635.5" y="172.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="660.8" cy="178.0" r="3.5"/>
+<rect class="hit" x="0" y="166.0" width="960" height="24"/></g>
+<g data-tip="6 Apr 2026 · IEM Cologne Major 2026"><title>6 Apr 2026 · IEM Cologne Major 2026</title>
+<text class="snap-label cutoff" x="86" y="206.0" text-anchor="end">6 Apr</text>
+<rect class="window" x="538.5" y="196.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="665.0" y="196.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="690.3" cy="202.0" r="3.5"/>
+<path class="link" d="M695.3 202.0 H736.3"/>
+<rect class="hit" x="0" y="190.0" width="960" height="24"/></g>
+<g data-tip="4 May 2026"><title>4 May 2026</title>
+<text class="snap-label" x="86" y="230.0" text-anchor="end">4 May</text>
+<rect class="window" x="562.1" y="220.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="688.6" y="220.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="713.9" cy="226.0" r="3.5"/>
+<rect class="hit" x="0" y="214.0" width="960" height="24"/></g>
+<g data-tip="1 Jun 2026"><title>1 Jun 2026</title>
+<text class="snap-label" x="86" y="254.0" text-anchor="end">1 Jun</text>
+<rect class="window" x="585.7" y="244.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="712.2" y="244.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="737.5" cy="250.0" r="3.5"/>
+<rect class="hit" x="0" y="238.0" width="960" height="24"/></g>
+<g data-tip="6 Jul 2026"><title>6 Jul 2026</title>
+<text class="snap-label" x="86" y="278.0" text-anchor="end">6 Jul</text>
+<rect class="window" x="615.3" y="268.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="741.7" y="268.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="767.0" cy="274.0" r="3.5"/>
+<rect class="hit" x="0" y="262.0" width="960" height="24"/></g>
+<g data-tip="3 Aug 2026"><title>3 Aug 2026</title>
+<text class="snap-label" x="86" y="302.0" text-anchor="end">3 Aug</text>
+<rect class="window" x="638.9" y="292.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="765.3" y="292.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="790.6" cy="298.0" r="3.5"/>
+<rect class="hit" x="0" y="286.0" width="960" height="24"/></g>
+<g data-tip="7 Sep 2026"><title>7 Sep 2026</title>
+<text class="snap-label" x="86" y="326.0" text-anchor="end">7 Sep</text>
+<rect class="window" x="668.4" y="316.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="794.8" y="316.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="820.1" cy="322.0" r="3.5"/>
+<rect class="hit" x="0" y="310.0" width="960" height="24"/></g>
+<g data-tip="5 Oct 2026"><title>5 Oct 2026</title>
+<text class="snap-label" x="86" y="350.0" text-anchor="end">5 Oct</text>
+<rect class="window" x="692.0" y="340.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="818.4" y="340.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="843.7" cy="346.0" r="3.5"/>
+<rect class="hit" x="0" y="334.0" width="960" height="24"/></g>
+<g data-tip="2 Nov 2026 · PGL Major Singapore 2026"><title>2 Nov 2026 · PGL Major Singapore 2026</title>
+<text class="snap-label cutoff" x="86" y="374.0" text-anchor="end">2 Nov</text>
+<rect class="window" x="715.6" y="364.0" width="126.4" height="12" rx="3"/>
+<rect class="full" x="842.0" y="364.0" width="25.3" height="12" rx="3"/>
+<circle class="snap" cx="867.3" cy="370.0" r="3.5"/>
+<path class="link" d="M872.3 370.0 H883.8"/>
+<rect class="hit" x="0" y="358.0" width="960" height="24"/></g>
+</svg></div>
+</section>
+<div class="cards">
+  <div class="card"><h3>1 · The model</h3><p class="lede">Valve's ranking model, rewritten in Python from an understanding of it, with none of its code copied. It matches Valve's values within 4.6 × 10⁻¹³ on the reference sample.</p></div>
+  <div class="card"><h3>2 · The audit</h3><p class="lede">Every starting value, head-to-head adjustment and factor Valve publishes is recomputed, within its rounding.</p></div>
+  <div class="card"><h3>3 · Independent data</h3><p class="lede">OpenVRS's matches, from Liquipedia, rebuild Valve's standings: 30 of 30 in the top 30.</p></div>
+  <div class="card"><h3>4 · The race</h3><p class="lede">Every event up to the invitation date is played 5,000 times. Backtested on two Majors.</p></div>
+</div>
+<p class="note"><a href="https://github.com/fgeronimi/retake-vrs">github.com/fgeronimi/retake-vrs</a> · MIT</p>
 </main>
-<footer>
-  <p>Model and standings: <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a>.
-  Event data: HLTV.org, as credited by Valve. Recomputed and audited by retake-vrs.</p>
-<p>Recomputed standings: match data by <a href="https://openvrs.uk">OpenVRS</a>, from <a href="https://liquipedia.net/counterstrike/">Liquipedia</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>  <p>Not affiliated with Valve or HLTV. Standings as of 2026-11-02.</p>
-</footer>
+<footer><div class="wrap">
+  <p>Model and standings: Valve. Event data: HLTV.org, as credited by Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>
+<p>Our recomputed standings and races: match data by OpenVRS, from Liquipedia (CC BY-SA 3.0). <a href="https://openvrs.uk">OpenVRS</a> · <a href="https://liquipedia.net/counterstrike/">Liquipedia</a></p>  <p>Typeface: Albert Sans (SIL Open Font License). Not affiliated with Valve, HLTV, OpenVRS or Liquipedia. <a href="https://github.com/fgeronimi/retake-vrs">GitHub</a></p>
+</div></footer>
 </body>
 </html>
