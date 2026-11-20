@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How the race is simulated · retake-vrs</title>
+<meta name="description" content="Every month Valve ranks the Counter-Strike teams, and the best of each region are invited to the Majors. retake-vrs recomputes those standings with Valve&#39;s own model and plays the race to each Major thousands of times.">
+<link rel="alternate" hreflang="en" href="simulations.html">
+<link rel="alternate" hreflang="fr" href="fr/simulations.html">
+<link rel="preload" href="assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.5e502a8e7c.css">
+<script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="assets/site.4df07db769.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="2" y="7" width="28" height="20" rx="4" fill="var(--accent)"/>
+        <rect x="6" y="11" width="16" height="12" rx="2" fill="var(--bg)"/>
+        <path d="M9 14h4M9 20h4M15 14h4M15 20h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="17" r="2" fill="var(--bg)"/>
+        <path d="M10 7V4M22 7V3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>retake-vrs</a>
+    <nav class="nav" aria-label="Main">
+      <a href="standings.html">Standings</a>
+<a href="race.html">Race to the Major</a>      <a href="evolution.html">Analysis</a>
+      <a href="how-it-works.html" aria-current="true">How it&#39;s built</a>
+    </nav>
+    <div class="tools">
+      <div class="search js-only">
+        <input id="q" type="search" autocomplete="off" placeholder="Search a team or a player" aria-label="Search a team or a player"
+               data-index="assets/search.json" data-assets="assets/" data-home="" data-none="No team or player matches.">
+        <ul id="q-results" hidden></ul>
+      </div>
+      <div class="seg js-only" role="group" aria-label="Theme">
+        <button type="button" data-set-theme="dark">Dark</button>
+        <button type="button" data-set-theme="light">Light</button>
+      </div>
+      <div class="seg" role="group" aria-label="Language">
+<a href="simulations.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="fr/simulations.html" hreflang="fr" lang="fr">FR</a>      </div>
+    </div>
+  </div>
+</header>
+<nav class="subnav" aria-label="How the race is simulated"><div class="wrap">
+<a href="how-it-works.html">How it works</a><a href="points.html">The points</a><a href="simulations.html" aria-current="page">The simulations</a><a href="data.html">Where the data goes</a><a href="roadmap.html">Roadmap</a></div></nav>
+<main id="content" class="wrap">
+  <p class="fresh">Valve standings of 2 Nov 2026 · built 2026-11-20 12:21 UTC</p>
+<section class="head">
+  <h1>How the race is simulated</h1>
+  <span class="src projection">Projection · retake-vrs</span>
+  <p class="lede">The chances on this site do not come from the points alone. They come from simulated races, kept apart from the ranking: the points say where a team stands, the simulations what could happen next.</p>
+</section>
+
+<div class="explain">
+  <section class="card"><h2>What we predict</h2><p>Which teams Valve will invite to a Major. In each region, Valve invites the best ranked teams of the standings published on the invitation date, up to that region&#39;s number of spots.</p></section>
+  <section class="card"><h2>Which teams, which spots</h2><p>Every ranked team, in its region, against the spots Valve announced for the Major.</p>
+<p class="note">For PGL Major Singapore 2026: Europe 18, Americas 9, Asia 5.</p>  </section>
+  <section class="card"><h2>What is simulated</h2><p>We start from the standings a month before the invitation date. Every event between that day and the invitation date is played again, with its real teams and its real format. Each match is won with the chance the ranking model gives from the two teams&#39; points, with the gap toned down because the model is too sure of favourites. Prize money goes out again by simulated placement. Then Valve&#39;s model computes the standings on the invitation date, and the spots are handed out.</p></section>
+  <section class="card"><h2>From races to a chance</h2><p>The race is played 5,000 times. A team&#39;s chance is the share of those races in which it gets a spot. A team invited in 3,000 races out of 5,000 gets 60%.</p>
+    <p class="sum">3,000 / 5,000 = <span class="prob"><span class="track half"><b style="width:60.0%;background:color-mix(in oklab, var(--likely) 20%, var(--mid))"></b></span><span class="val" style="color:color-mix(in oklab, var(--likely-ink) 20%, var(--ink-2))">60%</span></span></p>
+  </section>
+  <section class="card"><h2>What a chance means</h2><p>60% is not a promise. Among all the teams given about 60%, about six in ten should be invited and four not. We check it on past Majors, a month before their invitations:</p>
+    <ul><li>PGL Major Singapore 2026: 24 of the 32 invited teams had more than 50%, and 5 of the 7 teams given 60 to 80% were invited.</li><li>IEM Cologne Major 2026: 26 of the 32 invited teams had more than 50%, and 4 of the 7 teams given 60 to 80% were invited.</li></ul>
+  </section>
+  <section class="card"><h2>Limits</h2>
+    <ul><li>So far, only past Majors: the race is played again with the events, teams and formats that really happened. Projecting the next Major needs data we do not have yet.</li><li>A team&#39;s strength is fixed for the month: a team on a run does not get stronger during the race.</li><li>Teams that came from far below are underrated: on both past Majors, most of the misses climbed from outside the spots.</li><li>Teams that qualified for an event during the month are known in advance.</li></ul>
+  </section>
+</div>
+<p class="note"><a href="https://github.com/fgeronimi/retake-vrs/blob/main/docs/race.md">The full method, with every measurement, is in docs/race.md.</a></p>
+<p><a href="points.html">How the points work →</a></p>
+</main>
+<footer><div class="wrap">
+  <p>Model and standings: Valve. Event data: HLTV.org, as credited by Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>
+<p>Our recomputed standings and races: match data by OpenVRS, from Liquipedia (CC BY-SA 3.0). <a href="https://openvrs.uk">OpenVRS</a> · <a href="https://liquipedia.net/counterstrike/">Liquipedia</a></p>  <p>Typeface: Albert Sans (SIL Open Font License). Not affiliated with Valve, HLTV, OpenVRS or Liquipedia. <a href="https://github.com/fgeronimi/retake-vrs">GitHub</a></p>
+</div></footer>
+</body>
+</html>

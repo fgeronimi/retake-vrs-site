@@ -158,6 +158,13 @@
     document.addEventListener("click", function (e) {
       if (!e.target.closest(".search")) render(null);
     });
+    // "Understand my team's score" opens the search in the header.
+    document.querySelectorAll("[data-find-team]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        input.focus({ preventScroll: true });
+      });
+    });
   }
 
 })();

@@ -8,9 +8,9 @@
 <link rel="alternate" hreflang="en" href="../roster/0005--spirit--donk-magixx-sh1ro-tn1r-zont1x.html">
 <link rel="alternate" hreflang="fr" href="../fr/roster/0005--spirit--donk-magixx-sh1ro-tn1r-zont1x.html">
 <link rel="preload" href="../assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.f0cd8c2037.css">
+<link rel="stylesheet" href="../assets/site.5e502a8e7c.css">
 <script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../assets/site.8b42a8c23b.js" defer></script>
+<script src="../assets/site.4df07db769.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -47,12 +47,13 @@
 <nav class="subnav" aria-label="Spirit"><div class="wrap">
 <a href="../standings.html">Global</a><a href="../region/europe.html">Europe</a><a href="../region/americas.html">Americas</a><a href="../region/asia.html">Asia</a></div></nav>
 <main id="content" class="wrap">
-  <p class="fresh">Standings as of 2 Nov 2026 · built 2026-11-20 09:21 UTC</p>
+  <p class="fresh">Valve standings of 2 Nov 2026 · built 2026-11-20 12:21 UTC</p>
 <p class="crumbs"><a href="../standings.html">Standings</a> › <a href="../region/europe.html">Europe</a> › Spirit</p>
 <section class="head team-head">
   <span class="logo lg" aria-hidden="true"><img src="../assets/teams/spirit.png" alt="" loading="lazy" decoding="async"></span>
   <h1>Spirit</h1>
   <p class="lede">donk · magixx · sh1ro · tN1R · zont1x</p>
+  <span class="src official">Official · Valve<small>published 2 Nov 2026</small></span>
 </section>
 
 <section class="kpis plain" aria-label="Spirit">
@@ -161,14 +162,44 @@
   <p class="note">Points after each match: the starting value (1,868.1) plus Valve&#39;s head-to-head adjustments, in the order played; the last point is the final value.</p>
 </section>
 
+<section class="card score" aria-labelledby="score-title">
+  <h2 id="score-title">How this score is built</h2>
+  <ol class="steps">
+    <li>
+      <h3>Four scores between 0 and 1</h3>
+      <div class="factor"><span>Bounty offered</span><span class="track"><b style="width:100.0%"></b></span><span class="val">1.000</span></div>
+      <div class="factor"><span>Bounty collected</span><span class="track"><b style="width:85.2%"></b></span><span class="val">0.852</span></div>
+      <div class="factor"><span>Opponent network</span><span class="track"><b style="width:36.5%"></b></span><span class="val">0.365</span></div>
+      <div class="factor"><span>LAN wins</span><span class="track"><b style="width:91.7%"></b></span><span class="val">0.917</span></div>
+      <p class="note">Average of the four: 0.783</p>
+    </li>
+    <li>
+      <h3>The starting value</h3>
+      <p>Valve spreads the averages of all rosters over 400 to 2,000 points, from the lowest to the highest. An average of 0.783 gives Spirit 1,868.1 points.</p>
+      <p class="note">Recomputed by retake-vrs: within Valve&#39;s rounding.</p>
+    </li>
+    <li>
+      <h3>Match by match</h3>
+      <p>Each match then adds or removes points: more for a surprise, less for an old match. 44 matches (34 won, 10 lost) moved Spirit by −25.6.</p>
+<p class="note">Biggest gain: +16.0 against FURIA, 26 Oct 2026.</p><p class="note">Biggest loss: −27.4 against 1win, 6 Oct 2026.</p>    </li>
+    <li>
+      <h3>The points</h3>
+      <dl class="receipt">
+        <div><dt>Starting value</dt><dd>1,868.1</dd></div>
+        <div><dt>Head-to-head, 44 matches</dt><dd>−25.6</dd></div>
+        <div class="total"><dt>Points</dt><dd>1,842.5</dd></div>
+      </dl>
+    </li>
+  </ol>
+<p><a href="../points.html">How the points are computed →</a></p></section>
+
 <div class="grid2">
-  <section class="card" aria-labelledby="factors-title">
-    <h2 id="factors-title">Factors</h2>
-    <div class="factor"><span>Bounty offered</span><span class="track"><b style="width:100.0%"></b></span><span class="val">1.000</span></div>
-    <div class="factor"><span>Bounty collected</span><span class="track"><b style="width:85.2%"></b></span><span class="val">0.852</span></div>
-    <div class="factor"><span>Opponent network</span><span class="track"><b style="width:36.5%"></b></span><span class="val">0.365</span></div>
-    <div class="factor"><span>LAN wins</span><span class="track"><b style="width:91.7%"></b></span><span class="val">0.917</span></div>
-    <p class="note">Starting value 1,868.1 from the average of the four factors, recomputed by retake-vrs: within Valve&#39;s rounding. Head-to-head −25.6.</p>
+  <section class="card" aria-labelledby="quota-title">
+    <h2 id="quota-title">Against the Major&#39;s spots</h2>
+    <div class="proof"><span class="v up">+331.8</span>
+      <p>PGL Major Singapore 2026: 18 spots for Europe. Spirit is Europe #4, inside the spots. Gap to the last spot (#18, 1,510.7 points): +331.8.</p>
+    </div>
+    <p class="note">Context for the race, not part of the score.</p>
   </section>
 
   <section class="card" aria-labelledby="prize-title">
@@ -184,7 +215,7 @@
 <section class="card" aria-labelledby="matches-title" style="padding:0;overflow:hidden">
   <h2 id="matches-title" style="padding:18px 18px 0">Matches</h2>
   <div class="scroll"><table>
-    <thead><tr><th>Date</th><th>Opponent</th><th class="hide-narrow">Event</th><th>Where</th><th>Result</th><th class="r">Points</th></tr></thead>
+    <thead><tr><th>Date</th><th>Opponent</th><th class="hide-narrow">Event</th><th>Where</th><th>Result</th><th class="r">Head-to-head</th></tr></thead>
     <tbody>
       <tr>
         <td class="nowrap">28 Oct</td>
@@ -540,6 +571,7 @@
       </tr>
     </tbody>
   </table></div>
+  <p class="note" style="padding:0 18px 14px">The head-to-head column is each match&#39;s own adjustment. A match also counts in the four scores, which this column leaves out.</p>
 </section>
 </main>
 <footer><div class="wrap">

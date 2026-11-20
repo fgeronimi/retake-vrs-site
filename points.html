@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How the points work · retake-vrs</title>
+<meta name="description" content="Every month Valve ranks the Counter-Strike teams, and the best of each region are invited to the Majors. retake-vrs recomputes those standings with Valve&#39;s own model and plays the race to each Major thousands of times.">
+<link rel="alternate" hreflang="en" href="points.html">
+<link rel="alternate" hreflang="fr" href="fr/points.html">
+<link rel="preload" href="assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.5e502a8e7c.css">
+<script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="assets/site.4df07db769.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="2" y="7" width="28" height="20" rx="4" fill="var(--accent)"/>
+        <rect x="6" y="11" width="16" height="12" rx="2" fill="var(--bg)"/>
+        <path d="M9 14h4M9 20h4M15 14h4M15 20h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="17" r="2" fill="var(--bg)"/>
+        <path d="M10 7V4M22 7V3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>retake-vrs</a>
+    <nav class="nav" aria-label="Main">
+      <a href="standings.html">Standings</a>
+<a href="race.html">Race to the Major</a>      <a href="evolution.html">Analysis</a>
+      <a href="how-it-works.html" aria-current="true">How it&#39;s built</a>
+    </nav>
+    <div class="tools">
+      <div class="search js-only">
+        <input id="q" type="search" autocomplete="off" placeholder="Search a team or a player" aria-label="Search a team or a player"
+               data-index="assets/search.json" data-assets="assets/" data-home="" data-none="No team or player matches.">
+        <ul id="q-results" hidden></ul>
+      </div>
+      <div class="seg js-only" role="group" aria-label="Theme">
+        <button type="button" data-set-theme="dark">Dark</button>
+        <button type="button" data-set-theme="light">Light</button>
+      </div>
+      <div class="seg" role="group" aria-label="Language">
+<a href="points.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="fr/points.html" hreflang="fr" lang="fr">FR</a>      </div>
+    </div>
+  </div>
+</header>
+<nav class="subnav" aria-label="How the points work"><div class="wrap">
+<a href="how-it-works.html">How it works</a><a href="points.html" aria-current="page">The points</a><a href="simulations.html">The simulations</a><a href="data.html">Where the data goes</a><a href="roadmap.html">Roadmap</a></div></nav>
+<main id="content" class="wrap">
+  <p class="fresh">Valve standings of 2 Nov 2026 · built 2026-11-20 12:21 UTC</p>
+<section class="head">
+  <h1>How the points work</h1>
+  <p class="lede">Why does a team have this many points? Four steps in plain words, a real team as an example, then the formulas.</p>
+</section>
+
+<section class="card" aria-labelledby="plain">
+  <h2 id="plain">In plain words</h2>
+  <ol class="steps">
+    <li><h3>A fresh start every month</h3><p>Valve does not carry last month&#39;s points over. Each standings is computed again from the matches of the last six months. Four scores between 0 and 1 measure the prize money a team won, the money of the teams it beat, how many good teams it beat, and its wins at LAN events. Their average gives a starting value between 400 and 2,000 points.</p></li>
+    <li><h3>Then every match</h3><p>The matches are then played back in order. A win adds points and a loss removes some, as in chess ratings: beating a stronger team brings more than beating a weaker one, and losing to a weaker team costs more.</p></li>
+    <li><h3>The model&#39;s adjustments</h3><p>Wins count more at events with a bigger prize pool, up to 1,000,000 dollars. Each score is measured against the team ranked 5th, which gets the full score, and a curve keeps the gaps from growing too large. A team needs at least 5 matches to be ranked. A team is its players, not its name: a line-up keeps the results of the roster it shares at least three players with. Nothing else enters the points.</p></li>
+    <li><h3>Time</h3><p>A match from the last month counts fully. Older ones count less and less, and a match more than six months old no longer counts. A team can therefore lose points without playing, as its results age.</p></li>
+  </ol>
+</section>
+
+<section class="card" aria-labelledby="weight">
+  <h2 id="weight">Old matches count less</h2>
+  <p class="lede">A match from last week counts fully. A match from five months ago counts only a little. A match older than six months does not count at all.</p>
+  <div class="chart-box"><svg class="chart age-weight" viewBox="0 0 960 210" width="960" height="210" role="img" aria-label="Old matches count less">
+<line class="grid" x1="64" x2="908" y1="166.0" y2="166.0"/>
+<text class="axis" x="56.0" y="170.0" text-anchor="end">0%</text>
+<line class="grid" x1="64" x2="908" y1="91.0" y2="91.0"/>
+<text class="axis" x="56.0" y="95.0" text-anchor="end">50%</text>
+<line class="grid" x1="64" x2="908" y1="16.0" y2="16.0"/>
+<text class="axis" x="56.0" y="20.0" text-anchor="end">100%</text>
+<text class="axis" x="64.0" y="184.0" text-anchor="middle">8 mo. ago</text>
+<text class="axis" x="275.0" y="184.0" text-anchor="middle">6 mo. ago</text>
+<text class="axis" x="380.5" y="184.0" text-anchor="middle">5 mo. ago</text>
+<text class="axis" x="486.0" y="184.0" text-anchor="middle">4 mo. ago</text>
+<text class="axis" x="591.5" y="184.0" text-anchor="middle">3 mo. ago</text>
+<text class="axis" x="697.0" y="184.0" text-anchor="middle">2 mo. ago</text>
+<text class="axis" x="802.5" y="184.0" text-anchor="middle">1 mo. ago</text>
+<text class="axis" x="908.0" y="184.0" text-anchor="middle">Today</text>
+<path class="area" d="M64.0 166.0 L275.0 166.0 L802.5 16.0 L908.0 16.0 L908.0 166.0 Z"/>
+<path class="line" d="M64.0 166.0 L275.0 166.0 L802.5 16.0 L908.0 16.0"/>
+<rect class="full-band" x="802.5" y="16" width="105.5" height="150"/>
+<text class="note-label" x="855.2" y="38.0" text-anchor="middle">counts fully</text>
+<text class="note-label" x="169.5" y="154.0" text-anchor="middle">too old, does not count</text>
+<text class="axis" x="908.0" y="206.0" text-anchor="end">How old the match is →</text>
+</svg></div>
+</section>
+
+<section class="card score" aria-labelledby="score-title">
+  <h2 id="score-title">A real example: MOUZ</h2>
+<p class="lede">The team ranked first on the 2 Nov 2026 standings, with the values Valve published.</p>  <ol class="steps">
+    <li>
+      <h3>Four scores between 0 and 1</h3>
+      <div class="factor"><span>Bounty offered</span><span class="track"><b style="width:100.0%"></b></span><span class="val">1.000</span></div>
+      <div class="factor"><span>Bounty collected</span><span class="track"><b style="width:94.9%"></b></span><span class="val">0.949</span></div>
+      <div class="factor"><span>Opponent network</span><span class="track"><b style="width:46.7%"></b></span><span class="val">0.467</span></div>
+      <div class="factor"><span>LAN wins</span><span class="track"><b style="width:100.0%"></b></span><span class="val">1.000</span></div>
+      <p class="note">Average of the four: 0.854</p>
+    </li>
+    <li>
+      <h3>The starting value</h3>
+      <p>Valve spreads the averages of all rosters over 400 to 2,000 points, from the lowest to the highest. An average of 0.854 gives MOUZ 2,000.0 points.</p>
+      <p class="note">Recomputed by retake-vrs: within Valve&#39;s rounding.</p>
+    </li>
+    <li>
+      <h3>Match by match</h3>
+      <p>Each match then adds or removes points: more for a surprise, less for an old match. 49 matches (34 won, 15 lost) moved MOUZ by −39.7.</p>
+<p class="note">Biggest gain: +15.2 against Spirit, 5 Oct 2026.</p><p class="note">Biggest loss: −29.1 against Liquid, 24 Oct 2026.</p>    </li>
+    <li>
+      <h3>The points</h3>
+      <dl class="receipt">
+        <div><dt>Starting value</dt><dd>2,000.0</dd></div>
+        <div><dt>Head-to-head, 49 matches</dt><dd>−39.7</dd></div>
+        <div class="total"><dt>Points</dt><dd>1,960.3</dd></div>
+      </dl>
+    </li>
+  </ol>
+</section>
+<p><a href="roster/0001--mouz--pr-spinx-torzsi-xelex-xertion.html">Open MOUZ&#39;s sheet →</a></p>
+
+
+<section class="card" aria-labelledby="points">
+  <span class="eyebrow">In detail</span>
+  <h2 id="points">How a team gets its points</h2>
+  <p class="lede">The points are computed in two parts. Part 1 looks at the last six months and gives each team a starting number. Part 2 goes through the matches one by one, in the order they were played, and adds or removes points.</p>
+
+  <h3>Part 1: four scores, then the average</h3>
+  <p>Each team gets four scores. Each score is a number between 0 and 1. A team gets 1 when it does as well as the team ranked 5th, or better. Then we take the average of the four scores: each one counts for a quarter.</p>
+  <div class="formula"><math display="block"><mi>s</mi><mo>=</mo><mfrac><mrow><mi>O</mi><mo>+</mo><mi>C</mi><mo>+</mo><mi>N</mi><mo>+</mo><mi>L</mi></mrow><mn>4</mn></mfrac></math></div>
+  <div class="formulas">
+    <div class="formula"><math display="block"><mi>O</mi><mo>=</mo><mi>c</mi><mo>(</mo><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><mi>M</mi><msub><mi>M</mi><mn>5</mn></msub></mfrac><mo>)</mo><mo>)</mo></math></div>
+    <div class="formula"><math display="block"><mi>M</mi><mo>=</mo><munder><mo>∑</mo><mtext>10 best results</mtext></munder><mtext>prize</mtext><mo>×</mo><mi>a</mi></math></div>
+    <div class="formula"><math display="block"><mi>C</mi><mo>=</mo><mi>c</mi><mo>(</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 best wins</mtext></munder><msub><mi>O</mi><mtext>opp</mtext></msub><mo>×</mo><mi>a</mi><mo>×</mo><mi>c</mi><mo>(</mo><mfrac><mi>P</mi><mn>1,000,000</mn></mfrac><mo>)</mo><mo>)</mo></math></div>
+    <div class="formula"><math display="block"><mi>N</mi><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 best wins</mtext></munder><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><msub><mi>D</mi><mtext>opp</mtext></msub><msub><mi>D</mi><mn>5</mn></msub></mfrac><mo>)</mo><mo>×</mo><mi>a</mi><mo>×</mo><mi>c</mi><mo>(</mo><mfrac><mi>P</mi><mn>1,000,000</mn></mfrac><mo>)</mo></math></div>
+    <div class="formula"><math display="block"><mi>D</mi><mo>=</mo><munder><mo>∑</mo><mtext>teams beaten</mtext></munder><mi>a</mi></math></div>
+    <div class="formula"><math display="block"><mi>L</mi><mo>=</mo><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><mi>W</mi><msub><mi>W</mi><mn>5</mn></msub></mfrac><mo>)</mo></math></div>
+    <div class="formula"><math display="block"><mi>W</mi><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 best LAN wins</mtext></munder><mi>a</mi></math></div>
+    <div class="formula"><math display="block"><mi>c</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mo>|</mo><msub><mi>log</mi><mn>10</mn></msub><mi>x</mi><mo>|</mo></mrow></mfrac></math></div>
+  </div>
+  <dl class="symbols">
+    <dt>O</dt><dd>the prize money the team won, in its 10 best results.</dd>
+    <dt>C</dt><dd>the prize money of the teams it beat.</dd>
+    <dt>N</dt><dd>how many different teams it beat, and how good those teams are.</dd>
+    <dt>L</dt><dd>its wins at LAN events, where both teams play in the same room and not over the internet.</dd>
+    <dt>a</dt><dd>the age weight of a result, between 0 and 1 (the chart above).</dd>
+    <dt>P</dt><dd>the prize pool of the event, up to 1,000,000 dollars. Wins at events with more prize money count more.</dd>
+    <dt>c</dt><dd>turns a ratio into a score: 1 stays 1, 0.1 becomes 0.5, 0.01 becomes 0.33. A team with 10 times less money does not get a score 10 times smaller.</dd>
+    <dt>M₅, D₅, W₅</dt><dd>the same number for the team ranked 5th.</dd>
+  </dl>
+  <p>The average is turned into a starting number between 400 and 2,000 points. The team with the lowest average gets 400, the team with the highest gets 2,000.</p>
+  <div class="formula"><math display="block"><mtext>start</mtext><mo>=</mo><mn>400</mn><mo>+</mo><mn>1,600</mn><mo>×</mo><mfrac><mrow><mi>s</mi><mo>−</mo><msub><mi>s</mi><mtext>min</mtext></msub></mrow><mrow><msub><mi>s</mi><mtext>max</mtext></msub><mo>−</mo><msub><mi>s</mi><mtext>min</mtext></msub></mrow></mfrac></math></div>
+
+  <h3>Part 2: one match at a time</h3>
+  <p>Before each match, the formula computes E, the chance it gives the team to win. After the match, S is 1 if the team won and 0 if it lost. The team gains points when it does better than expected and loses points when it does worse.</p>
+  <div class="formulas">
+    <div class="formula"><math display="block"><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mn>10</mn><mrow><mo>−</mo><mi>g</mi><mo>(</mo><mi>R</mi><mo>−</mo><msub><mi>R</mi><mtext>opp</mtext></msub><mo>)</mo><mo>/</mo><mn>400</mn></mrow></msup></mrow></mfrac></math></div>
+    <div class="formula"><math display="block"><msup><mi>R</mi><mo>′</mo></msup><mo>≈</mo><mi>R</mi><mo>+</mo><mi>k</mi><mo>×</mo><mi>w</mi><mo>×</mo><mo>(</mo><mi>S</mi><mo>−</mo><mi>E</mi><mo>)</mo></math></div>
+  </div>
+  <dl class="symbols">
+    <dt>R, R<sub>opp</sub></dt><dd>the team&#39;s points before the match, and the opponent&#39;s points.</dd>
+    <dt>w</dt><dd>the age weight of the match.</dd>
+    <dt>k</dt><dd>the size of a step, about 30. A recent win against a team with the same points gives 15 points.</dd>
+  </dl>
+  <p class="note">The exact formula is Glicko with a fixed deviation of 75 (Glickman, 1999), so g is 0.97 and k moves a little, between 30 and 32.</p>
+</section>
+
+<section class="card" aria-labelledby="measured">
+  <h2 id="measured">What decides the points in practice</h2>
+  <p class="lede">In the formula, the four scores count the same. But among the 30 best teams, they do not change by the same amount from one team to another. A score that is almost the same for every team cannot separate them.</p>
+  <h3>How much each score changes among the 30 best teams (standard deviation × 100)</h3>
+  <div class="chart-box narrow"><svg class="chart scale-bars" viewBox="0 0 420 190" width="420" height="190" role="img" aria-label="Spread of each score among the top 30">
+<g data-tip="O · prize money won: 18"><title>O · prize money won: 18</title>
+<text class="bar-label" x="0" y="20">O · prize money won</text>
+<rect class="bar-fill" x="0" y="26" width="350.0" height="16" rx="4"/>
+<text class="bar-value" x="358.0" y="39">18</text></g>
+<g data-tip="C · money of the teams beaten: 14"><title>C · money of the teams beaten: 14</title>
+<text class="bar-label" x="0" y="66">C · money of the teams beaten</text>
+<rect class="bar-fill" x="0" y="72" width="272.2" height="16" rx="4"/>
+<text class="bar-value" x="280.2" y="85">14</text></g>
+<g data-tip="L · LAN wins: 9"><title>L · LAN wins: 9</title>
+<text class="bar-label" x="0" y="112">L · LAN wins</text>
+<rect class="bar-fill" x="0" y="118" width="175.0" height="16" rx="4"/>
+<text class="bar-value" x="183.0" y="131">9</text></g>
+<g data-tip="N · teams beaten: 7"><title>N · teams beaten: 7</title>
+<text class="bar-label" x="0" y="158">N · teams beaten</text>
+<rect class="bar-fill" x="0" y="164" width="136.1" height="16" rx="4"/>
+<text class="bar-value" x="144.1" y="177">7</text></g>
+</svg></div>
+  <p>On the 2 Nov 2026 standings, the score that changes the most is O · prize money won.</p>
+  <p>Part 1 gives the 30 best teams starting numbers that are 177 points apart (standard deviation). Part 2 then moves each of them by 36 points on average, 121 at most. So part 1 decides most of the ranking.</p>
+</section>
+
+<p><a href="simulations.html">How the race is simulated →</a></p>
+</main>
+<footer><div class="wrap">
+  <p>Model and standings: Valve. Event data: HLTV.org, as credited by Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>
+<p>Our recomputed standings and races: match data by OpenVRS, from Liquipedia (CC BY-SA 3.0). <a href="https://openvrs.uk">OpenVRS</a> · <a href="https://liquipedia.net/counterstrike/">Liquipedia</a></p>  <p>Typeface: Albert Sans (SIL Open Font License). Not affiliated with Valve, HLTV, OpenVRS or Liquipedia. <a href="https://github.com/fgeronimi/retake-vrs">GitHub</a></p>
+</div></footer>
+</body>
+</html>

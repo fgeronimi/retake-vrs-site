@@ -8,9 +8,9 @@
 <link rel="alternate" hreflang="en" href="how-it-works.html">
 <link rel="alternate" hreflang="fr" href="fr/how-it-works.html">
 <link rel="preload" href="assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.f0cd8c2037.css">
+<link rel="stylesheet" href="assets/site.5e502a8e7c.css">
 <script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="assets/site.8b42a8c23b.js" defer></script>
+<script src="assets/site.4df07db769.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -45,9 +45,9 @@
   </div>
 </header>
 <nav class="subnav" aria-label="How it&#39;s built"><div class="wrap">
-<a href="how-it-works.html" aria-current="page">How it works</a><a href="data.html">Where the data goes</a><a href="roadmap.html">Roadmap</a></div></nav>
+<a href="how-it-works.html" aria-current="page">How it works</a><a href="points.html">The points</a><a href="simulations.html">The simulations</a><a href="data.html">Where the data goes</a><a href="roadmap.html">Roadmap</a></div></nav>
 <main id="content" class="wrap">
-  <p class="fresh">Standings as of 2 Nov 2026 · built 2026-11-20 09:21 UTC</p>
+  <p class="fresh">Valve standings of 2 Nov 2026 · built 2026-11-20 12:21 UTC</p>
 <section class="head">
   <h1>How it&#39;s built</h1>
   <p class="lede">retake-vrs rewrites Valve&#39;s ranking model in Python, checks it against every figure Valve publishes, and uses it to simulate the race to each Major.</p>
@@ -243,6 +243,10 @@
   <div class="card"><h3>2 · The audit</h3><p class="lede">Every starting value, head-to-head adjustment and factor Valve publishes is recomputed, within its rounding.</p></div>
   <div class="card"><h3>3 · Independent data</h3><p class="lede">OpenVRS's matches, from Liquipedia, rebuild Valve's standings: 30 of 30 in the top 30.</p></div>
   <div class="card"><h3>4 · The race</h3><p class="lede">Every event up to the invitation date is played 5,000 times. Backtested on two Majors.</p></div>
+</div>
+<div class="cards">
+  <a class="card" href="points.html"><h3>How the points work</h3><p>Why a team has its points: four steps, a real example, the formulas.</p></a>
+  <a class="card" href="simulations.html"><h3>How the race is simulated</h3><p>Where the chances come from, what they mean, and their limits.</p></a>
 </div>
 <p class="note"><a href="https://github.com/fgeronimi/retake-vrs">github.com/fgeronimi/retake-vrs</a> · MIT</p>
 </main>

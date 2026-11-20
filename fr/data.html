@@ -8,9 +8,9 @@
 <link rel="alternate" hreflang="en" href="../data.html">
 <link rel="alternate" hreflang="fr" href="../fr/data.html">
 <link rel="preload" href="../assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.f0cd8c2037.css">
+<link rel="stylesheet" href="../assets/site.5e502a8e7c.css">
 <script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../assets/site.8b42a8c23b.js" defer></script>
+<script src="../assets/site.4df07db769.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#content">Aller au contenu</a>
@@ -45,9 +45,9 @@
   </div>
 </header>
 <nav class="subnav" aria-label="D&#39;où viennent les données, et où elles vont"><div class="wrap">
-<a href="../fr/how-it-works.html">Comment ça marche</a><a href="../fr/data.html" aria-current="page">Le voyage des données</a><a href="../fr/roadmap.html">Feuille de route</a></div></nav>
+<a href="../fr/how-it-works.html">Comment ça marche</a><a href="../fr/points.html">Les points</a><a href="../fr/simulations.html">Les simulations</a><a href="../fr/data.html" aria-current="page">Le voyage des données</a><a href="../fr/roadmap.html">Feuille de route</a></div></nav>
 <main id="content" class="wrap">
-  <p class="fresh">Classement du 2 nov. 2026 · généré le 2026-11-20 09:21 UTC</p>
+  <p class="fresh">Classement Valve du 2 nov. 2026 · généré le 2026-11-20 12:21 UTC</p>
 <section class="head">
   <h1>D&#39;où viennent les données, et où elles vont</h1>
   <p class="lede">Avant que tu voies les points d&#39;une équipe sur ce site, les chiffres passent par six étapes.</p>
@@ -125,103 +125,6 @@
   <p class="note">Chiffres du classement du 2 nov. 2026 : OpenVRS (Liquipedia), Valve.</p>
 </section>
 
-<section class="card" aria-labelledby="weight">
-  <h2 id="weight">Les vieux matchs comptent moins</h2>
-  <p class="lede">Un match de la semaine dernière compte en entier. Un match d&#39;il y a cinq mois compte juste un peu. Un match de plus de six mois ne compte plus du tout.</p>
-  <div class="chart-box"><svg class="chart age-weight" viewBox="0 0 960 210" width="960" height="210" role="img" aria-label="Les vieux matchs comptent moins">
-<line class="grid" x1="64" x2="908" y1="166.0" y2="166.0"/>
-<text class="axis" x="56.0" y="170.0" text-anchor="end">0 %</text>
-<line class="grid" x1="64" x2="908" y1="91.0" y2="91.0"/>
-<text class="axis" x="56.0" y="95.0" text-anchor="end">50 %</text>
-<line class="grid" x1="64" x2="908" y1="16.0" y2="16.0"/>
-<text class="axis" x="56.0" y="20.0" text-anchor="end">100 %</text>
-<text class="axis" x="64.0" y="184.0" text-anchor="middle">il y a 8 mois</text>
-<text class="axis" x="275.0" y="184.0" text-anchor="middle">il y a 6 mois</text>
-<text class="axis" x="380.5" y="184.0" text-anchor="middle">il y a 5 mois</text>
-<text class="axis" x="486.0" y="184.0" text-anchor="middle">il y a 4 mois</text>
-<text class="axis" x="591.5" y="184.0" text-anchor="middle">il y a 3 mois</text>
-<text class="axis" x="697.0" y="184.0" text-anchor="middle">il y a 2 mois</text>
-<text class="axis" x="802.5" y="184.0" text-anchor="middle">il y a 1 mois</text>
-<text class="axis" x="908.0" y="184.0" text-anchor="middle">Aujourd&#x27;hui</text>
-<path class="area" d="M64.0 166.0 L275.0 166.0 L802.5 16.0 L908.0 16.0 L908.0 166.0 Z"/>
-<path class="line" d="M64.0 166.0 L275.0 166.0 L802.5 16.0 L908.0 16.0"/>
-<rect class="full-band" x="802.5" y="16" width="105.5" height="150"/>
-<text class="note-label" x="855.2" y="38.0" text-anchor="middle">compte en entier</text>
-<text class="note-label" x="169.5" y="154.0" text-anchor="middle">trop vieux, ne compte pas</text>
-<text class="axis" x="908.0" y="206.0" text-anchor="end">L&#x27;âge du match →</text>
-</svg></div>
-</section>
-
-<section class="card" aria-labelledby="points">
-  <h2 id="points">Comment une équipe obtient ses points</h2>
-  <p class="lede">Les points sont calculés en deux parties. La partie 1 regarde les six derniers mois et donne à chaque équipe un nombre de départ. La partie 2 passe les matchs un par un, dans l&#39;ordre où ils ont été joués, et ajoute ou retire des points.</p>
-
-  <h3>Partie 1 : quatre notes, puis la moyenne</h3>
-  <p>Chaque équipe reçoit quatre notes. Chaque note est un nombre entre 0 et 1. Une équipe a 1 quand elle fait aussi bien que l&#39;équipe classée 5e, ou mieux. Puis on fait la moyenne des quatre notes : chacune compte pour un quart.</p>
-  <div class="formula"><math display="block"><mi>s</mi><mo>=</mo><mfrac><mrow><mi>O</mi><mo>+</mo><mi>C</mi><mo>+</mo><mi>N</mi><mo>+</mo><mi>L</mi></mrow><mn>4</mn></mfrac></math></div>
-  <div class="formulas">
-    <div class="formula"><math display="block"><mi>O</mi><mo>=</mo><mi>c</mi><mo>(</mo><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><mi>M</mi><msub><mi>M</mi><mn>5</mn></msub></mfrac><mo>)</mo><mo>)</mo></math></div>
-    <div class="formula"><math display="block"><mi>M</mi><mo>=</mo><munder><mo>∑</mo><mtext>10 meilleurs résultats</mtext></munder><mtext>gain</mtext><mo>×</mo><mi>a</mi></math></div>
-    <div class="formula"><math display="block"><mi>C</mi><mo>=</mo><mi>c</mi><mo>(</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 meilleures victoires</mtext></munder><msub><mi>O</mi><mtext>adv</mtext></msub><mo>×</mo><mi>a</mi><mo>×</mo><mi>c</mi><mo>(</mo><mfrac><mi>P</mi><mn>1 000 000</mn></mfrac><mo>)</mo><mo>)</mo></math></div>
-    <div class="formula"><math display="block"><mi>N</mi><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 meilleures victoires</mtext></munder><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><msub><mi>D</mi><mtext>adv</mtext></msub><msub><mi>D</mi><mn>5</mn></msub></mfrac><mo>)</mo><mo>×</mo><mi>a</mi><mo>×</mo><mi>c</mi><mo>(</mo><mfrac><mi>P</mi><mn>1 000 000</mn></mfrac><mo>)</mo></math></div>
-    <div class="formula"><math display="block"><mi>D</mi><mo>=</mo><munder><mo>∑</mo><mtext>équipes battues</mtext></munder><mi>a</mi></math></div>
-    <div class="formula"><math display="block"><mi>L</mi><mo>=</mo><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><mi>W</mi><msub><mi>W</mi><mn>5</mn></msub></mfrac><mo>)</mo></math></div>
-    <div class="formula"><math display="block"><mi>W</mi><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 meilleures victoires en LAN</mtext></munder><mi>a</mi></math></div>
-    <div class="formula"><math display="block"><mi>c</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mo>|</mo><msub><mi>log</mi><mn>10</mn></msub><mi>x</mi><mo>|</mo></mrow></mfrac></math></div>
-  </div>
-  <dl class="symbols">
-    <dt>O</dt><dd>l&#39;argent gagné par l&#39;équipe, sur ses 10 meilleurs résultats.</dd>
-    <dt>C</dt><dd>l&#39;argent gagné par les équipes qu&#39;elle a battues.</dd>
-    <dt>N</dt><dd>le nombre d&#39;équipes différentes qu&#39;elle a battues, et leur niveau.</dd>
-    <dt>L</dt><dd>ses victoires en LAN, quand les deux équipes jouent dans la même salle et pas par internet.</dd>
-    <dt>a</dt><dd>le poids d&#39;un résultat selon son âge, entre 0 et 1 (le graphique au-dessus).</dd>
-    <dt>P</dt><dd>la somme mise en jeu dans le tournoi, jusqu&#39;à 1 000 000 de dollars. Les victoires dans les tournois qui distribuent plus d&#39;argent comptent plus.</dd>
-    <dt>c</dt><dd>transforme un rapport en note : 1 reste 1, 0,1 devient 0,5, 0,01 devient 0,33. Une équipe qui a gagné 10 fois moins d&#39;argent n&#39;a pas une note 10 fois plus petite.</dd>
-    <dt>M₅, D₅, W₅</dt><dd>le même nombre pour l&#39;équipe classée 5e.</dd>
-  </dl>
-  <p>La moyenne devient un nombre de départ entre 400 et 2 000 points. L&#39;équipe qui a la moyenne la plus basse reçoit 400, celle qui a la plus haute reçoit 2 000.</p>
-  <div class="formula"><math display="block"><mtext>départ</mtext><mo>=</mo><mn>400</mn><mo>+</mo><mn>1 600</mn><mo>×</mo><mfrac><mrow><mi>s</mi><mo>−</mo><msub><mi>s</mi><mtext>min</mtext></msub></mrow><mrow><msub><mi>s</mi><mtext>max</mtext></msub><mo>−</mo><msub><mi>s</mi><mtext>min</mtext></msub></mrow></mfrac></math></div>
-
-  <h3>Partie 2 : un match à la fois</h3>
-  <p>Avant chaque match, la formule calcule E, la chance qu&#39;elle donne à l&#39;équipe de gagner. Après le match, S vaut 1 si l&#39;équipe a gagné et 0 si elle a perdu. L&#39;équipe gagne des points quand elle fait mieux que prévu et en perd quand elle fait moins bien.</p>
-  <div class="formulas">
-    <div class="formula"><math display="block"><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mn>10</mn><mrow><mo>−</mo><mi>g</mi><mo>(</mo><mi>R</mi><mo>−</mo><msub><mi>R</mi><mtext>adv</mtext></msub><mo>)</mo><mo>/</mo><mn>400</mn></mrow></msup></mrow></mfrac></math></div>
-    <div class="formula"><math display="block"><msup><mi>R</mi><mo>′</mo></msup><mo>≈</mo><mi>R</mi><mo>+</mo><mi>k</mi><mo>×</mo><mi>w</mi><mo>×</mo><mo>(</mo><mi>S</mi><mo>−</mo><mi>E</mi><mo>)</mo></math></div>
-  </div>
-  <dl class="symbols">
-    <dt>R, R<sub>adv</sub></dt><dd>les points de l&#39;équipe avant le match, et ceux de l&#39;adversaire.</dd>
-    <dt>w</dt><dd>le poids du match selon son âge.</dd>
-    <dt>k</dt><dd>la taille d&#39;un pas, environ 30. Une victoire récente contre une équipe qui a les mêmes points rapporte 15 points.</dd>
-  </dl>
-  <p class="note">La formule exacte est Glicko avec un écart fixe de 75 (Glickman, 1999) : g vaut 0,97 et k bouge un peu, entre 30 et 32.</p>
-</section>
-
-<section class="card" aria-labelledby="measured">
-  <h2 id="measured">Ce qui décide les points en vrai</h2>
-  <p class="lede">Dans la formule, les quatre notes comptent pareil. Mais parmi les 30 meilleures équipes, elles ne changent pas autant d&#39;une équipe à l&#39;autre. Une note presque identique pour toutes les équipes ne peut pas les départager.</p>
-  <h3>Combien chaque note change parmi les 30 meilleures équipes (écart type × 100)</h3>
-  <div class="chart-box narrow"><svg class="chart scale-bars" viewBox="0 0 420 190" width="420" height="190" role="img" aria-label="Écart de chaque note parmi les 30 premières">
-<g data-tip="O · argent gagné : 18"><title>O · argent gagné : 18</title>
-<text class="bar-label" x="0" y="20">O · argent gagné</text>
-<rect class="bar-fill" x="0" y="26" width="350.0" height="16" rx="4"/>
-<text class="bar-value" x="358.0" y="39">18</text></g>
-<g data-tip="C · argent des équipes battues : 14"><title>C · argent des équipes battues : 14</title>
-<text class="bar-label" x="0" y="66">C · argent des équipes battues</text>
-<rect class="bar-fill" x="0" y="72" width="272.2" height="16" rx="4"/>
-<text class="bar-value" x="280.2" y="85">14</text></g>
-<g data-tip="L · victoires en LAN : 9"><title>L · victoires en LAN : 9</title>
-<text class="bar-label" x="0" y="112">L · victoires en LAN</text>
-<rect class="bar-fill" x="0" y="118" width="175.0" height="16" rx="4"/>
-<text class="bar-value" x="183.0" y="131">9</text></g>
-<g data-tip="N · équipes battues : 7"><title>N · équipes battues : 7</title>
-<text class="bar-label" x="0" y="158">N · équipes battues</text>
-<rect class="bar-fill" x="0" y="164" width="136.1" height="16" rx="4"/>
-<text class="bar-value" x="144.1" y="177">7</text></g>
-</svg></div>
-  <p>Sur le classement du 2 nov. 2026, la note qui change le plus est O · argent gagné.</p>
-  <p>La partie 1 donne aux 30 meilleures équipes des nombres de départ écartés de 177 points (écart type). La partie 2 déplace ensuite chacune de 36 points en moyenne, 121 au plus. C&#39;est donc la partie 1 qui décide l&#39;essentiel du classement.</p>
-</section>
-
 <section class="card" aria-labelledby="layers">
   <h2 id="layers">Ce qu&#39;on fait à chaque couche</h2>
   <p class="lede">Entre les fichiers publiés et ce site, les données passent par trois couches, appelées bronze, silver et gold. Chaque couche fait un seul travail. Une couche ne démarre que si la précédente a fini sans erreur.</p>
@@ -239,7 +142,10 @@
   </div>
 </section>
 
-<p><a href="../fr/how-it-works.html">Comment ça marche →</a></p>
+<div class="cards">
+  <a class="card" href="../fr/points.html"><h3>Comment marchent les points</h3><p>Pourquoi une équipe a ses points : quatre étapes, un vrai exemple, les formules.</p></a>
+  <a class="card" href="../fr/simulations.html"><h3>Comment la course est simulée</h3><p>D&#39;où viennent les chances, ce qu&#39;elles veulent dire, et leurs limites.</p></a>
+</div>
 </main>
 <footer><div class="wrap">
   <p>Modèle et classements : Valve. Données des tournois : HLTV.org, comme l&#39;indique Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>

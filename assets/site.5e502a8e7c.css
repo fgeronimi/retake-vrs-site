@@ -17,8 +17,8 @@
   --ink: #f3f2f8; --ink-2: #b6b4c6; --ink-3: #8e8ca2;
   --accent: #ea4f86; --accent-ink: #14131a;
   --likely: #4c8df6; --likely-ink: #4c8df6; --unlikely: darkslategrey; --unlikely-ink: var(--ink-3); --mid: #6e6c80;
-  /* lasource draws its logos for dark backgrounds (white marks), so the tile stays dark in both themes */
-  --logo-bg: #24232e;
+  /* A mid grey under every logo, in both themes: white marks (Spirit, FUT) and black ones (FURIA) both show */
+  --logo-bg: #77767f; --logo-ink: #ffffff;
   --font: "Albert Sans", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --radius: 10px;
 }
@@ -110,6 +110,26 @@ footer p { margin: 0; }
 .stat .v { font-weight: 800; font-size: 28px; line-height: 1.1; }
 .stat .v small { font-size: 16px; color: var(--ink-3); }
 .stat .k { font-size: 12px; color: var(--ink-2); }
+/* Home: the site's two promises, side by side, then stacked on a phone */
+.entries { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+.entry { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.entry h2 { margin: 0; }
+.entry .q { margin: 0; font-size: 17px; font-weight: 600; color: var(--ink); }
+.entry .note { margin: 0; }
+.entry .actions { margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; }
+.mini { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; }
+.mini li { display: grid; grid-template-columns: 2.2em minmax(0, 1fr) auto; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.mini li:last-child { border-bottom: 0; }
+.mini .n { color: var(--ink-3); font-weight: 700; }
+.mini a { display: flex; align-items: center; min-width: 0; font-weight: 600; }
+.mini .pts { font-weight: 800; }
+.ticks { margin: 0; padding-left: 1.1em; color: var(--ink-2); display: grid; gap: 4px; }
+.proof { display: flex; align-items: center; gap: 14px; }
+.proof .v { flex: none; white-space: nowrap; font-weight: 800; font-size: 34px; line-height: 1; color: var(--likely-ink); }
+.proof .v small { font-size: 18px; color: var(--ink-3); }
+.proof p { margin: 0; color: var(--ink-2); }
+.btn { display: inline-flex; align-items: center; padding: 9px 16px; border: 0; border-radius: 8px; background: var(--accent); color: var(--accent-ink); font: 700 13px var(--font); letter-spacing: 0.04em; cursor: pointer; text-decoration: none; }
+.btn:hover { background: color-mix(in srgb, var(--accent) 85%, var(--ink)); }
 .cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
 .cards a.card { transition: border-color 150ms ease, background-color 150ms ease; }
 .cards a.card:hover { border-color: var(--ink-3); background: var(--raised); }
@@ -142,15 +162,15 @@ table.sticky th:nth-child(2), table.sticky td:nth-child(2) { left: 52px; box-sha
 .team-cell a { font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
 
 /* Team logos: one square box whatever the file's shape; initials when there is none */
-.logo { flex: none; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 5px; background: var(--logo-bg); overflow: hidden; vertical-align: middle; margin-right: 8px; }
-.logo img { width: 100%; height: 100%; object-fit: contain; padding: 2px; }
-.logo.none { font-size: 9.5px; font-weight: 800; letter-spacing: 0.02em; color: var(--ink-3); background: color-mix(in srgb, var(--ink) 8%, transparent); }
-.logo.lg { width: 64px; height: 64px; border-radius: 12px; margin: 0; }
-.logo.lg img { padding: 6px; }
+.logo { flex: none; display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--logo-bg); overflow: hidden; vertical-align: middle; margin-right: 8px; }
+/* Files are square with the mark centred (sources/lasource.py); the padding keeps the mark inside the circle */
+.logo img { width: 100%; height: 100%; object-fit: contain; padding: 17%; }
+.logo.none { font-size: 9.5px; font-weight: 800; letter-spacing: 0.02em; color: var(--logo-ink); }
+.logo.lg { width: 64px; height: 64px; margin: 0; }
 .logo.lg.none { font-size: 22px; }
 .team-cell a .logo, .search li a .logo { margin-right: 0; }
 .team-head { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 16px; align-items: center; }
-.team-head .logo { grid-row: span 2; }
+.team-head .logo { grid-row: span 3; }
 .opp { white-space: nowrap; }
 .won { font-weight: 600; }
 .lost { color: var(--ink-3); }
@@ -158,6 +178,18 @@ table.sticky th:nth-child(2), table.sticky td:nth-child(2) { left: 52px; box-sha
 .down { color: var(--unlikely-ink); font-weight: 600; }
 .tag { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
 .tag.dim { color: var(--ink-3); }
+/* Where a figure comes from (docs/design.md, Data status). The word carries it; projections
+   are dashed, like every projected mark. No colour of its own: blue and grey already carry data. */
+.src { justify-self: start; display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: 0 6px; padding: 2px 9px; border: 1px solid var(--ink-3); border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.src small { font-size: 11.5px; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--ink-3); }
+.src.official { border-color: var(--ink-2); color: var(--ink); }
+.src.projection { border-style: dashed; }
+.srcs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
+.status-note dl { display: grid; gap: 10px; margin: 0 0 12px; }
+.status-note dl div { display: grid; grid-template-columns: minmax(0, 15em) minmax(0, 1fr); gap: 4px 14px; align-items: baseline; }
+.status-note dd { margin: 0; color: var(--ink-2); }
+.status-note p { margin: 0; }
+@media (max-width: 640px) { .status-note dl div { grid-template-columns: minmax(0, 1fr); } }
 
 /* Probability bar and gap to the last spot */
 .prob { display: grid; grid-template-columns: minmax(60px, 1fr) 42px; align-items: center; gap: 8px; min-width: 100px; }
@@ -296,7 +328,6 @@ td.num { width: 32px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 
 /* The next Major, not projected yet: dashed like every projection, muted until it exists */
 .coming { border-style: dashed; }
-.coming .eyebrow { color: var(--ink-3); }
 .coming h3 { margin-top: 0; }
 .facts { display: grid; gap: 10px 24px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); margin: 0; }
 .facts dt { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
@@ -313,6 +344,26 @@ td.num { width: 32px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .layer.gold { --layer: #d4a72c; }
 
 /* Factors, what-if, misc */
+/* Explainers: one card per question */
+.explain { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+.explain .card { align-content: start; }
+.explain .card h2 { margin: 0; }
+.explain .card p { margin: 0; }
+.explain ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; color: var(--ink-2); }
+.sum { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+/* Roster sheet: the score in four steps, read left to right, stacked on a phone */
+.steps { list-style: none; counter-reset: step; margin: 0 0 12px; padding: 0; display: grid; gap: 18px 24px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); }
+.steps > li { counter-increment: step; display: grid; gap: 8px; align-content: start; }
+.steps h3 { margin: 0; }
+.steps h3::before { content: counter(step) " · "; color: var(--ink-3); }
+.steps p { margin: 0; }
+.steps .factor { grid-template-columns: minmax(0, 1fr) 70px 44px; }
+.receipt { margin: 0; display: grid; }
+.receipt div { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.receipt dd { margin: 0; font-weight: 700; }
+.receipt .total { border-bottom: 0; border-top: 2px solid var(--ink-2); }
+.receipt .total dt, .receipt .total dd { font-weight: 800; font-size: 18px; }
+.proof .v.down { color: var(--unlikely-ink); }
 .factor { display: grid; grid-template-columns: minmax(110px, 140px) minmax(0, 1fr) 48px; gap: 12px; align-items: center; font-size: 13.5px; }
 .factor .val { text-align: right; font-weight: 800; }
 details.team { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; }
