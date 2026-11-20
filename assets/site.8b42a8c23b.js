@@ -82,12 +82,32 @@
   if (input && results) {
     var index = null;
     var home = input.getAttribute("data-home");
+    var assets = input.getAttribute("data-assets");
     var none = input.getAttribute("data-none");
     function fold(s) { return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
     function load() {
       if (index) return Promise.resolve(index);
       return fetch(input.getAttribute("data-index")).then(function (r) { return r.json(); })
         .then(function (data) { index = data; return data; });
+    }
+    function initials(name) {
+      var words = name.replace(/[^\p{L}\p{N}]+/gu, " ").trim().split(/\s+/).filter(Boolean);
+      if (!words.length) return "?";
+      return (words.length === 1 ? words[0].slice(0, 2) : words[0][0] + words[1][0]).toUpperCase();
+    }
+    function logo(t) {
+      var box = document.createElement("span");
+      box.className = "logo" + (t.l ? "" : " none");
+      box.setAttribute("aria-hidden", "true");
+      if (t.l) {
+        var img = document.createElement("img");
+        img.src = assets + "teams/" + t.l;
+        img.alt = "";
+        box.appendChild(img);
+      } else {
+        box.textContent = initials(t.n);
+      }
+      return box;
     }
     function render(items) {
       results.innerHTML = "";
@@ -102,7 +122,8 @@
         var li = document.createElement("li");
         var a = document.createElement("a");
         a.href = home + "roster/" + t.s + ".html";
-        a.textContent = "#" + t.r + " " + t.n;
+        a.appendChild(logo(t));
+        a.appendChild(document.createTextNode("#" + t.r + " " + t.n));
         var small = document.createElement("small");
         small.textContent = t.p.join(" · ");
         a.appendChild(small);

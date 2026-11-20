@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feuille de route · retake-vrs</title>
+<meta name="description" content="Chaque mois, Valve classe les équipes de Counter-Strike, et les meilleures de chaque région sont invitées aux Majors. retake-vrs recalcule ces classements avec le modèle de Valve lui-même et joue la course à chaque Major des milliers de fois.">
+<link rel="alternate" hreflang="en" href="../roadmap.html">
+<link rel="alternate" hreflang="fr" href="../fr/roadmap.html">
+<link rel="preload" href="../assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.f0cd8c2037.css">
+<script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="../assets/site.8b42a8c23b.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">Aller au contenu</a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="../fr/index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="2" y="7" width="28" height="20" rx="4" fill="var(--accent)"/>
+        <rect x="6" y="11" width="16" height="12" rx="2" fill="var(--bg)"/>
+        <path d="M9 14h4M9 20h4M15 14h4M15 20h4" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="17" r="2" fill="var(--bg)"/>
+        <path d="M10 7V4M22 7V3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>retake-vrs</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="../fr/standings.html">Classements</a>
+<a href="../fr/race.html">Course au Major</a>      <a href="../fr/evolution.html">Analyses</a>
+      <a href="../fr/how-it-works.html" aria-current="true">Comment c&#39;est fait</a>
+    </nav>
+    <div class="tools">
+      <div class="search js-only">
+        <input id="q" type="search" autocomplete="off" placeholder="Chercher une équipe ou un joueur" aria-label="Chercher une équipe ou un joueur"
+               data-index="../assets/search.json" data-assets="../assets/" data-home="../fr/" data-none="Aucune équipe ni joueur ne correspond.">
+        <ul id="q-results" hidden></ul>
+      </div>
+      <div class="seg js-only" role="group" aria-label="Thème">
+        <button type="button" data-set-theme="dark">Sombre</button>
+        <button type="button" data-set-theme="light">Clair</button>
+      </div>
+      <div class="seg" role="group" aria-label="Langue">
+<a href="../roadmap.html" hreflang="en" lang="en">EN</a><a href="../fr/roadmap.html" hreflang="fr" lang="fr" aria-current="true">FR</a>      </div>
+    </div>
+  </div>
+</header>
+<nav class="subnav" aria-label="Feuille de route"><div class="wrap">
+<a href="../fr/how-it-works.html">Comment ça marche</a><a href="../fr/data.html">Le voyage des données</a><a href="../fr/roadmap.html" aria-current="page">Feuille de route</a></div></nav>
+<main id="content" class="wrap">
+  <p class="fresh">Classement du 2 nov. 2026 · généré le 2026-11-20 09:21 UTC</p>
+<section class="head">
+  <h1>Feuille de route</h1>
+  <p class="lede">Ce que le projet veut faire, ce qui est déjà fait, et ce qui manque pour faire le reste. L&#39;essentiel de ce qui reste attend des données qu&#39;on n&#39;a pas encore.</p>
+</section>
+
+<section aria-labelledby="missing">
+  <h2 id="missing">Les données qu&#39;on n&#39;a pas encore</h2>
+  <div class="missing">
+    <article class="card missing-item">
+      <h3>Les prochains tournois, leurs équipes et leur calendrier</h3>
+      <p>Pour projeter la course vers une date d&#39;invitation à venir, la simulation a besoin des matchs qui restent à jouer. Aujourd&#39;hui, elle ne rejoue qu&#39;un mois déjà passé.</p>
+      <p class="blocks"><span>Bloque</span></p>
+      <ul><li>Projeter la course vers les dates d&#39;invitation à venir, pour chaque tournoi VRS <small><a href="https://github.com/fgeronimi/retake-vrs/issues/74">#74</a></small></li><li>Un détail par équipe : répartition des places, seuil d&#39;invitation, prochain tournoi <small><a href="https://github.com/fgeronimi/retake-vrs/issues/76">#76</a></small></li><li>Choisir des résultats de matchs et recalculer toutes les chances dans le navigateur <small><a href="https://github.com/fgeronimi/retake-vrs/issues/77">#77</a></small></li></ul>
+    </article>
+    <article class="card missing-item">
+      <h3>Le vrai format de chaque tournoi (groupes, tableaux, nombre de manches)</h3>
+      <p>Les données n&#39;enregistrent pas les formats : la simulation les devine d&#39;après le nombre d&#39;équipes. Les tournois avec phase de groupes sont joués comme de simples tableaux, ce qui change le nombre de matchs de chaque équipe.</p>
+      <p class="blocks"><span>Bloque</span></p>
+      <ul><li>Faire passer le test sur le passé au-dessus de 80 % des invitées données à plus de 50 % <small><a href="https://github.com/fgeronimi/retake-vrs/issues/58">#58</a></small></li><li>Projeter la course vers les dates d&#39;invitation à venir, pour chaque tournoi VRS <small><a href="https://github.com/fgeronimi/retake-vrs/issues/74">#74</a></small></li></ul>
+    </article>
+    <article class="card missing-item">
+      <h3>Les résultats des matchs entre deux classements de Valve</h3>
+      <p>Valve publie son classement environ une fois par mois. Mettre les chances à jour chaque jour demande les résultats des jours entre deux classements.</p>
+      <p class="blocks"><span>Bloque</span></p>
+      <ul><li>Mettre les chances à jour chaque jour, et montrer ce qui a bougé depuis la veille <small><a href="https://github.com/fgeronimi/retake-vrs/issues/75">#75</a></small></li></ul>
+    </article>
+    <article class="card missing-item">
+      <h3>Les listes d&#39;invitations passées de chaque tournoi VRS, avec leurs règles</h3>
+      <p>On n&#39;a les règles que de deux Majors. Les tournois des autres organisateurs invitent aussi depuis le classement mondial, et vérifier nos chances demande beaucoup de listes passées, pas deux.</p>
+      <p class="blocks"><span>Bloque</span></p>
+      <ul><li>Projeter la course vers les dates d&#39;invitation à venir, pour chaque tournoi VRS <small><a href="https://github.com/fgeronimi/retake-vrs/issues/74">#74</a></small></li><li>Vérifier les chances sur chaque liste d&#39;invitations passée <small><a href="https://github.com/fgeronimi/retake-vrs/issues/78">#78</a></small></li></ul>
+    </article>
+    <article class="card missing-item">
+      <h3>Les équipes qui ont refusé une invitation</h3>
+      <p>Quand une équipe refuse, sa place passe à la suivante du classement. Sans les refus passés, toute probabilité de refus serait inventée.</p>
+      <p class="blocks"><span>Bloque</span></p>
+      <ul><li>Projeter la course vers les dates d&#39;invitation à venir, pour chaque tournoi VRS <small><a href="https://github.com/fgeronimi/retake-vrs/issues/74">#74</a></small></li></ul>
+    </article>
+    <article class="card missing-item">
+      <h3>La date de chaque changement d&#39;effectif</h3>
+      <p>Une équipe qui change de joueurs pendant le mois est simulée avec son ancien effectif jusqu&#39;au classement suivant.</p>
+      <p class="blocks"><span>Bloque</span></p>
+      <ul><li>Faire passer le test sur le passé au-dessus de 80 % des invitées données à plus de 50 % <small><a href="https://github.com/fgeronimi/retake-vrs/issues/58">#58</a></small></li><li>Suivre les changements d&#39;effectif pendant une course au Major <small><a href="https://github.com/fgeronimi/retake-vrs/issues/60">#60</a></small></li></ul>
+    </article>
+  </div>
+</section>
+
+<section class="card" style="padding:0;overflow:hidden" aria-labelledby="features">
+  <h2 id="features" style="padding:18px 18px 0">Ce qu&#39;on veut faire</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Fonction</th><th class="r">État</th><th class="r hide-narrow">Ticket</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Une page qui explique d&#39;où viennent les données</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/71">#71</a></td>
+      </tr>
+      <tr>
+        <td>Comment les points sont calculés : les formules, et ce que fait chaque couche</td>
+        <td class="r"><span class="status st-wip">En cours</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/72">#72</a></td>
+      </tr>
+      <tr>
+        <td>Tableaux de la course : rang projeté et résumé par région</td>
+        <td class="r"><span class="status st-wip">En cours</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/73">#73</a></td>
+      </tr>
+      <tr>
+        <td>Cette page de feuille de route</td>
+        <td class="r"><span class="status st-wip">En cours</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/79">#79</a></td>
+      </tr>
+      <tr>
+        <td>Faire passer le test sur le passé au-dessus de 80 % des invitées données à plus de 50 %<small class="needs">Il faut : le vrai format de chaque tournoi (groupes, tableaux, nombre de manches) · la date de chaque changement d&#39;effectif</small></td>
+        <td class="r"><span class="status st-blocked">Attend des données</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/58">#58</a></td>
+      </tr>
+      <tr>
+        <td>Projeter la course vers les dates d&#39;invitation à venir, pour chaque tournoi VRS<small class="needs">Il faut : les prochains tournois, leurs équipes et leur calendrier · le vrai format de chaque tournoi (groupes, tableaux, nombre de manches) · les listes d&#39;invitations passées de chaque tournoi VRS, avec leurs règles · les équipes qui ont refusé une invitation</small></td>
+        <td class="r"><span class="status st-blocked">Attend des données</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/74">#74</a></td>
+      </tr>
+      <tr>
+        <td>Mettre les chances à jour chaque jour, et montrer ce qui a bougé depuis la veille<small class="needs">Il faut : les résultats des matchs entre deux classements de Valve</small></td>
+        <td class="r"><span class="status st-blocked">Attend des données</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/75">#75</a></td>
+      </tr>
+      <tr>
+        <td>Un détail par équipe : répartition des places, seuil d&#39;invitation, prochain tournoi<small class="needs">Il faut : les prochains tournois, leurs équipes et leur calendrier</small></td>
+        <td class="r"><span class="status st-blocked">Attend des données</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/76">#76</a></td>
+      </tr>
+      <tr>
+        <td>Choisir des résultats de matchs et recalculer toutes les chances dans le navigateur<small class="needs">Il faut : les prochains tournois, leurs équipes et leur calendrier</small></td>
+        <td class="r"><span class="status st-blocked">Attend des données</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/77">#77</a></td>
+      </tr>
+      <tr>
+        <td>Vérifier les chances sur chaque liste d&#39;invitations passée<small class="needs">Il faut : les listes d&#39;invitations passées de chaque tournoi VRS, avec leurs règles</small></td>
+        <td class="r"><span class="status st-blocked">Attend des données</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/78">#78</a></td>
+      </tr>
+      <tr>
+        <td>Suivre les changements d&#39;effectif pendant une course au Major<small class="needs">Il faut : la date de chaque changement d&#39;effectif</small></td>
+        <td class="r"><span class="status st-blocked">Attend des données</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/60">#60</a></td>
+      </tr>
+      <tr>
+        <td>Être d&#39;accord avec Valve sur les effectifs de 95 % des matchs du top 100</td>
+        <td class="r"><span class="status st-planned">Prévu</span></td>
+        <td class="r hide-narrow"><a href="https://github.com/fgeronimi/retake-vrs/issues/32">#32</a></td>
+      </tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="card" style="padding:0;overflow:hidden" aria-labelledby="milestones">
+  <h2 id="milestones" style="padding:18px 18px 0">Jalons</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>#</th><th>Jalon</th><th class="r">État</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="num">0</td>
+        <td>Fondations</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">1</td>
+        <td>Portage du modèle</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td>Bronze Valve</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">3</td>
+        <td>Silver Valve</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">4</td>
+        <td>Gold, audit du classement</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">5</td>
+        <td>Pages statiques</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">6</td>
+        <td>Données Liquipedia</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">7</td>
+        <td>Votre VRS</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">8</td>
+        <td>Automatisation<small class="needs">Reste : sept exécutions d&#39;affilée, le coût du mois, le jalon 7 sur le classement suivant</small></td>
+        <td class="r"><span class="status st-wip">En cours</span></td>
+      </tr>
+      <tr>
+        <td class="num">9</td>
+        <td>Simulation d&#39;un tournoi</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">10</td>
+        <td>Course au Major<small class="needs">Reste : le test sur le passé est à 78 %, l&#39;objectif est 80 %</small></td>
+        <td class="r"><span class="status st-wip">En cours</span></td>
+      </tr>
+      <tr>
+        <td class="num">11</td>
+        <td>Questions conditionnelles</td>
+        <td class="r"><span class="status st-done">Fait</span></td>
+      </tr>
+      <tr>
+        <td class="num">12</td>
+        <td>Serveur MCP</td>
+        <td class="r"><span class="status st-todo">Pas commencé</span></td>
+      </tr>
+      <tr>
+        <td class="num">13</td>
+        <td>Analyses</td>
+        <td class="r"><span class="status st-todo">Pas commencé</span></td>
+      </tr>
+    </tbody>
+  </table></div>
+</section>
+
+<p class="note">Mis à jour le 19 nov. 2026. Le plan complet, avec les indicateurs de chaque jalon, est dans ROADMAP.md. <a href="https://github.com/fgeronimi/retake-vrs/blob/main/ROADMAP.md">ROADMAP.md</a></p>
+</main>
+<footer><div class="wrap">
+  <p>Modèle et classements : Valve. Données des tournois : HLTV.org, comme l&#39;indique Valve. <a href="https://github.com/ValveSoftware/counter-strike_regional_standings">Valve</a></p>
+<p>Nos classements recalculés et nos courses : données de matchs OpenVRS, d&#39;après Liquipedia (CC BY-SA 3.0). <a href="https://openvrs.uk">OpenVRS</a> · <a href="https://liquipedia.net/counterstrike/">Liquipedia</a></p>  <p>Police : Albert Sans (SIL Open Font License). Sans lien avec Valve, HLTV, OpenVRS ni Liquipedia. <a href="https://github.com/fgeronimi/retake-vrs">GitHub</a></p>
+</div></footer>
+</body>
+</html>

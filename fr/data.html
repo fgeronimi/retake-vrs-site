@@ -8,9 +8,9 @@
 <link rel="alternate" hreflang="en" href="../data.html">
 <link rel="alternate" hreflang="fr" href="../fr/data.html">
 <link rel="preload" href="../assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.128a9c93e5.css">
+<link rel="stylesheet" href="../assets/site.f0cd8c2037.css">
 <script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../assets/site.5959fce70a.js" defer></script>
+<script src="../assets/site.8b42a8c23b.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#content">Aller au contenu</a>
@@ -32,7 +32,7 @@
     <div class="tools">
       <div class="search js-only">
         <input id="q" type="search" autocomplete="off" placeholder="Chercher une équipe ou un joueur" aria-label="Chercher une équipe ou un joueur"
-               data-index="../assets/search.json" data-home="../fr/" data-none="Aucune équipe ni joueur ne correspond.">
+               data-index="../assets/search.json" data-assets="../assets/" data-home="../fr/" data-none="Aucune équipe ni joueur ne correspond.">
         <ul id="q-results" hidden></ul>
       </div>
       <div class="seg js-only" role="group" aria-label="Thème">
@@ -45,12 +45,12 @@
   </div>
 </header>
 <nav class="subnav" aria-label="D&#39;où viennent les données, et où elles vont"><div class="wrap">
-<a href="../fr/how-it-works.html">Comment ça marche</a><a href="../fr/data.html" aria-current="page">Le voyage des données</a></div></nav>
+<a href="../fr/how-it-works.html">Comment ça marche</a><a href="../fr/data.html" aria-current="page">Le voyage des données</a><a href="../fr/roadmap.html">Feuille de route</a></div></nav>
 <main id="content" class="wrap">
-  <p class="fresh">Classement du 2 nov. 2026 · généré le 2026-11-18 23:46 UTC</p>
+  <p class="fresh">Classement du 2 nov. 2026 · généré le 2026-11-20 09:21 UTC</p>
 <section class="head">
   <h1>D&#39;où viennent les données, et où elles vont</h1>
-  <p class="lede">Avant que tu voies les points d&#39;une équipe sur ce site, les chiffres font un long voyage. Le voici, étape par étape, comme une recette.</p>
+  <p class="lede">Avant que tu voies les points d&#39;une équipe sur ce site, les chiffres passent par six étapes.</p>
 </section>
 
 <ol class="journey" aria-label="D&#39;où viennent les données, et où elles vont">
@@ -71,36 +71,36 @@
   <li class="step">
     <span class="step-n" aria-hidden="true">3</span>
     <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="18" width="44" height="34" rx="4"/><path d="M10 28h44"/><circle cx="32" cy="40" r="5"/><path d="M32 40v4"/></svg>
-    <h2>On en fait une copie dans un coffre</h2>
-    <p>On copie ces listes dans un coffre. On n&#39;écrit jamais sur la copie, comme ça on peut toujours revenir vérifier.</p>
+    <h2>On en garde une copie</h2>
+    <p>On enregistre chaque liste exactement comme elle a été publiée. On ne modifie jamais cette copie, comme ça on peut toujours vérifier d&#39;où vient un chiffre.</p>
     <p class="tech"><span>Le nom pour les grands</span>Bronze · Google Cloud Storage</p>
   </li>
   <li class="step">
     <span class="step-n" aria-hidden="true">4</span>
     <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="10" width="40" height="44" rx="4"/><path d="M12 25h40M12 40h40"/><path d="M27 18h10M27 33h10M27 48h10"/></svg>
-    <h2>On range et on vérifie</h2>
-    <p>On met chaque morceau dans le bon tiroir et on vérifie que rien ne manque. Si quelque chose cloche, tout s&#39;arrête.</p>
+    <h2>On les met en tableaux et on vérifie</h2>
+    <p>On écrit les données dans des tableaux, avec une ligne par équipe ou par match, et on vérifie que rien ne manque et que rien n&#39;est faux. Si une vérification échoue, tout s&#39;arrête.</p>
     <p class="tech"><span>Le nom pour les grands</span>Silver · tables BigQuery et contrôles de qualité</p>
   </li>
   <li class="step">
     <span class="step-n" aria-hidden="true">5</span>
     <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="8" width="36" height="48" rx="5"/><rect x="20" y="14" width="24" height="10" rx="2"/><path d="M22 32h4M30 32h4M38 32h4M22 40h4M30 40h4M38 40h4M22 48h4M30 48h12"/></svg>
     <h2>On fait les calculs</h2>
-    <p>On suit la recette de Valve elle-même pour donner des points à chaque équipe. Puis l&#39;ordinateur joue les prochains tournois des milliers de fois pour voir qui pourrait être invité.</p>
+    <p>On calcule les points de chaque équipe avec les mêmes formules que Valve. Puis l&#39;ordinateur joue les prochains tournois des milliers de fois pour compter qui obtient une place au Major.</p>
     <p class="tech"><span>Le nom pour les grands</span>Gold · le modèle en Python et la simulation</p>
   </li>
   <li class="step">
     <span class="step-n" aria-hidden="true">6</span>
     <svg class="step-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="20" width="36" height="28" rx="8"/><circle cx="25" cy="33" r="3.5"/><circle cx="39" cy="33" r="3.5"/><path d="M27 41h10M32 20v-7"/><circle cx="32" cy="11" r="2.5"/><path d="M14 32h-5M55 32h-5"/></svg>
-    <h2>Un robot construit le site</h2>
-    <p>Deux fois par jour, un petit robot se réveille, cherche les nouveaux matchs et refait toutes les pages, en anglais et en français.</p>
+    <h2>Un programme construit le site</h2>
+    <p>Deux fois par jour, un programme démarre tout seul, cherche les nouveaux matchs et refait toutes les pages, en anglais et en français.</p>
     <p class="tech"><span>Le nom pour les grands</span>Job Cloud Run à 06:00 et 18:00 UTC · GitHub Pages</p>
   </li>
 </ol>
 
 <section class="card" aria-labelledby="funnel">
-  <h2 id="funnel">De beaucoup à quelques-uns</h2>
-  <p class="lede">Beaucoup de matchs entrent. Une poignée d&#39;équipes ressortent avec un ticket pour le Major. Les barres sont à l&#39;échelle.</p>
+  <h2 id="funnel">Beaucoup de matchs, peu de places</h2>
+  <p class="lede">Beaucoup de matchs entrent. Peu d&#39;équipes obtiennent une place au Major. Les barres sont à l&#39;échelle.</p>
   <div class="grid2">
 <div><h3>Matchs</h3><div class="chart-box"><svg class="chart scale-bars" viewBox="0 0 420 98" width="420" height="98" role="img" aria-label="Matchs">
 <g data-tip="Matchs notés, sur deux ans : 19 948"><title>Matchs notés, sur deux ans : 19 948</title>
@@ -127,7 +127,7 @@
 
 <section class="card" aria-labelledby="weight">
   <h2 id="weight">Les vieux matchs comptent moins</h2>
-  <p class="lede">Un match de la semaine dernière compte en entier. Un match d&#39;il y a cinq mois compte juste un peu. Après six mois, il ne compte plus du tout : c&#39;est comme s&#39;il était tombé par la fenêtre.</p>
+  <p class="lede">Un match de la semaine dernière compte en entier. Un match d&#39;il y a cinq mois compte juste un peu. Un match de plus de six mois ne compte plus du tout.</p>
   <div class="chart-box"><svg class="chart age-weight" viewBox="0 0 960 210" width="960" height="210" role="img" aria-label="Les vieux matchs comptent moins">
 <line class="grid" x1="64" x2="908" y1="166.0" y2="166.0"/>
 <text class="axis" x="56.0" y="170.0" text-anchor="end">0 %</text>
@@ -150,6 +150,93 @@
 <text class="note-label" x="169.5" y="154.0" text-anchor="middle">trop vieux, ne compte pas</text>
 <text class="axis" x="908.0" y="206.0" text-anchor="end">L&#x27;âge du match →</text>
 </svg></div>
+</section>
+
+<section class="card" aria-labelledby="points">
+  <h2 id="points">Comment une équipe obtient ses points</h2>
+  <p class="lede">Les points sont calculés en deux parties. La partie 1 regarde les six derniers mois et donne à chaque équipe un nombre de départ. La partie 2 passe les matchs un par un, dans l&#39;ordre où ils ont été joués, et ajoute ou retire des points.</p>
+
+  <h3>Partie 1 : quatre notes, puis la moyenne</h3>
+  <p>Chaque équipe reçoit quatre notes. Chaque note est un nombre entre 0 et 1. Une équipe a 1 quand elle fait aussi bien que l&#39;équipe classée 5e, ou mieux. Puis on fait la moyenne des quatre notes : chacune compte pour un quart.</p>
+  <div class="formula"><math display="block"><mi>s</mi><mo>=</mo><mfrac><mrow><mi>O</mi><mo>+</mo><mi>C</mi><mo>+</mo><mi>N</mi><mo>+</mo><mi>L</mi></mrow><mn>4</mn></mfrac></math></div>
+  <div class="formulas">
+    <div class="formula"><math display="block"><mi>O</mi><mo>=</mo><mi>c</mi><mo>(</mo><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><mi>M</mi><msub><mi>M</mi><mn>5</mn></msub></mfrac><mo>)</mo><mo>)</mo></math></div>
+    <div class="formula"><math display="block"><mi>M</mi><mo>=</mo><munder><mo>∑</mo><mtext>10 meilleurs résultats</mtext></munder><mtext>gain</mtext><mo>×</mo><mi>a</mi></math></div>
+    <div class="formula"><math display="block"><mi>C</mi><mo>=</mo><mi>c</mi><mo>(</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 meilleures victoires</mtext></munder><msub><mi>O</mi><mtext>adv</mtext></msub><mo>×</mo><mi>a</mi><mo>×</mo><mi>c</mi><mo>(</mo><mfrac><mi>P</mi><mn>1 000 000</mn></mfrac><mo>)</mo><mo>)</mo></math></div>
+    <div class="formula"><math display="block"><mi>N</mi><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 meilleures victoires</mtext></munder><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><msub><mi>D</mi><mtext>adv</mtext></msub><msub><mi>D</mi><mn>5</mn></msub></mfrac><mo>)</mo><mo>×</mo><mi>a</mi><mo>×</mo><mi>c</mi><mo>(</mo><mfrac><mi>P</mi><mn>1 000 000</mn></mfrac><mo>)</mo></math></div>
+    <div class="formula"><math display="block"><mi>D</mi><mo>=</mo><munder><mo>∑</mo><mtext>équipes battues</mtext></munder><mi>a</mi></math></div>
+    <div class="formula"><math display="block"><mi>L</mi><mo>=</mo><mi>min</mi><mo>(</mo><mn>1</mn><mo>,</mo><mfrac><mi>W</mi><msub><mi>W</mi><mn>5</mn></msub></mfrac><mo>)</mo></math></div>
+    <div class="formula"><math display="block"><mi>W</mi><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><munder><mo>∑</mo><mtext>10 meilleures victoires en LAN</mtext></munder><mi>a</mi></math></div>
+    <div class="formula"><math display="block"><mi>c</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mo>|</mo><msub><mi>log</mi><mn>10</mn></msub><mi>x</mi><mo>|</mo></mrow></mfrac></math></div>
+  </div>
+  <dl class="symbols">
+    <dt>O</dt><dd>l&#39;argent gagné par l&#39;équipe, sur ses 10 meilleurs résultats.</dd>
+    <dt>C</dt><dd>l&#39;argent gagné par les équipes qu&#39;elle a battues.</dd>
+    <dt>N</dt><dd>le nombre d&#39;équipes différentes qu&#39;elle a battues, et leur niveau.</dd>
+    <dt>L</dt><dd>ses victoires en LAN, quand les deux équipes jouent dans la même salle et pas par internet.</dd>
+    <dt>a</dt><dd>le poids d&#39;un résultat selon son âge, entre 0 et 1 (le graphique au-dessus).</dd>
+    <dt>P</dt><dd>la somme mise en jeu dans le tournoi, jusqu&#39;à 1 000 000 de dollars. Les victoires dans les tournois qui distribuent plus d&#39;argent comptent plus.</dd>
+    <dt>c</dt><dd>transforme un rapport en note : 1 reste 1, 0,1 devient 0,5, 0,01 devient 0,33. Une équipe qui a gagné 10 fois moins d&#39;argent n&#39;a pas une note 10 fois plus petite.</dd>
+    <dt>M₅, D₅, W₅</dt><dd>le même nombre pour l&#39;équipe classée 5e.</dd>
+  </dl>
+  <p>La moyenne devient un nombre de départ entre 400 et 2 000 points. L&#39;équipe qui a la moyenne la plus basse reçoit 400, celle qui a la plus haute reçoit 2 000.</p>
+  <div class="formula"><math display="block"><mtext>départ</mtext><mo>=</mo><mn>400</mn><mo>+</mo><mn>1 600</mn><mo>×</mo><mfrac><mrow><mi>s</mi><mo>−</mo><msub><mi>s</mi><mtext>min</mtext></msub></mrow><mrow><msub><mi>s</mi><mtext>max</mtext></msub><mo>−</mo><msub><mi>s</mi><mtext>min</mtext></msub></mrow></mfrac></math></div>
+
+  <h3>Partie 2 : un match à la fois</h3>
+  <p>Avant chaque match, la formule calcule E, la chance qu&#39;elle donne à l&#39;équipe de gagner. Après le match, S vaut 1 si l&#39;équipe a gagné et 0 si elle a perdu. L&#39;équipe gagne des points quand elle fait mieux que prévu et en perd quand elle fait moins bien.</p>
+  <div class="formulas">
+    <div class="formula"><math display="block"><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mn>10</mn><mrow><mo>−</mo><mi>g</mi><mo>(</mo><mi>R</mi><mo>−</mo><msub><mi>R</mi><mtext>adv</mtext></msub><mo>)</mo><mo>/</mo><mn>400</mn></mrow></msup></mrow></mfrac></math></div>
+    <div class="formula"><math display="block"><msup><mi>R</mi><mo>′</mo></msup><mo>≈</mo><mi>R</mi><mo>+</mo><mi>k</mi><mo>×</mo><mi>w</mi><mo>×</mo><mo>(</mo><mi>S</mi><mo>−</mo><mi>E</mi><mo>)</mo></math></div>
+  </div>
+  <dl class="symbols">
+    <dt>R, R<sub>adv</sub></dt><dd>les points de l&#39;équipe avant le match, et ceux de l&#39;adversaire.</dd>
+    <dt>w</dt><dd>le poids du match selon son âge.</dd>
+    <dt>k</dt><dd>la taille d&#39;un pas, environ 30. Une victoire récente contre une équipe qui a les mêmes points rapporte 15 points.</dd>
+  </dl>
+  <p class="note">La formule exacte est Glicko avec un écart fixe de 75 (Glickman, 1999) : g vaut 0,97 et k bouge un peu, entre 30 et 32.</p>
+</section>
+
+<section class="card" aria-labelledby="measured">
+  <h2 id="measured">Ce qui décide les points en vrai</h2>
+  <p class="lede">Dans la formule, les quatre notes comptent pareil. Mais parmi les 30 meilleures équipes, elles ne changent pas autant d&#39;une équipe à l&#39;autre. Une note presque identique pour toutes les équipes ne peut pas les départager.</p>
+  <h3>Combien chaque note change parmi les 30 meilleures équipes (écart type × 100)</h3>
+  <div class="chart-box narrow"><svg class="chart scale-bars" viewBox="0 0 420 190" width="420" height="190" role="img" aria-label="Écart de chaque note parmi les 30 premières">
+<g data-tip="O · argent gagné : 18"><title>O · argent gagné : 18</title>
+<text class="bar-label" x="0" y="20">O · argent gagné</text>
+<rect class="bar-fill" x="0" y="26" width="350.0" height="16" rx="4"/>
+<text class="bar-value" x="358.0" y="39">18</text></g>
+<g data-tip="C · argent des équipes battues : 14"><title>C · argent des équipes battues : 14</title>
+<text class="bar-label" x="0" y="66">C · argent des équipes battues</text>
+<rect class="bar-fill" x="0" y="72" width="272.2" height="16" rx="4"/>
+<text class="bar-value" x="280.2" y="85">14</text></g>
+<g data-tip="L · victoires en LAN : 9"><title>L · victoires en LAN : 9</title>
+<text class="bar-label" x="0" y="112">L · victoires en LAN</text>
+<rect class="bar-fill" x="0" y="118" width="175.0" height="16" rx="4"/>
+<text class="bar-value" x="183.0" y="131">9</text></g>
+<g data-tip="N · équipes battues : 7"><title>N · équipes battues : 7</title>
+<text class="bar-label" x="0" y="158">N · équipes battues</text>
+<rect class="bar-fill" x="0" y="164" width="136.1" height="16" rx="4"/>
+<text class="bar-value" x="144.1" y="177">7</text></g>
+</svg></div>
+  <p>Sur le classement du 2 nov. 2026, la note qui change le plus est O · argent gagné.</p>
+  <p>La partie 1 donne aux 30 meilleures équipes des nombres de départ écartés de 177 points (écart type). La partie 2 déplace ensuite chacune de 36 points en moyenne, 121 au plus. C&#39;est donc la partie 1 qui décide l&#39;essentiel du classement.</p>
+</section>
+
+<section class="card" aria-labelledby="layers">
+  <h2 id="layers">Ce qu&#39;on fait à chaque couche</h2>
+  <p class="lede">Entre les fichiers publiés et ce site, les données passent par trois couches, appelées bronze, silver et gold. Chaque couche fait un seul travail. Une couche ne démarre que si la précédente a fini sans erreur.</p>
+  <div class="layers">
+    <article class="layer bronze"><h3>Bronze : garder les fichiers tels qu&#39;ils ont été publiés</h3><ul>
+<li>On enregistre chaque fichier exactement comme il a été publié, octet par octet, dans Google Cloud Storage.</li><li>On ne modifie jamais un fichier enregistré. Une nouvelle version est enregistrée comme un nouveau fichier.</li><li>Pour chaque fichier, on calcule une somme de contrôle : un nombre calculé à partir de tous les octets du fichier. Si un seul octet change, le nombre change : on peut donc montrer que le fichier est l&#39;original.</li><li>On écrit la liste des fichiers, le manifeste, en dernier. S&#39;il manque, la couche suivante ne démarre pas.</li>    </ul></article>
+    <article class="layer silver"><h3>Silver : transformer les fichiers en tableaux vérifiés</h3><ul>
+<li>On lit chaque fichier et on écrit ses données dans des tables BigQuery, avec une ligne par équipe, par match ou par gain.</li><li>Chaque colonne a un type fixe : une date doit être une date, un nombre doit être un nombre. Aucune ligne ne peut apparaître deux fois.</li><li>Chaque match apparaît sur la page des deux équipes. On vérifie que les deux pages donnent le même résultat.</li><li>Si une vérification échoue, rien n&#39;est écrit et le traitement s&#39;arrête.</li>      <li><b>Sur le classement du 2 nov. 2026 : 376 équipes et 11 146 lignes de matchs.</b></li>
+    </ul></article>
+    <article class="layer gold"><h3>Gold : calculer les points et les chances</h3><ul>
+      <li>On calcule les points de chaque équipe avec les formules ci-dessus, réécrites en Python à partir du modèle de Valve.</li>
+      <li><b>On compare nos chiffres avec les points publiés par Valve : ils sont identiques pour 376 équipes sur 376.</b></li>
+<li>L&#39;ordinateur joue les prochains tournois 5 000 fois et compte combien de fois chaque équipe obtient une place au Major.</li>      <li>Les résultats vont dans les tables que ce site lit.</li>
+    </ul></article>
+  </div>
 </section>
 
 <p><a href="../fr/how-it-works.html">Comment ça marche →</a></p>

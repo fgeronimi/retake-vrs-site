@@ -8,9 +8,9 @@
 <link rel="alternate" hreflang="en" href="../how-it-works.html">
 <link rel="alternate" hreflang="fr" href="../fr/how-it-works.html">
 <link rel="preload" href="../assets/fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.128a9c93e5.css">
+<link rel="stylesheet" href="../assets/site.f0cd8c2037.css">
 <script>try{var t=localStorage.getItem("rv-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="../assets/site.5959fce70a.js" defer></script>
+<script src="../assets/site.8b42a8c23b.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#content">Aller au contenu</a>
@@ -32,7 +32,7 @@
     <div class="tools">
       <div class="search js-only">
         <input id="q" type="search" autocomplete="off" placeholder="Chercher une équipe ou un joueur" aria-label="Chercher une équipe ou un joueur"
-               data-index="../assets/search.json" data-home="../fr/" data-none="Aucune équipe ni joueur ne correspond.">
+               data-index="../assets/search.json" data-assets="../assets/" data-home="../fr/" data-none="Aucune équipe ni joueur ne correspond.">
         <ul id="q-results" hidden></ul>
       </div>
       <div class="seg js-only" role="group" aria-label="Thème">
@@ -45,9 +45,9 @@
   </div>
 </header>
 <nav class="subnav" aria-label="Comment c&#39;est fait"><div class="wrap">
-<a href="../fr/how-it-works.html" aria-current="page">Comment ça marche</a><a href="../fr/data.html">Le voyage des données</a></div></nav>
+<a href="../fr/how-it-works.html" aria-current="page">Comment ça marche</a><a href="../fr/data.html">Le voyage des données</a><a href="../fr/roadmap.html">Feuille de route</a></div></nav>
 <main id="content" class="wrap">
-  <p class="fresh">Classement du 2 nov. 2026 · généré le 2026-11-18 23:46 UTC</p>
+  <p class="fresh">Classement du 2 nov. 2026 · généré le 2026-11-20 09:21 UTC</p>
 <section class="head">
   <h1>Comment c&#39;est fait</h1>
   <p class="lede">retake-vrs réécrit le modèle de classement de Valve en Python, le vérifie face à chaque chiffre publié par Valve, et s&#39;en sert pour simuler la course à chaque Major.</p>
@@ -63,163 +63,178 @@
   <div class="chart-box"><svg class="chart calendar" viewBox="0 0 960 412" width="960" height="412" role="img" aria-label="Quels matchs comptent, et quand les Majors se décident">
 <line class="grid" x1="96.0" x2="96.0" y1="38" y2="382"/>
 <text class="axis" x="99.0" y="400">M</text>
-<line class="grid" x1="122.1" x2="122.1" y1="38" y2="382"/>
-<text class="axis" x="125.1" y="400">J</text>
-<line class="grid" x1="147.4" x2="147.4" y1="38" y2="382"/>
-<text class="axis" x="150.4" y="400">J</text>
-<line class="grid" x1="173.6" x2="173.6" y1="38" y2="382"/>
-<text class="axis" x="176.6" y="400">A</text>
-<line class="grid" x1="199.7" x2="199.7" y1="38" y2="382"/>
-<text class="axis" x="202.7" y="400">S</text>
-<line class="grid" x1="225.0" x2="225.0" y1="38" y2="382"/>
-<text class="axis" x="228.0" y="400">O</text>
-<line class="grid" x1="251.1" x2="251.1" y1="38" y2="382"/>
-<text class="axis" x="254.1" y="400">N</text>
-<line class="grid" x1="276.4" x2="276.4" y1="38" y2="382"/>
-<text class="axis" x="279.4" y="400">D</text>
-<line class="grid" x1="302.5" x2="302.5" y1="38" y2="382"/>
-<text class="axis" x="305.5" y="400">2025</text>
-<line class="grid" x1="328.7" x2="328.7" y1="38" y2="382"/>
-<text class="axis" x="331.7" y="400">F</text>
-<line class="grid" x1="352.3" x2="352.3" y1="38" y2="382"/>
-<text class="axis" x="355.3" y="400">M</text>
-<line class="grid" x1="378.4" x2="378.4" y1="38" y2="382"/>
-<text class="axis" x="381.4" y="400">A</text>
-<line class="grid" x1="403.7" x2="403.7" y1="38" y2="382"/>
-<text class="axis" x="406.7" y="400">M</text>
-<line class="grid" x1="429.8" x2="429.8" y1="38" y2="382"/>
-<text class="axis" x="432.8" y="400">J</text>
-<line class="grid" x1="455.1" x2="455.1" y1="38" y2="382"/>
-<text class="axis" x="458.1" y="400">J</text>
-<line class="grid" x1="481.2" x2="481.2" y1="38" y2="382"/>
-<text class="axis" x="484.2" y="400">A</text>
-<line class="grid" x1="507.4" x2="507.4" y1="38" y2="382"/>
-<text class="axis" x="510.4" y="400">S</text>
-<line class="grid" x1="532.6" x2="532.6" y1="38" y2="382"/>
-<text class="axis" x="535.6" y="400">O</text>
-<line class="grid" x1="558.8" x2="558.8" y1="38" y2="382"/>
-<text class="axis" x="561.8" y="400">N</text>
-<line class="grid" x1="584.1" x2="584.1" y1="38" y2="382"/>
-<text class="axis" x="587.1" y="400">D</text>
-<line class="grid" x1="610.2" x2="610.2" y1="38" y2="382"/>
-<text class="axis" x="613.2" y="400">2026</text>
-<line class="grid" x1="636.3" x2="636.3" y1="38" y2="382"/>
-<text class="axis" x="639.3" y="400">F</text>
-<line class="grid" x1="659.9" x2="659.9" y1="38" y2="382"/>
-<text class="axis" x="662.9" y="400">M</text>
-<line class="grid" x1="686.1" x2="686.1" y1="38" y2="382"/>
-<text class="axis" x="689.1" y="400">A</text>
-<line class="grid" x1="711.3" x2="711.3" y1="38" y2="382"/>
-<text class="axis" x="714.3" y="400">M</text>
-<line class="grid" x1="737.5" x2="737.5" y1="38" y2="382"/>
-<text class="axis" x="740.5" y="400">J</text>
-<line class="grid" x1="762.8" x2="762.8" y1="38" y2="382"/>
-<text class="axis" x="765.8" y="400">J</text>
-<line class="grid" x1="788.9" x2="788.9" y1="38" y2="382"/>
-<text class="axis" x="791.9" y="400">A</text>
-<line class="grid" x1="815.0" x2="815.0" y1="38" y2="382"/>
-<text class="axis" x="818.0" y="400">S</text>
-<line class="grid" x1="840.3" x2="840.3" y1="38" y2="382"/>
-<text class="axis" x="843.3" y="400">O</text>
-<line class="grid" x1="866.4" x2="866.4" y1="38" y2="382"/>
-<text class="axis" x="869.4" y="400">N</text>
-<line class="grid" x1="891.7" x2="891.7" y1="38" y2="382"/>
-<text class="axis" x="894.7" y="400">D</text>
-<line class="grid" x1="917.9" x2="917.9" y1="38" y2="382"/>
-<text class="axis" x="920.9" y="400">2027</text>
-<g data-tip="PGL Major Singapore 2026 · 24 nov. 2026 – 13 déc. 2026"><title>PGL Major Singapore 2026 · 24 nov. 2026 – 13 déc. 2026</title><rect class="major" x="885.8" y="16" width="16.9" height="366"/>
-<line class="major-edge" x1="885.8" x2="885.8" y1="16" y2="382"/>
-<text class="major-label" x="881.8" y="28" text-anchor="end">Singapore</text></g>
-<g data-tip="IEM Cologne Major 2026 · 2 juin 2026 – 21 juin 2026"><title>IEM Cologne Major 2026 · 2 juin 2026 – 21 juin 2026</title><rect class="major" x="738.3" y="16" width="16.9" height="366"/>
-<line class="major-edge" x1="738.3" x2="738.3" y1="16" y2="382"/>
-<text class="major-label" x="734.3" y="28" text-anchor="end">Cologne</text></g>
-<line class="today" x1="880.8" x2="880.8" y1="10" y2="382"/>
-<text class="today-label" x="884.8" y="16">Aujourd'hui</text>
+<line class="grid" x1="118.1" x2="118.1" y1="38" y2="382"/>
+<text class="axis" x="121.1" y="400">J</text>
+<line class="grid" x1="139.6" x2="139.6" y1="38" y2="382"/>
+<text class="axis" x="142.6" y="400">J</text>
+<line class="grid" x1="161.7" x2="161.7" y1="38" y2="382"/>
+<text class="axis" x="164.7" y="400">A</text>
+<line class="grid" x1="183.9" x2="183.9" y1="38" y2="382"/>
+<text class="axis" x="186.9" y="400">S</text>
+<line class="grid" x1="205.3" x2="205.3" y1="38" y2="382"/>
+<text class="axis" x="208.3" y="400">O</text>
+<line class="grid" x1="227.5" x2="227.5" y1="38" y2="382"/>
+<text class="axis" x="230.5" y="400">N</text>
+<line class="grid" x1="248.9" x2="248.9" y1="38" y2="382"/>
+<text class="axis" x="251.9" y="400">D</text>
+<line class="grid" x1="271.0" x2="271.0" y1="38" y2="382"/>
+<text class="axis" x="274.0" y="400">2025</text>
+<line class="grid" x1="293.2" x2="293.2" y1="38" y2="382"/>
+<text class="axis" x="296.2" y="400">F</text>
+<line class="grid" x1="313.2" x2="313.2" y1="38" y2="382"/>
+<text class="axis" x="316.2" y="400">M</text>
+<line class="grid" x1="335.3" x2="335.3" y1="38" y2="382"/>
+<text class="axis" x="338.3" y="400">A</text>
+<line class="grid" x1="356.8" x2="356.8" y1="38" y2="382"/>
+<text class="axis" x="359.8" y="400">M</text>
+<line class="grid" x1="378.9" x2="378.9" y1="38" y2="382"/>
+<text class="axis" x="381.9" y="400">J</text>
+<line class="grid" x1="400.3" x2="400.3" y1="38" y2="382"/>
+<text class="axis" x="403.3" y="400">J</text>
+<line class="grid" x1="422.5" x2="422.5" y1="38" y2="382"/>
+<text class="axis" x="425.5" y="400">A</text>
+<line class="grid" x1="444.6" x2="444.6" y1="38" y2="382"/>
+<text class="axis" x="447.6" y="400">S</text>
+<line class="grid" x1="466.1" x2="466.1" y1="38" y2="382"/>
+<text class="axis" x="469.1" y="400">O</text>
+<line class="grid" x1="488.2" x2="488.2" y1="38" y2="382"/>
+<text class="axis" x="491.2" y="400">N</text>
+<line class="grid" x1="509.6" x2="509.6" y1="38" y2="382"/>
+<text class="axis" x="512.6" y="400">D</text>
+<line class="grid" x1="531.8" x2="531.8" y1="38" y2="382"/>
+<text class="axis" x="534.8" y="400">2026</text>
+<line class="grid" x1="553.9" x2="553.9" y1="38" y2="382"/>
+<text class="axis" x="556.9" y="400">F</text>
+<line class="grid" x1="573.9" x2="573.9" y1="38" y2="382"/>
+<text class="axis" x="576.9" y="400">M</text>
+<line class="grid" x1="596.1" x2="596.1" y1="38" y2="382"/>
+<text class="axis" x="599.1" y="400">A</text>
+<line class="grid" x1="617.5" x2="617.5" y1="38" y2="382"/>
+<text class="axis" x="620.5" y="400">M</text>
+<line class="grid" x1="639.7" x2="639.7" y1="38" y2="382"/>
+<text class="axis" x="642.7" y="400">J</text>
+<line class="grid" x1="661.1" x2="661.1" y1="38" y2="382"/>
+<text class="axis" x="664.1" y="400">J</text>
+<line class="grid" x1="683.2" x2="683.2" y1="38" y2="382"/>
+<text class="axis" x="686.2" y="400">A</text>
+<line class="grid" x1="705.4" x2="705.4" y1="38" y2="382"/>
+<text class="axis" x="708.4" y="400">S</text>
+<line class="grid" x1="726.8" x2="726.8" y1="38" y2="382"/>
+<text class="axis" x="729.8" y="400">O</text>
+<line class="grid" x1="749.0" x2="749.0" y1="38" y2="382"/>
+<text class="axis" x="752.0" y="400">N</text>
+<line class="grid" x1="770.4" x2="770.4" y1="38" y2="382"/>
+<text class="axis" x="773.4" y="400">D</text>
+<line class="grid" x1="792.5" x2="792.5" y1="38" y2="382"/>
+<text class="axis" x="795.5" y="400">2027</text>
+<line class="grid" x1="814.7" x2="814.7" y1="38" y2="382"/>
+<text class="axis" x="817.7" y="400">F</text>
+<line class="grid" x1="834.7" x2="834.7" y1="38" y2="382"/>
+<text class="axis" x="837.7" y="400">M</text>
+<line class="grid" x1="856.8" x2="856.8" y1="38" y2="382"/>
+<text class="axis" x="859.8" y="400">A</text>
+<line class="grid" x1="878.3" x2="878.3" y1="38" y2="382"/>
+<text class="axis" x="881.3" y="400">M</text>
+<line class="grid" x1="900.4" x2="900.4" y1="38" y2="382"/>
+<text class="axis" x="903.4" y="400">J</text>
+<line class="grid" x1="921.9" x2="921.9" y1="38" y2="382"/>
+<text class="axis" x="924.9" y="400">J</text>
+<g data-tip="FiReSPORTS Buenos Aires Major 2027 · 31 mai 2027 – 20 juin 2027"><title>FiReSPORTS Buenos Aires Major 2027 · 31 mai 2027 – 20 juin 2027</title><rect class="major" x="899.7" y="16" width="15.0" height="366"/>
+<line class="major-edge" x1="899.7" x2="899.7" y1="16" y2="382"/>
+<text class="major-label" x="895.7" y="28" text-anchor="end">Buenos Aires</text></g>
+<g data-tip="PGL Major Singapore 2026 · 24 nov. 2026 – 13 déc. 2026"><title>PGL Major Singapore 2026 · 24 nov. 2026 – 13 déc. 2026</title><rect class="major" x="765.4" y="16" width="14.3" height="366"/>
+<line class="major-edge" x1="765.4" x2="765.4" y1="16" y2="382"/>
+<text class="major-label" x="761.4" y="28" text-anchor="end">Singapore</text></g>
+<g data-tip="IEM Cologne Major 2026 · 2 juin 2026 – 21 juin 2026"><title>IEM Cologne Major 2026 · 2 juin 2026 – 21 juin 2026</title><rect class="major" x="640.4" y="16" width="14.3" height="366"/>
+<line class="major-edge" x1="640.4" x2="640.4" y1="16" y2="382"/>
+<text class="major-label" x="636.4" y="28" text-anchor="end">Cologne</text></g>
+<line class="today" x1="762.5" x2="762.5" y1="10" y2="382"/>
+<text class="today-label" x="766.5" y="16">Aujourd'hui</text>
 <g data-tip="2 déc. 2024"><title>2 déc. 2024</title>
 <text class="snap-label" x="86" y="62.0" text-anchor="end">2 déc.</text>
-<rect class="window" x="125.5" y="52.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="251.9" y="52.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="277.2" cy="58.0" r="3.5"/>
+<rect class="window" x="121.0" y="52.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="228.2" y="52.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="249.6" cy="58.0" r="3.5"/>
 <rect class="hit" x="0" y="46.0" width="960" height="24"/></g>
 <g data-tip="3 nov. 2025"><title>3 nov. 2025</title>
 <text class="snap-label" x="86" y="86.0" text-anchor="end">3 nov.</text>
-<rect class="window" x="408.7" y="76.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="535.2" y="76.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="560.5" cy="82.0" r="3.5"/>
+<rect class="window" x="361.0" y="76.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="468.2" y="76.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="489.6" cy="82.0" r="3.5"/>
 <rect class="hit" x="0" y="70.0" width="960" height="24"/></g>
 <g data-tip="1 déc. 2025"><title>1 déc. 2025</title>
 <text class="snap-label" x="86" y="110.0" text-anchor="end">1 déc.</text>
-<rect class="window" x="432.3" y="100.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="558.8" y="100.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="584.1" cy="106.0" r="3.5"/>
+<rect class="window" x="381.0" y="100.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="488.2" y="100.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="509.6" cy="106.0" r="3.5"/>
 <rect class="hit" x="0" y="94.0" width="960" height="24"/></g>
 <g data-tip="5 janv. 2026"><title>5 janv. 2026</title>
 <text class="snap-label" x="86" y="134.0" text-anchor="end">5 janv.</text>
-<rect class="window" x="461.8" y="124.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="588.3" y="124.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="613.6" cy="130.0" r="3.5"/>
+<rect class="window" x="406.1" y="124.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="513.2" y="124.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="534.6" cy="130.0" r="3.5"/>
 <rect class="hit" x="0" y="118.0" width="960" height="24"/></g>
 <g data-tip="2 févr. 2026"><title>2 févr. 2026</title>
 <text class="snap-label" x="86" y="158.0" text-anchor="end">2 févr.</text>
-<rect class="window" x="485.4" y="148.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="611.9" y="148.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="637.2" cy="154.0" r="3.5"/>
+<rect class="window" x="426.1" y="148.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="533.2" y="148.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="554.6" cy="154.0" r="3.5"/>
 <rect class="hit" x="0" y="142.0" width="960" height="24"/></g>
 <g data-tip="2 mars 2026"><title>2 mars 2026</title>
 <text class="snap-label" x="86" y="182.0" text-anchor="end">2 mars</text>
-<rect class="window" x="509.0" y="172.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="635.5" y="172.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="660.8" cy="178.0" r="3.5"/>
+<rect class="window" x="446.1" y="172.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="553.2" y="172.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="574.7" cy="178.0" r="3.5"/>
 <rect class="hit" x="0" y="166.0" width="960" height="24"/></g>
 <g data-tip="6 avr. 2026 · IEM Cologne Major 2026"><title>6 avr. 2026 · IEM Cologne Major 2026</title>
 <text class="snap-label cutoff" x="86" y="206.0" text-anchor="end">6 avr.</text>
-<rect class="window" x="538.5" y="196.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="665.0" y="196.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="690.3" cy="202.0" r="3.5"/>
-<path class="link" d="M695.3 202.0 H736.3"/>
+<rect class="window" x="471.1" y="196.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="578.2" y="196.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="599.7" cy="202.0" r="3.5"/>
+<path class="link" d="M604.7 202.0 H638.4"/>
 <rect class="hit" x="0" y="190.0" width="960" height="24"/></g>
 <g data-tip="4 mai 2026"><title>4 mai 2026</title>
 <text class="snap-label" x="86" y="230.0" text-anchor="end">4 mai</text>
-<rect class="window" x="562.1" y="220.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="688.6" y="220.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="713.9" cy="226.0" r="3.5"/>
+<rect class="window" x="491.1" y="220.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="598.2" y="220.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="619.7" cy="226.0" r="3.5"/>
 <rect class="hit" x="0" y="214.0" width="960" height="24"/></g>
 <g data-tip="1 juin 2026"><title>1 juin 2026</title>
 <text class="snap-label" x="86" y="254.0" text-anchor="end">1 juin</text>
-<rect class="window" x="585.7" y="244.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="712.2" y="244.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="737.5" cy="250.0" r="3.5"/>
+<rect class="window" x="511.1" y="244.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="618.2" y="244.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="639.7" cy="250.0" r="3.5"/>
 <rect class="hit" x="0" y="238.0" width="960" height="24"/></g>
 <g data-tip="6 juil. 2026"><title>6 juil. 2026</title>
 <text class="snap-label" x="86" y="278.0" text-anchor="end">6 juil.</text>
-<rect class="window" x="615.3" y="268.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="741.7" y="268.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="767.0" cy="274.0" r="3.5"/>
+<rect class="window" x="536.1" y="268.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="643.2" y="268.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="664.7" cy="274.0" r="3.5"/>
 <rect class="hit" x="0" y="262.0" width="960" height="24"/></g>
 <g data-tip="3 août 2026"><title>3 août 2026</title>
 <text class="snap-label" x="86" y="302.0" text-anchor="end">3 août</text>
-<rect class="window" x="638.9" y="292.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="765.3" y="292.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="790.6" cy="298.0" r="3.5"/>
+<rect class="window" x="556.1" y="292.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="663.2" y="292.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="684.7" cy="298.0" r="3.5"/>
 <rect class="hit" x="0" y="286.0" width="960" height="24"/></g>
 <g data-tip="7 sept. 2026"><title>7 sept. 2026</title>
 <text class="snap-label" x="86" y="326.0" text-anchor="end">7 sept.</text>
-<rect class="window" x="668.4" y="316.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="794.8" y="316.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="820.1" cy="322.0" r="3.5"/>
+<rect class="window" x="581.1" y="316.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="688.2" y="316.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="709.7" cy="322.0" r="3.5"/>
 <rect class="hit" x="0" y="310.0" width="960" height="24"/></g>
 <g data-tip="5 oct. 2026"><title>5 oct. 2026</title>
 <text class="snap-label" x="86" y="350.0" text-anchor="end">5 oct.</text>
-<rect class="window" x="692.0" y="340.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="818.4" y="340.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="843.7" cy="346.0" r="3.5"/>
+<rect class="window" x="601.1" y="340.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="708.2" y="340.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="729.7" cy="346.0" r="3.5"/>
 <rect class="hit" x="0" y="334.0" width="960" height="24"/></g>
 <g data-tip="2 nov. 2026 · PGL Major Singapore 2026"><title>2 nov. 2026 · PGL Major Singapore 2026</title>
 <text class="snap-label cutoff" x="86" y="374.0" text-anchor="end">2 nov.</text>
-<rect class="window" x="715.6" y="364.0" width="126.4" height="12" rx="3"/>
-<rect class="full" x="842.0" y="364.0" width="25.3" height="12" rx="3"/>
-<circle class="snap" cx="867.3" cy="370.0" r="3.5"/>
-<path class="link" d="M872.3 370.0 H883.8"/>
+<rect class="window" x="621.1" y="364.0" width="107.2" height="12" rx="3"/>
+<rect class="full" x="728.2" y="364.0" width="21.4" height="12" rx="3"/>
+<circle class="snap" cx="749.7" cy="370.0" r="3.5"/>
+<path class="link" d="M754.7 370.0 H763.4"/>
 <rect class="hit" x="0" y="358.0" width="960" height="24"/></g>
 </svg></div>
 </section>
