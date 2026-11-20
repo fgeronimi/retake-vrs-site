@@ -17,8 +17,8 @@
   --ink: #f3f2f8; --ink-2: #b6b4c6; --ink-3: #8e8ca2;
   --accent: #ea4f86; --accent-ink: #14131a;
   --likely: #4c8df6; --likely-ink: #4c8df6; --unlikely: darkslategrey; --unlikely-ink: var(--ink-3); --mid: #6e6c80;
-  /* A mid grey under every logo, in both themes: white marks (Spirit, FUT) and black ones (FURIA) both show */
-  --logo-bg: #77767f; --logo-ink: #ffffff;
+  /* A black round tile under every logo, in both themes: lasource draws its logos for dark backgrounds */
+  --logo-bg: #000000; --logo-ink: #ffffff;
   --font: "Albert Sans", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --radius: 10px;
 }
@@ -299,6 +299,28 @@ svg.chart.age-weight { min-width: 680px; }
 svg .bar-label { fill: var(--ink-2); font-size: 13px; }
 svg .bar-value { fill: var(--ink); font-size: 13px; font-weight: 800; }
 svg .bar-fill { fill: var(--likely); }
+/* Roster sheet: from the four scores to the points. Steps blue, totals in ink, a loss in the
+   unlikely grey with its outline, what a full score would add dashed (docs/design.md, Charts). */
+svg.chart.waterfall { min-width: 560px; }
+/* A factor's name: plain words, Valve's name in small, and an "i" that explains it on hover,
+   on keyboard focus, and on tap (a tap focuses it). */
+.valve-name { color: var(--ink-3); font-size: 11px; }
+.hint { position: relative; display: inline-grid; place-items: center; width: 15px; height: 15px; margin-left: 4px; border: 1px solid var(--ink-3); border-radius: 50%; color: var(--ink-3); font-size: 10px; font-weight: 800; font-style: italic; cursor: help; vertical-align: 1px; }
+.hint:hover, .hint:focus-visible, .hint:focus { color: var(--ink); border-color: var(--ink); }
+.hint-text { display: none; position: absolute; z-index: 20; left: -8px; top: calc(100% + 6px); width: min(280px, 70vw); padding: 9px 11px; background: var(--raised); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 12px 30px rgb(0 0 0 / 0.3); color: var(--ink); font-size: 12.5px; font-weight: 500; font-style: normal; line-height: 1.45; text-align: left; }
+.hint:hover .hint-text, .hint:focus .hint-text { display: block; }
+.waterfall { display: grid; gap: 10px; margin-bottom: 12px; }
+.waterfall h3 { margin: 0; }
+svg .wf-step { fill: var(--likely); }
+svg .wf-total { fill: var(--ink-2); }
+svg .wf-loss { fill: var(--unlikely); stroke: var(--ink-3); stroke-width: 1; }
+svg .wf-missing { fill: none; stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 4 3; }
+svg .wf-link { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 2; }
+svg .wf-short { fill: var(--ink-3); font-weight: 500; }
+.l-wf-step, .l-wf-total, .l-wf-missing { display: inline-block; width: 14px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+.l-wf-step { background: var(--likely); }
+.l-wf-total { background: var(--ink-2); }
+.l-wf-missing { border: 1px dashed var(--ink-3); }
 svg .full-band { fill: var(--likely); fill-opacity: 0.08; }
 svg .note-label { fill: var(--ink); font-size: 12px; font-weight: 600; }
 
